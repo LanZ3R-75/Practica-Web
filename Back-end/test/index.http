@@ -1,0 +1,38 @@
+### OBTENER LISTA DE COMERCIOS
+
+GET http://localhost:3000/api/comercios
+
+### OBTENER UN COMERCIO POR EL CIF
+
+GET http://localhost:3000/api/comercios/098765432Y
+
+### CREAR UN NUEVO COMERCIO
+
+POST http://localhost:3000/api/comercios
+Content-Type: application/json
+
+{
+    "nombre": "Navantia",
+    "CIF": "098765432Y",
+    "direccion": "Av Los Nuevos Mares, 1, Cadiz",
+    "email": "navantiae@test.com",
+    "telefono": "912223344",
+    "id_pagina": 4
+}
+
+### MODIFICAR UN COMERCIO A PARTIR DE SU CIF
+
+PUT http://localhost:3000/api/comercios/098765432Y
+Content-Type: application/json
+
+{
+    "nombre": "Navantia",
+    "CIF": "111111111Y",
+    "direccion": "Av Los Nuevos Mares, 1, Cadiz",
+    "email": "navantiae@test.com",
+    "telefono": "111111111",
+    "id_pagina": 4
+}
+
+### BORRAR UN COMERCIO A PARTIR DE SU CIF (PERMITE ELEGIR ENTRE BORRADO LOGICO Y FISICO)
+DELETE  http://localhost:3000/api/comercios/111111111Y?deleteMode=soft

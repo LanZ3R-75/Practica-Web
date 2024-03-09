@@ -1,43 +1,109 @@
 const{comerciosModel} = require("../models")
+const{handleHttpError} = require("../utils/handleError")
 
 //Obtener la lista de comercios
 
-const getItems = (req, res) => {
+const getItems = async (req, res) => {
 
-    const data = ["hola", "mundo", "lista completa"]
-    res.send({data}) 
+    try {
+
+        const data = await comerciosModel.find({})
+        res.send(data)
+
+    } catch (error) {
+        
+        handleHttpError(res, 'ERROR_GET_ITEMS', 403)
+    }
 }
 
 //Obtener un unico comercio (usando el CIF)
 
-const getItem = (req, res) => {
+const getItem = async (req, res) => {
 
-    const data = ["hola", "mundo", "item unico"]
-    res.send({data}) 
+    const{cif} = req.params
+
+    try {
+
+        const item = await comerciosModel.findOne({CIF:cif})
+
+        if (item) {
+
+            res.send(item)
+            
+        }else{
+
+            handleHttpError(res,'ERROR_ITEM_NOT_FOUND',404)
+        }
+        
+    } catch (error) {
+        
+        handleHttpError(res, 'ERROR_GET_ITEM', 500)
+    }
+
 }
 
 //Crear un comercio
 
-const createItem = (req, res) => {
+const createItem = async (req, res) => {
 
-    const data = ["hola", "mundo", "create"]
-    res.send({data}) 
+    try {
+
+        const{body} = req
+        const data = await comerciosModel.create(body)
+        res.send(data)
+
+    }catch(error){
+
+        handleHttpError(res, "ERROR_CREATE_ITEM", 403)
+    }
 }
 
 //Modificar un comercio a partir de su CIF
 
-const updateItem = (req, res) => {
+const updateItem = async (req, res) => {
 
-    const data = ["hola", "mundo", "update"]
-    res.send({data}) 
+    try {
+
+       const{cif} = req.params
+
+       const data = await comerciosModel.findOneAndUpdate({CIF:cif}, req.body)
+       res.send(data)
+
+    }catch (error) {
+
+        handleHttpError(res, "ERROR_UPDATE_ITEM", 403)
+        
+    }
 }
 
 //Borrado de un comercios (permite elegir de forma lógica o física)
 
-const deleteItem = (req, res) => {
+const deleteItem = async (req, res) => {
 
-    const data = ["hola", "mundo", "delete"]
-    res.send({data}) 
+    try {
+        
+        const{cif} = req.params
+        const deleteMode = req.query.deleteMode
+
+        if(deleteMode === 'soft'){
+
+            const data = await comerciosModel.delete({CIF:cif})
+            res.send({ message: 'Comercio eliminado lógicamente' });
+
+        }else if(deleteMode === 'hard'){
+
+            const data = await comerciosModel.deleteOne({CIF:cif})
+            res.send({ message: 'Comercio eliminado Fisicamente' });
+
+        }else{
+
+            handleHttpError(res, 'INVALID_DELETE_MODE',400)
+        }
+
+    } catch (error) {
+
+        handleHttpError(res,'ERROR_DELETE_ITEM',500)
+    }
 }
 
 module.exports = {getItems, getItem, createItem, updateItem, deleteItem}

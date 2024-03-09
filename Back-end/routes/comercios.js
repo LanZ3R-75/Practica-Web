@@ -4,9 +4,9 @@ const router = express.Router()
 const { getItems ,getItem, createItem, updateItem, deleteItem } = require("../controllers/comercios")
 
 router.get("/", getItems)
-router.get("/:id", getItem)
+router.get("/:cif", getItem)
 router.post("/", createItem)
-router.update("/:id", updateItem)
-router.delete("/:id", deleteItem)
+router.put("/:cif", updateItem)
+router.delete("/:cif", deleteItem)
 
 module.exports = router

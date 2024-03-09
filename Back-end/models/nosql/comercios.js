@@ -1,10 +1,11 @@
 const mongoose = require("mongoose")
+const mongooseDelete = require("mongoose-delete")
 
 //Creamos el modelo de la base de datos
 
 const ComerciosScheme = new mongoose.Schema(
     {
-        name: {
+        nombre: {
             type: String
         },
 
@@ -19,8 +20,7 @@ const ComerciosScheme = new mongoose.Schema(
         },
 
         email: {
-            type: String,
-            unique:true
+            type: String
         },
 
         telefono: {
@@ -28,7 +28,8 @@ const ComerciosScheme = new mongoose.Schema(
         },
 
         id_pagina: {
-            type: Number
+            type: Number,
+            unique:true
         }
     },
     {
@@ -37,4 +38,5 @@ const ComerciosScheme = new mongoose.Schema(
     }
 )
 
+ComerciosScheme.plugin(mongooseDelete, {overrideMethods: "all"})
 module.exports = mongoose.model("comercios",ComerciosScheme) //"comercio" es el nombre de la coleccion/tabla en mongoDB
