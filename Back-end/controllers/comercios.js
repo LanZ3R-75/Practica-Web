@@ -1,3 +1,4 @@
+const { matchedData } = require("express-validator")
 const{comerciosModel} = require("../models")
 const{handleHttpError} = require("../utils/handleError")
 
@@ -20,7 +21,7 @@ const getItems = async (req, res) => {
 
 const getItem = async (req, res) => {
 
-    const{cif} = req.params
+    const{cif} = matchedData(req)
 
     try {
 
@@ -48,7 +49,7 @@ const createItem = async (req, res) => {
 
     try {
 
-        const{body} = req
+        const body = matchedData(req)
         const data = await comerciosModel.create(body)
         res.send(data)
 
@@ -64,9 +65,9 @@ const updateItem = async (req, res) => {
 
     try {
 
-       const{cif} = req.params
+       const{cif, ...body} = matchedData(req) //Extrae el CIF y el resto lo asigna a la constante body
 
-       const data = await comerciosModel.findOneAndUpdate({CIF:cif}, req.body)
+       const data = await comerciosModel.findOneAndUpdate({CIF:cif}, body)
        res.send(data)
 
     }catch (error) {
@@ -82,7 +83,7 @@ const deleteItem = async (req, res) => {
 
     try {
         
-        const{cif} = req.params
+        const{cif} = matchedData(req)
         const deleteMode = req.query.deleteMode
 
         if(deleteMode === 'soft'){

@@ -4,7 +4,7 @@ GET http://localhost:3000/api/comercios
 
 ### OBTENER UN COMERCIO POR EL CIF
 
-GET http://localhost:3000/api/comercios/098765432Y
+GET http://localhost:3000/api/comercios/B87654321C
 
 ### CREAR UN NUEVO COMERCIO
 
@@ -12,12 +12,12 @@ POST http://localhost:3000/api/comercios
 Content-Type: application/json
 
 {
-    "nombre": "Navantia",
-    "CIF": "098765432Y",
-    "direccion": "Av Los Nuevos Mares, 1, Cadiz",
-    "email": "navantiae@test.com",
-    "telefono": "912223344",
-    "id_pagina": 4
+  "nombre": "Trattoria Il Forno",
+  "CIF": "B87654321C",
+  "direccion": "Calle Mayor, 12, Madrid",
+  "email": "info@trattoriailforno.es",
+  "telefono": "912345678",
+  "id_pagina": 3
 }
 
 ### MODIFICAR UN COMERCIO A PARTIR DE SU CIF
@@ -35,4 +35,4 @@ Content-Type: application/json
 }
 
 ### BORRAR UN COMERCIO A PARTIR DE SU CIF (PERMITE ELEGIR ENTRE BORRADO LOGICO Y FISICO)
-DELETE  http://localhost:3000/api/comercios/111111111Y?deleteMode=hard
+DELETE  http://localhost:3000/api/comercios/098765432Y?deleteMode=hard
