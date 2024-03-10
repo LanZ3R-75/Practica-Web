@@ -12,17 +12,17 @@ POST http://localhost:3000/api/comercios
 Content-Type: application/json
 
 {
-  "nombre": "Trattoria Il Forno",
-  "CIF": "B87654321C",
-  "direccion": "Calle Mayor, 12, Madrid",
-  "email": "info@trattoriailforno.es",
-  "telefono": "912345678",
-  "id_pagina": 3
+  "nombre": "Moda & Estilo",
+  "CIF": "C987654321D",
+  "direccion": "Paseo del Prado, 45, Barcelona",
+  "email": "modayestilo@tienda.com",
+  "telefono": "934567890",
+  "id_pagina": 4
 }
 
 ### MODIFICAR UN COMERCIO A PARTIR DE SU CIF
 
-PUT http://localhost:3000/api/comercios/098765432Y
+PUT http://localhost:3000/api/comercios/C987654321D
 Content-Type: application/json
 
 {
@@ -35,4 +35,4 @@ Content-Type: application/json
 }
 
 ### BORRAR UN COMERCIO A PARTIR DE SU CIF (PERMITE ELEGIR ENTRE BORRADO LOGICO Y FISICO)
-DELETE  http://localhost:3000/api/comercios/098765432Y?deleteMode=hard
+DELETE  http://localhost:3000/api/comercios/111111111Y?deleteMode=hard
