@@ -1,3 +1,4 @@
+//Importamos las caracteristicas necesarias de mongoose para gestionar la base de datos
 const mongoose = require("mongoose")
 const mongooseDelete = require("mongoose-delete")
 
@@ -20,11 +21,13 @@ const ComerciosScheme = new mongoose.Schema(
         },
 
         email: {
-            type: String
+            type: String,
+            unique:true
         },
 
         telefono: {
-            type: String
+            type: String,
+            unique:true
         },
 
         id_pagina: {
@@ -38,5 +41,5 @@ const ComerciosScheme = new mongoose.Schema(
     }
 )
 
-ComerciosScheme.plugin(mongooseDelete, {overrideMethods: "all"})
+ComerciosScheme.plugin(mongooseDelete, {overrideMethods: "all"}) //Este plugin nos permite establecer tanto borrado logico/como borrado físico
 module.exports = mongoose.model("comercios",ComerciosScheme) //"comercio" es el nombre de la coleccion/tabla en mongoDB

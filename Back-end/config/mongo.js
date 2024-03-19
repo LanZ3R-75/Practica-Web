@@ -1,12 +1,16 @@
+/**
+ * Esta funcion se encarga de conectar con la base de datos.
+ */
+
 const mongoose = require('mongoose')
 
 const dbConnect = () => {
 
-    const db_uri = process.env.DB_URI
+    const db_uri = process.env.DB_URI //Obtenemos la URI de conexion de las variables de entorno.
 
-    mongoose.set('strictQuery', false)
+    mongoose.set('strictQuery', false) //Configuramos la base de datos para que no aplique estrictamente los filtros de consultas.
 
-    try{
+    try{ //tratamos de conectarnos y en caso de fallo mostramos un error.
         mongoose.connect(db_uri)
 
     }catch(error){
