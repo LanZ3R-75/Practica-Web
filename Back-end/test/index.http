@@ -12,12 +12,12 @@ POST http://localhost:3000/api/comercios
 Content-Type: application/json
 
 {
-  "nombre": "Moda & Estilo",
-  "CIF": "C987654321D",
+  "nombre": "Moda Urbana",
+  "CIF": "F987654322X",
   "direccion": "Paseo del Prado, 45, Barcelona",
-  "email": "modayestilo@tienda.com",
-  "telefono": "934567890",
-  "id_pagina": 4
+  "email": "modaurbana@tienda.com",
+  "telefono": "936666890",
+  "id_pagina": 5
 }
 
 ### MODIFICAR UN COMERCIO A PARTIR DE SU CIF
