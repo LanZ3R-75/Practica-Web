@@ -36,3 +36,36 @@ Content-Type: application/json
 
 ### BORRAR UN COMERCIO A PARTIR DE SU CIF (PERMITE ELEGIR ENTRE BORRADO LOGICO Y FISICO)
 DELETE  http://localhost:3000/api/comercios/111111111Y?deleteMode=hard
+
+###CREAR UN COMERCIO
+POST http://localhost:3000/api/admin
+Content-Type: application/json
+
+{
+    "nombre": "Prueba2",
+    "CIF": "131313131B",
+    "direccion": "Av Los Nuevos Mares, 1, Cadiz",
+    "email": "Prueba2@test.com",
+    "telefono": "112232142",
+    "id_pagina": 12
+}
+
+###ACTUALIZAR UN COMERCIO
+PUT http://localhost:3000/api/admin/662d440fbe6c90d8670ac283
+Content-Type: application/json
+
+{
+    "nombre": "Prueba2",
+    "CIF": "131313131B",
+    "direccion": "Viva españa , viva el rey , viva la orden y la ley",
+    "email": "Prueba2@test.com",
+    "telefono": "112232142",
+    "id_pagina": 12
+}
+
+###Get comercio by id
+
+GET http://localhost:3000/api/admin/662d440fbe6c90d8670ac283
+
+###DELETE COMERCIO
+DELETE  http://localhost:3000/api/admin/662d440fbe6c90d8670ac283
