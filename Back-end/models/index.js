@@ -7,7 +7,9 @@ const models = {
     comerciosModel: require('./nosql/comercios'), //Importa y asigna el modelo 'comercio'
     userModel: require('./nosql/user'),
     adminModel: require('./nosql/admin'),
-    webpageModel: require('./nosql/webpage')
+    contenidoModel: require('./nosql/contenido'),
+    reviewModel: require('./nosql/review')
+
 }                                                
 
 module.exports = models

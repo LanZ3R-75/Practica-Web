@@ -4,13 +4,14 @@ const { Schema } = mongoose
 
 //Modelo Pagina Web
 
-const WebpageScheme = new mongoose.Schema(
+const ContenidoScheme = new mongoose.Schema(
     {
         //Identificador del comercio asociado
 
-        comercio:{
+        comercioID:{
             type: Schema.Types.ObjectId,
-            ref:"comercios"
+            ref:"comercios",
+            require:true,
 
         },
         
@@ -18,32 +19,38 @@ const WebpageScheme = new mongoose.Schema(
         //Datos que puedes ser Actualizados por el comercio
 
         ciudad:{
-            type: String
+            type: String,
+            require:true,
 
         },
 
         actividad:{
-            type: String
+            type: String,
+            require:true,
 
         },
 
         titulo:{
-            type: String
+            type: String,
+            require:true,
 
         },
 
         resumen:{
-            type: String
+            type: String,
+            require:true,
 
         },
 
         text:{
-            type: [String]
+            type: [String],
+            require:true,
 
         },
 
         fotos:{
-            type: [String]
+            type: [String],
+            require:true,
 
         },
 
@@ -95,4 +102,4 @@ const WebpageScheme = new mongoose.Schema(
     
 )
 
-module.exports = mongoose.model("webpage",WebpageScheme)
+module.exports = mongoose.model("contenido",ContenidoScheme)

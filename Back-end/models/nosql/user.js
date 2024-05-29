@@ -8,23 +8,26 @@ const MongooseDelete = require("mongoose-delete")
 const UserScheme = new moongose.Schema(
     {
         nombre:{
-            type: String
+            type: String,
+            require:true,
 
         },
 
         email:{
             type: String,
-            unique: true
+            require:true,
+            unique: true,
 
         },
 
         password:{
             type: String,
+            require:true,
             
         },
 
         edad:{
-            type: Number
+            type: Number,
 
         },
 
@@ -39,7 +42,8 @@ const UserScheme = new moongose.Schema(
         },
 
         ofertas:{
-            type: Boolean
+            type: Boolean,
+            default: false,
         }
     },
     {

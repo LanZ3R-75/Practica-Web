@@ -1,0 +1,53 @@
+### Registrar Admin
+POST http://localhost:3000/api/admin/register
+Content-Type: application/json
+
+{
+  "username": "adminUser",
+  "password": "securePassword"
+}
+
+### Iniciar Sesión como Admin
+POST http://localhost:3000/api/admin/login
+Content-Type: application/json
+
+{
+  "username": "adminUser",
+  "password": "securePassword"
+}
+
+### Crear Comercio
+POST http://localhost:3000/api/admin/comercios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNjk0Nzc2NywiZXhwIjoxNzE3MDM0MTY3fQ.OxOyv_E3ciUDGz2gpx85ahs1UDCKH06QP2Ub35T69lI
+
+{
+  "nombre": "Comercio 1",
+  "CIF": "CIF123456",
+  "direccion": "Calle Falsa 123",
+  "email": "comercio1@example.com",
+  "password": "securePassword",
+  "telefono": "123456789"
+}
+
+### Consultar Todos los Comercios
+GET http://localhost:3000/api/admin/comercios
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNjk0Nzc2NywiZXhwIjoxNzE3MDM0MTY3fQ.OxOyv_E3ciUDGz2gpx85ahs1UDCKH06QP2Ub35T69lI
+
+### Consultar Comercio por ID
+GET http://localhost:3000/api/admin/comercios/66568d3e24023f7279efe175
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNjk0Nzc2NywiZXhwIjoxNzE3MDM0MTY3fQ.OxOyv_E3ciUDGz2gpx85ahs1UDCKH06QP2Ub35T69lI
+
+### Actualizar Comercio
+PUT http://localhost:3000/api/admin/comercios/66568d3e24023f7279efe175
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNjk0Nzc2NywiZXhwIjoxNzE3MDM0MTY3fQ.OxOyv_E3ciUDGz2gpx85ahs1UDCKH06QP2Ub35T69lI
+
+{
+  "nombre": "Super Comercio 1",
+  "direccion": "Calle Verdadera 456"
+}
+
+### Borrar Comercio
+DELETE http://localhost:3000/api/admin/comercios/66568c4f64df47e8b3e9d425
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNjk0Nzc2NywiZXhwIjoxNzE3MDM0MTY3fQ.OxOyv_E3ciUDGz2gpx85ahs1UDCKH06QP2Ub35T69lI

@@ -1,24 +1,71 @@
-const{comerciosModel} = require("../models")
+//Importamos las rutas necesarias
+const{comerciosModel, adminModel} = require("../models")
 const jwt = require('jsonwebtoken')
 
+//Ruta para Registro de Admin
+const postRegisterAdmin = async (req, res) => {
 
-//Ruta para registrar un nuevo comercio
-const postComercio = async (req, res) =>{
+    const {username, password} = req.body
 
     try{
-        const comercio = new comerciosModel(req.body)
-        await comercio.save()
 
-        //crear y enviar el token JWT
-        const token = jwt.sign({_id: comercio._id}, process.env.JWT_SECRET)
-        res.status(201).send({comercio: comercio, comercio: token})
+        const existingAdmin = await adminModel.findOne({username})
+
+        if(existingAdmin){
+
+            return res.status(400).send({message: 'Adminstrador ya existente'})
+
+        }
+
+        const newAdmin = new adminModel({username, password})
+        await newAdmin.save()
+        res.status(201).send({mesage: 'Administrador registrado con exito'})
+
 
     }catch(error){
-        
-        res.status(500).send({error: error.message})
 
+        res.status(500).send({message: error.message})
     }
 }
+
+//Ruta para Login de Administradores
+const loginAdmin = async (req, res) => {
+
+    const { username, password } = req.body;
+
+    try {
+
+        const admin = await adminModel.findOne({ username });
+        if (!admin) return res.status(400).send({ message: 'Administrador no encontrado' });
+
+        const isMatch = await admin.comparePassword(password); // Asegúrate de usar el nombre correcto del método
+        if (!isMatch) return res.status(400).send({ message: 'Credenciales no válidas' });
+
+        const token = jwt.sign({ id: admin._id }, process.env.JWT_SECRET, { expiresIn: '24h' });
+        res.status(200).send({ token });
+
+    } catch (error) {
+
+        res.status(500).send({ message: error.message });
+    }
+};
+
+
+
+// Ruta para registrar un nuevo comercio
+const postComercio = async (req, res) => {
+    try {
+
+        const newComercio = new comerciosModel(req.body);
+        await newComercio.save();
+
+        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio });
+    
+    } catch (error) {
+        
+        res.status(500).send({ error: error.message });
+    }
+};
 
 //Ruta para modificar un nuevo comercio
 const putComercio = async (req, res) =>{
@@ -86,7 +133,7 @@ const deleteComercio = async (req, res)=>{
 
     try {
 
-        const data = await comerciosModel.deleteOne({_id: id})
+        const data = await comerciosModel.findByIdAndDelete(id)
         res.send({ message: 'Comercio eliminado Fisicamente' })
         
         
@@ -97,4 +144,4 @@ const deleteComercio = async (req, res)=>{
 
 }
 
-module.exports = {postComercio, putComercio, getComercios,getComercio, deleteComercio}
+module.exports = {postRegisterAdmin, loginAdmin, postComercio, putComercio, getComercios,getComercio, deleteComercio}

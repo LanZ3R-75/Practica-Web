@@ -1,26 +1,31 @@
 /**
  * Definimos y manejamos las rutas CRUD para Admin
  */
-
 const express = require("express")
 const router = express.Router()
+const auth = require('../utils/auth')
+const {postRegisterAdmin, loginAdmin, postComercio, getComercios, putComercio, getComercio, deleteComercio} = require('../controllers/admin')
 
-const {postComercio, getComercios, putComercio, getComercio, deleteComercio} = require('../controllers/admin')
+//Ruta para registar un administrador
+router.post('/register',postRegisterAdmin)
+
+//Ruta para loguear un administrador
+router.post('/login',loginAdmin)
 
 //Ruta para registrar un nuevo comercio
-router.post('/', postComercio)
+router.post('/comercios', auth, postComercio)
 
 //Ruta para modificar un comercio
-router.put('/:id', putComercio)
+router.put('/comercios/:id',auth, putComercio)
 
 //Ruta para obtener todos los comercios
-router.get('/',getComercios)
+router.get('/comercios',auth, getComercios)
 
 //Ruta para obtener un comercio en especifico 
-router.get('/:id',getComercio)
+router.get('/comercios/:id',auth, getComercio)
 
 //Ruta para asignar borrar un comercio
-router.delete('/:id',deleteComercio)
+router.delete('/comercios/:id',auth, deleteComercio)
 
 module.exports = router
 
