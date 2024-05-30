@@ -4,114 +4,100 @@
  */
 
 //Importamos las utilidades necesarias
-const { matchedData } = require("express-validator")
-const{comerciosModel} = require("../models")
-const{handleHttpError} = require("../utils/handleError")
+const{comerciosModel, contenidoModel, userModel} = require("../models")
+const jwt = require('jsonwebtoken')
 
-
-//Obtener la lista de comercios
-
-const getItems = async (req, res) => {
+// Actualizar página web
+const updatecontenido = async (req, res) => {
+    const { id } = req.params;
 
     try {
-        //Muestra todos los comercios que encuentre en la base de datos
-        const data = await comerciosModel.find({})
-        res.send(data)
+        const comercio = await comerciosModel.findById(id);
 
-    } catch (error) {
-        //Muestra el error con el mensaje 'ERROR_GET_ITEMS' y el codigo de error 403
-        handleHttpError(res, 'ERROR_GET_ITEMS', 403)
-    }
-}
+        if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
 
-//Obtener un unico comercio (usando el CIF)
+        const token = req.header('Authorization').replace('Bearer ', '');
 
-const getItem = async (req, res) => {
+        if (comercio.tokenJWT !== token) {
 
-    const{cif} = matchedData(req) //Estrae el CIF del comercio a buscar
-
-    try {
-
-        const item = await comerciosModel.findOne({CIF:cif})
-
-        if (item) {
-
-            res.send(item) //Si encuentra el comercio lo retorna
-            
-        }else{
-
-            handleHttpError(res,'ERROR_ITEM_NOT_FOUND',404) //Manejo de error para cuando no existe el comercio
-        }
-        
-    } catch (error) {
-        
-        handleHttpError(res, 'ERROR_GET_ITEM', 500) //Manejo de error para cuando falla la consulta
-    }
-
-}
-
-//Crear un comercio
-
-const createItem = async (req, res) => {
-
-    try {
-
-        const body = matchedData(req) //Estraemos los datos de la consulta y comprobamos el cuerpo de la peticion
-        const data = await comerciosModel.create(body) // Crea el comercio en la base de datos
-        res.send(data) 
-
-    }catch(error){
-
-        handleHttpError(res, "ERROR_CREATE_ITEM", 403) //Manejo de errores en caso de fallar en la peticion
-    }
-}
-
-//Modificar un comercio a partir de su CIF
-
-const updateItem = async (req, res) => {
-
-    try {
-
-       const{cif, ...body} = matchedData(req) //Extrae el CIF y el resto lo asigna a la constante body
-
-       const data = await comerciosModel.findOneAndUpdate({CIF:cif}, body)
-       res.send(data)
-
-    }catch (error) {
-
-        handleHttpError(res, "ERROR_UPDATE_ITEM", 403) // Manejo de errores en caso de falla al actualizar el registro
-        
-    }
-}
-
-//Borrado de un comercios (permite elegir de forma lógica o física)
-
-const deleteItem = async (req, res) => {
-
-    try {
-        
-        const{cif} = matchedData(req) // Extrae el CIF del comercio a eliminar
-        const deleteMode = req.query.deleteMode //Determina el modo de eliminación a travaes de una query
-
-        if(deleteMode === 'soft'){ // Borrado lógico: marca el comercio como eliminado sin removerlo de la base de datos
-
-            const data = await comerciosModel.delete({CIF:cif})
-            res.send({ message: 'Comercio eliminado lógicamente' });
-
-        }else if(deleteMode === 'hard'){ // Borrado físico: elimina el comercio de la base de datos
-
-            const data = await comerciosModel.deleteOne({CIF:cif})
-            res.send({ message: 'Comercio eliminado Fisicamente' });
-
-        }else{ 
-
-            handleHttpError(res, 'INVALID_DELETE_MODE',400) // Maneja el error si el modo de borrado no es válido
+            return res.status(403).send({ message: 'Acceso denegado' });
         }
 
+        const updateContenido = await contenidoModel.findByIdAndUpdate(comercio.paginaID, req.body, { new: true });
+        if (!updateContenido) return res.status(404).send({ message: 'Página web no encontrada' });
+
+        res.status(200).send({ message: 'Página web actualizada con éxito', contenido: updateContenido });
+
     } catch (error) {
 
-        handleHttpError(res,'ERROR_DELETE_ITEM',500)  // Manejo de errores en caso de fallar al borrar el registro
+        res.status(500).send({ error: error.message });
+    }
+};
+
+//Subir texto
+
+const uploadText = async (req, res) => {
+
+    const { id } = req.params;
+    const { text } = req.body;
+
+    try {
+
+        const comercio = await comerciosModel.findById(id);
+        if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
+
+        const token = req.header('Authorization').replace('Bearer ', '');
+        if (comercio.tokenJWT !== token) {
+            return res.status(403).send({ message: 'Acceso denegado' });
+        }
+
+        const contenido = await contenidoModel.findById(comercio.paginaID);
+        contenido.text.push(text);
+
+        await contenido.save();
+
+        res.status(200).send({ message: 'Texto añadido correctamente', texto: contenido.text });
+
+    } catch (error) {
+
+        res.status(500).send({ error: error.message });
+    }
+};
+
+// Subida de imagenes
+
+const uploadPhoto = async (req, res) => {
+
+    const { id } = req.params
+
+    try {
+
+        const comercio = await comerciosModel.findById(id)
+        if(!comercio) return res.statust(404).send({message: 'Comercio no encontrado'})
+        
+        const token = req.header('Authorization').replace('Bearer ', '')
+        if(comercio.tokenJWT !== token){
+
+            return res.status(403).send({message: 'Acceso denegado'})
+        }
+
+        const contenido = await contenidoModel.findById(comercio.paginaID)
+        if(!req.file){
+
+            res.status(400).send({message: 'No se ha subido ninguna foto'})
+        }
+
+        const photoPath = req.file.path.replace(/\\/g, '/');
+        contenido.fotos.push(photoPath)
+
+        await contenido.save()
+
+        res.status(200).send({message: 'Foto añadida correctamente', fotos: contenido.fotos})
+        
+    } catch (error) {
+        
+        res.status(500).send({ error: error.message });
     }
 }
 
-module.exports = {getItems, getItem, createItem, updateItem, deleteItem}
+module.exports = { updatecontenido, uploadText, uploadPhoto };

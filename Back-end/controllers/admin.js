@@ -1,5 +1,5 @@
 //Importamos las rutas necesarias
-const{comerciosModel, adminModel} = require("../models")
+const{comerciosModel, adminModel, contenidoModel} = require("../models")
 const jwt = require('jsonwebtoken')
 
 //Ruta para Registro de Admin
@@ -54,12 +54,27 @@ const loginAdmin = async (req, res) => {
 
 // Ruta para registrar un nuevo comercio
 const postComercio = async (req, res) => {
+
+    const {nombre, CIF, direccion, email, telefono} = req.body
+
     try {
 
-        const newComercio = new comerciosModel(req.body);
+        //Generamos el token JWT para el comercio
+        const tokenJWT = jwt.sign({email}, process.env.JWT_SECRET)
+        
+        //Creamos la pagina del contenido que podra modificar luego el comercio
+        const contenido = new contenidoModel();
+        await contenido.save();
+
+        if (!contenido._id) {
+            throw new Error('Error al crear pagina web interna.');
+        }
+
+        //Creamos el comercio
+        const newComercio = new comerciosModel({nombre, CIF, direccion, email, telefono, tokenJWT, paginaID:contenido._id});
         await newComercio.save();
 
-        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio });
+        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio , token });
     
     } catch (error) {
         

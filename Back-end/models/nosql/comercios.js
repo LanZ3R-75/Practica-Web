@@ -42,42 +42,23 @@ const ComerciosScheme = new mongoose.Schema(
             unique:true,
         },
 
-        actividad:{
-
-            type: String,
-            defaul:'ninguna',
-            
-        },
-
         tokenJWT:{
 
             type: String,
-            defaul:'0',
+            unique:true,
+            required:true,
             
 
         },
 
         paginaID:{
 
-            type:String,
+            type: Schema.Types.ObjectId,
+            ref:"contenido",
+            require:true,
             unique: true,
             
         },
-
-        numeroPuntuaciones:{
-
-            type:Number,
-            default: 0,
-
-        },
-
-        review:[
-
-            {
-                type: Schema.Types.ObjectID,
-                ref: 'Review',
-            }
-        ],
     },
     {
         timestamps: true,

@@ -1,0 +1,33 @@
+### Actualizar Contenido
+PUT http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzAxMjE3M30.fV-c9aaeUfaOzFoQFB8X1UujzxlZ0UQZvQk3khAL3vU
+
+{
+  "ciudad": "Madrid",
+  "actividad": "Restaurante",
+  "titulo": "Peluqueria TOPTOPTOP",
+  "resumen": "algo muy bonito"
+
+}
+
+### Publicar un texto
+POST http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/texts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzAxMjE3M30.fV-c9aaeUfaOzFoQFB8X1UujzxlZ0UQZvQk3khAL3vU
+
+{
+  "text": "Este es el segundo texto añadido"
+}
+
+### Prueba de Upload Photo
+POST http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/photos
+Content-Type: multipart/form-data; boundary=boundary
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzAxMjE3M30.fV-c9aaeUfaOzFoQFB8X1UujzxlZ0UQZvQk3khAL3vU
+
+--boundary
+Content-Disposition: form-data; name="photo"; filename="shishaBar.jpg"
+Content-Type: image/jpg
+
+< ./images/shishaBar.jpg
+--boundary--

@@ -6,51 +6,41 @@ const { Schema } = mongoose
 
 const ContenidoScheme = new mongoose.Schema(
     {
-        //Identificador del comercio asociado
-
-        comercioID:{
-            type: Schema.Types.ObjectId,
-            ref:"comercios",
-            require:true,
-
-        },
-        
-
         //Datos que puedes ser Actualizados por el comercio
 
         ciudad:{
             type: String,
-            require:true,
+            
 
         },
 
         actividad:{
             type: String,
-            require:true,
+            
 
         },
 
         titulo:{
             type: String,
-            require:true,
+            
 
         },
 
         resumen:{
             type: String,
-            require:true,
+            
 
         },
 
         text:{
             type: [String],
-            require:true,
+            
 
         },
 
         fotos:{
             type: [String],
-            require:true,
+            
 
         },
 
@@ -68,32 +58,14 @@ const ContenidoScheme = new mongoose.Schema(
 
         },
 
-        reviews:[
+        reviews:{
 
-            {
-                user:{
-                    type: Schema.Types.ObjectId,
-                    ref: "user"
+            type: [Schema.Types.ObjectId],
+            ref: 'reviews',
 
-                },
+        },
 
-                text:{
-                    type: String
-
-                },
-
-                rating:{
-                    type: Number
-
-                },
-
-                creacion:{
-                    type: Date,
-                    default: Date.now
-
-                }
-            }
-        ]
+       
     },
     {
         timestamps: true,

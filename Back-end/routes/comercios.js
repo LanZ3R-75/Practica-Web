@@ -1,17 +1,46 @@
 /**
  * Definimos y manejamos las rutas CRUD para comercios
  */
-
 const express = require("express") //Importamos el modulo express para crear un enrutador que maneje las rutas
 const router = express.Router()
-const{validatorCreateItem, validatorGetItem} = require("../validators/comercios") //Importamos los validadores necesarios
+const multer = require("multer");
+const path = require("path");
+const auth = require('../utils/auth');
+const { uploadPhoto, uploadText, updatecontenido } = require("../controllers/comercios");
 
-const { getItems ,getItem, createItem, updateItem, deleteItem } = require("../controllers/comercios") //Importamos las funciones controladoras
+//GESTION DEL MULTER
 
-router.get("/", getItems) // Ruta para obtener todos los comercios. No requiere validadores.
-router.get("/:cif", validatorGetItem, getItem) //Ruta para obtener un comercio especifico por el CIF. Valida que el CIF sea correcto
-router.post("/", validatorCreateItem, createItem) //Ruta para crear un comercio. Valida que los datos sean correctos y completos
-router.put("/:cif",validatorGetItem,validatorCreateItem, updateItem) //Ruta para encontrar un comercio especifico por el CIF y actualizar sus datos. Valida tanto que su CIF sea correcto como que el contenido sea correcto
-router.delete("/:cif", validatorGetItem, deleteItem) //Ruta para eliminar un comercio especifico por el CIF. Valida que el CIF seacorrecto
+// Configuración de almacenamiento de Multer
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'subidas/'); // Carpeta donde se guardarán las fotos
+    },
+    filename: (req, file, cb) => {
+        cb(null, `${Date.now()}-${file.originalname}`);
+    }
+});
+
+// Filtro para aceptar solo imágenes
+const fileFilter = (req, file, cb) => {
+    if (file.mimetype.startsWith('image/')) {
+        cb(null, true);
+    } else {
+        cb(new Error('Not an image! Please upload an image.'), false);
+    }
+};
+
+const upload = multer({
+    storage: storage,
+    fileFilter: fileFilter
+});
+
+//RUTAS
+router.post("/contenido/:id/photos", auth, auth.isComercio, upload.single('photo'), uploadPhoto);
+
+// Ruta para actualizar contenido de comercio
+router.put("/contenido/:id",auth, auth.isComercio, updatecontenido) 
+
+// Ruta para subir texto
+router.post("/contenido/:id/texts", auth, auth.isComercio, uploadText); 
 
 module.exports = router
