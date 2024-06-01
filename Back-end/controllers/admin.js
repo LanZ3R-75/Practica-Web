@@ -59,6 +59,19 @@ const postComercio = async (req, res) => {
 
     try {
 
+        // Verificar si ya existe un comercio con el mismo CIF, email o teléfono
+        const existingComercio = await comerciosModel.findOne({ 
+            $or: [
+                { CIF },
+                { email },
+                { telefono }
+            ]
+        });
+
+        if (existingComercio) {
+            return res.status(400).send({ message: 'Comercio ya existe' });
+        }
+
         //Generamos el token JWT para el comercio
         const tokenJWT = jwt.sign({email}, process.env.JWT_SECRET)
         
@@ -74,7 +87,7 @@ const postComercio = async (req, res) => {
         const newComercio = new comerciosModel({nombre, CIF, direccion, email, telefono, tokenJWT, paginaID:contenido._id});
         await newComercio.save();
 
-        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio , token });
+        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio , tokenJWT });
     
     } catch (error) {
         
@@ -142,21 +155,26 @@ const getComercio = async (req, res)=>{
 }
 
 //Ruta para Borrar un comercio 
-const deleteComercio = async (req, res)=>{
-
-    const { id } = req.params
+const deleteComercio = async (req, res) => {
+    const { id } = req.params;
 
     try {
+        // Encuentra el comercio para obtener el id del contenido asociado
+        const comercio = await comerciosModel.findById(id);
+        if (!comercio) {
+            return res.status(404).send({ message: 'Comercio no encontrado' });
+        }
 
-        const data = await comerciosModel.findByIdAndDelete(id)
-        res.send({ message: 'Comercio eliminado Fisicamente' })
-        
-        
+        // Elimina el contenido asociado
+        await contenidoModel.findByIdAndDelete(comercio.paginaID);
+
+        // Elimina el comercio
+        await comerciosModel.findByIdAndDelete(id);
+
+        res.send({ message: 'Comercio y contenido eliminado físicamente' });
     } catch (error) {
-
         res.status(500).send({ error: error.message });
     }
-
-}
+};
 
 module.exports = {postRegisterAdmin, loginAdmin, postComercio, putComercio, getComercios,getComercio, deleteComercio}

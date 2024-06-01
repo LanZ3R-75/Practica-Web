@@ -55,7 +55,6 @@ const ComerciosScheme = new mongoose.Schema(
 
             type: Schema.Types.ObjectId,
             ref:"contenido",
-            require:true,
             unique: true,
             
         },

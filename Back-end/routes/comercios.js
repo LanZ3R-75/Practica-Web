@@ -6,7 +6,7 @@ const router = express.Router()
 const multer = require("multer");
 const path = require("path");
 const auth = require('../utils/auth');
-const { uploadPhoto, uploadText, updatecontenido } = require("../controllers/comercios");
+const { createContenido, deleteContenido, uploadFoto, deleteFoto, uploadText, deleteText, updateContenido, consultarIntereses} = require("../controllers/comercios");
 
 //GESTION DEL MULTER
 
@@ -35,12 +35,29 @@ const upload = multer({
 });
 
 //RUTAS
-router.post("/contenido/:id/photos", auth, auth.isComercio, upload.single('photo'), uploadPhoto);
+
+// Ruta para crear un nuevo contenido
+router.post("/:id", auth, auth.isComercio, createContenido); 
+
+// Ruta para crear un nuevo contenido
+router.delete("/:id", auth, auth.isComercio, deleteContenido); 
 
 // Ruta para actualizar contenido de comercio
-router.put("/contenido/:id",auth, auth.isComercio, updatecontenido) 
+router.put("/contenido/:id", auth, auth.isComercio, updateContenido) 
 
 // Ruta para subir texto
 router.post("/contenido/:id/texts", auth, auth.isComercio, uploadText); 
+
+//Ruta para eliminar un texto
+router.delete("/contenido/:id/texts/:textIndex", auth, auth.isComercio, deleteText); 
+
+//Ruta para subir fotos
+router.post("/contenido/:id/fotos", auth, auth.isComercio, upload.single('photo'), uploadFoto);
+
+//Ruta para eliminar una foto
+router.delete("/contenido/:id/fotos/:fotoIndex", auth, auth.isComercio, deleteFoto); 
+
+// Ruta para consultar intereses de usuarios
+router.get('/contenido/intereses/:id', auth, auth.isComercio, consultarIntereses);
 
 module.exports = router
