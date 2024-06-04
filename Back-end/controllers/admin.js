@@ -145,6 +145,8 @@ const getComercio = async (req, res)=>{
 
         //Muestra todos el comercio especificado por el id
         const data = await comerciosModel.findById(id)
+        if(!data) return res.status(404).send({message: 'No se ha encontrado el comercio'})
+
         res.send(data)
 
     } catch (error) {

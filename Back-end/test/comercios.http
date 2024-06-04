@@ -1,5 +1,5 @@
 ##Variables 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzAxMjE3M30.fV-c9aaeUfaOzFoQFB8X1UujzxlZ0UQZvQk3khAL3vU
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvM0BleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODA0Mn0.6aHh9RE_kNdMVLKiFCmfgWHL4zMxaa_Fb5s9lGECUUM
 
 ###Crear una nueva pagina de contenido
 POST http://localhost:3000/api/comercios/665a22a88870c0d87106f958
@@ -23,15 +23,20 @@ DELETE http://localhost:3000/api/comercios/665a22a88870c0d87106f958
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMkBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzE4MzE0NH0.18bQUxVciMhN4OYVYYE2rWNjYPh8q04QLMwYgW-Amis
 
 ### Actualizar Contenido
-PUT http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7
+PUT http://localhost:3000/api/comercios/contenido/665e547ac5f6a9059d069659
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "ciudad": "Madrid",
-  "actividad": "Restaurante",
-  "titulo": "Peluqueria TOPTOPTOP",
-  "resumen": "algo muy bonito"
+  "ciudad": "Valencia",
+  "actividad": "Tienda",
+  "titulo": "Tienda TOP",
+  "resumen": "La mejor tienda de la ciudad.",
+  "text": ["Bienvenidos a nuestra tienda.", "Ofrecemos una gran variedad de productos."],
+  "fotos": [],
+  "scoring": 0,
+  "numScoring": 0,
+  "reviews": []
 
 }
 
@@ -65,7 +70,7 @@ DELETE http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/fo
 Authorization: Bearer {{token}}
 
 ###Mostrar correo de usuarios de la misma ciudad y con el mismo interes
-GET http://localhost:3000/api/comercios/contenido/intereses/665a22a88870c0d87106f958
+GET http://localhost:3000/api/comercios/contenido/intereses/665e5452c5f6a9059d06964f
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMkBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzE4MzE0NH0.18bQUxVciMhN4OYVYYE2rWNjYPh8q04QLMwYgW-Amis
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODAwMn0.WClPyeV5dV6zTs85l5jl3HIEYlqfZdY5Z5EJbYIJTnk
 

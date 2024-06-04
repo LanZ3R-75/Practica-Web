@@ -13,10 +13,10 @@ const reviewScheme = new mongoose.Schema({
         require: true,
     },
 
-    comercioID:{
+    contenidoID:{
 
         type: Schema.Types.ObjectId,
-        ref:'comercios',
+        ref:'contenido',
         require: true,
     },
 

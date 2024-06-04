@@ -1,6 +1,5 @@
 ###Variables
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzE4MDYwMCwiZXhwIjoxNzE3MjY3MDAwfQ.eIyfJRbesh_s79wKeu752ItoqTCqDUGRTJ1mkgHk65Y
-
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzQ3NDcxMywiZXhwIjoxNzE3NTYxMTEzfQ.UmXMWxt_N6jKE7i1_S4DV0UtU-M1egx8FU_pb7miwXk
 ### Registrar Admin
 POST http://localhost:3000/api/admin/register
 Content-Type: application/json
@@ -25,12 +24,11 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "nombre": "Comercio 2",
-  "CIF": "CIF123452",
-  "direccion": "Calle Falsa 123",
-  "email": "comercio2@example.com",
-  "password": "securePassword",
-  "telefono": "123456782"
+  "nombre": "Comercio 3",
+  "CIF": "CIF1234563",
+  "direccion": "Calle Falsa 125",
+  "email": "comercio3@example.com",
+  "telefono": "1234567893"
 }
 
 ### Consultar Todos los Comercios
@@ -52,5 +50,5 @@ Authorization: Bearer {{token}}
 }
 
 ### Borrar Comercio 
-DELETE http://localhost:3000/api/admin/comercios/665a2197e4c95a69563f7ac1
+DELETE http://localhost:3000/api/admin/comercios/665a22a88870c0d87106f958
 Authorization: Bearer {{token}}
