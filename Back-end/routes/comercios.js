@@ -37,27 +37,27 @@ const upload = multer({
 //RUTAS
 
 // Ruta para crear un nuevo contenido
-router.post("/:id", auth.isComercio, createContenido); 
+router.post("/", auth, auth.isComercio, createContenido); 
 
 // Ruta para crear un nuevo contenido
-router.delete("/:id", auth.isComercio, deleteContenido); 
+router.delete("/", auth, auth.isComercio, deleteContenido); 
 
 // Ruta para actualizar contenido de comercio
-router.put("/contenido/:id", auth.isComercio, updateContenido) 
+router.put("/contenido", auth, auth.isComercio, updateContenido) 
 
 // Ruta para subir texto
-router.post("/contenido/:id/texts", auth.isComercio, uploadText); 
+router.post("/contenido/texts", auth.isComercio, uploadText); 
 
 //Ruta para eliminar un texto
-router.delete("/contenido/:id/texts/:textIndex", auth.isComercio, deleteText); 
+router.delete("/contenido/texts/:textIndex", auth.isComercio, deleteText); 
 
 //Ruta para subir fotos
-router.post("/contenido/:id/fotos", auth.isComercio, upload.single('photo'), uploadFoto);
+router.post("/contenido/fotos", auth.isComercio, upload.single('photo'), uploadFoto);
 
 //Ruta para eliminar una foto
-router.delete("/contenido/:id/fotos/:fotoIndex", auth.isComercio, deleteFoto); 
+router.delete("/contenido/fotos/:fotoIndex", auth.isComercio, deleteFoto); 
 
 // Ruta para consultar intereses de usuarios
-router.get('/contenido/intereses/:id', auth.isComercio, consultarIntereses);
+router.get('/contenido/intereses', auth.isComercio, consultarIntereses);
 
 module.exports = router

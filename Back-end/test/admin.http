@@ -1,5 +1,5 @@
 ###Variables
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzQ3NDcxMywiZXhwIjoxNzE3NTYxMTEzfQ.UmXMWxt_N6jKE7i1_S4DV0UtU-M1egx8FU_pb7miwXk
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzU4MzE5NCwiZXhwIjoxNzE3NjY5NTk0fQ.lLGAlUzy_4U1hr9noBRDArJ8qQ25GfortiGpS0KLIXU
 ### Registrar Admin
 POST http://localhost:3000/api/admin/register
 Content-Type: application/json
@@ -24,11 +24,11 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "nombre": "Comercio 3",
-  "CIF": "CIF1234563",
-  "direccion": "Calle Falsa 125",
-  "email": "comercio3@example.com",
-  "telefono": "1234567893"
+  "nombre": "Comercio 6",
+  "CIF": "CIF0006",
+  "direccion": "Calle 6",
+  "email": "comercio6@example.com",
+  "telefono": "6677889911"
 }
 
 ### Consultar Todos los Comercios
@@ -36,7 +36,7 @@ GET http://localhost:3000/api/admin/comercios
 Authorization: Bearer {{token}}
 
 ### Consultar Comercio por ID
-GET http://localhost:3000/api/admin/comercios/665786cdc663c63590307de7
+GET http://localhost:3000/api/admin/comercios/665e547ac5f6a9059d069659
 Authorization: Bearer {{token}}
 
 ### Actualizar Comercio
@@ -50,5 +50,5 @@ Authorization: Bearer {{token}}
 }
 
 ### Borrar Comercio 
-DELETE http://localhost:3000/api/admin/comercios/665a22a88870c0d87106f958
+DELETE http://localhost:3000/api/admin/comercios/666041e0b9bc68d084386bd7
 Authorization: Bearer {{token}}

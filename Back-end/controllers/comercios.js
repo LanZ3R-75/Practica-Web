@@ -4,7 +4,7 @@
  */
 
 //Importamos las utilidades necesarias
-const{comerciosModel, contenidoModel, userModel} = require("../models")
+const{comerciosModel, contenidoModel, userModel, reviewModel} = require("../models")
 const jwt = require('jsonwebtoken')
 const fs = require('fs')
 const path = require('path')
@@ -12,7 +12,8 @@ const path = require('path')
 //Creamos la pagina de contenido (Solo si no existe una ya)
 
 const createContenido = async (req, res, next) => {
-    const { id } = req.params;
+
+    const {id} = req.user;
 
     try {
         // Verificar si el comercio existe
@@ -44,7 +45,7 @@ const createContenido = async (req, res, next) => {
 
 const deleteContenido = async(req, res, next) =>{
 
-    const { id } = req.params;
+    const {id} = req.user;
 
     try {
 
@@ -59,6 +60,9 @@ const deleteContenido = async(req, res, next) =>{
         //Borramos el contenido
         const deletedContenido = await contenidoModel.findByIdAndDelete(contenidoID)
         if(!deletedContenido) return res.status(404).send({ message: 'Contenido no encontrado' });
+
+        // Borramos todas las reseñas asociadas a este contenido
+        await reviewModel.deleteMany({ _id: { $in: deletedContenido.reviews } });
 
         //Borramos la referencia en el comercio
         comercio.paginaID = null
@@ -76,11 +80,11 @@ const deleteContenido = async(req, res, next) =>{
 // Actualizar el contenido de un comercio
 const updateContenido = async (req, res, next) => {
 
-    const { id } = req.params;
+    const {id} = req.user;
 
     try {
-        const comercio = await comerciosModel.findById(id);
 
+        const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
 
         const updateContenido = await contenidoModel.findByIdAndUpdate(comercio.paginaID, req.body, { new: true });
@@ -98,7 +102,7 @@ const updateContenido = async (req, res, next) => {
 
 const uploadText = async (req, res, next) => {
 
-    const { id } = req.params;
+    const {id} = req.user;
     const { text } = req.body;
 
     try {
@@ -122,7 +126,8 @@ const uploadText = async (req, res, next) => {
 // Borrar texto
 const deleteText = async (req, res, next) => {
 
-    const { id, textIndex } = req.params;
+    const { textIndex } = req.params;
+    const {id} = req.user;
 
     try {
 
@@ -148,7 +153,8 @@ const deleteText = async (req, res, next) => {
 
 // Subir foto
 const uploadFoto = async (req, res, next) => {
-    const { id } = req.params;
+
+    const {id} = req.user;
 
     try {
 
@@ -177,7 +183,8 @@ const uploadFoto = async (req, res, next) => {
 
 const deleteFoto = async (req, res, next) => {
 
-    const { id, fotoIndex} = req.params;
+    const {fotoIndex} = req.params;
+    const {id} = req.user;
 
     try {
 
@@ -211,7 +218,7 @@ const deleteFoto = async (req, res, next) => {
 
 const consultarIntereses = async (req, res, next) => {
 
-    const { id } = req.params;
+    const {id} = req.user;
 
     try {
         // Verificar si el comercio existe

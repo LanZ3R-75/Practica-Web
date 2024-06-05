@@ -1,5 +1,5 @@
 //Importamos las rutas necesarias
-const{comerciosModel, adminModel, contenidoModel} = require("../models")
+const{comerciosModel, adminModel, contenidoModel, reviewModel} = require("../models")
 const jwt = require('jsonwebtoken')
 
 //Ruta para Registro de Admin
@@ -50,17 +50,14 @@ const loginAdmin = async (req, res, next) => {
     }
 };
 
-
-
 // Ruta para registrar un nuevo comercio
 const postComercio = async (req, res, next) => {
 
-    const {nombre, CIF, direccion, email, telefono} = req.body
+    const { nombre, CIF, direccion, email, telefono } = req.body;
 
     try {
-
         // Verificar si ya existe un comercio con el mismo CIF, email o teléfono
-        const existingComercio = await comerciosModel.findOne({ 
+        const existingComercio = await comerciosModel.findOne({
             $or: [
                 { CIF },
                 { email },
@@ -69,29 +66,32 @@ const postComercio = async (req, res, next) => {
         });
 
         if (existingComercio) {
-            return res.status(400).send({ message: 'Comercio ya existe' });
+            return res.status(400).send({ message: 'Comercio ya existe' })
         }
 
-        //Generamos el token JWT para el comercio
-        const tokenJWT = jwt.sign({email}, process.env.JWT_SECRET)
-        
-        //Creamos la pagina del contenido que podra modificar luego el comercio
-        const contenido = new contenidoModel();
-        await contenido.save();
+        // Creamos la pagina del contenido que podrá modificar luego el comercio
+        const contenido = new contenidoModel()
+        await contenido.save()
 
         if (!contenido._id) {
-            throw new Error('Error al crear pagina web interna.');
+            throw new Error('Error al crear pagina web interna.')
         }
 
-        //Creamos el comercio
-        const newComercio = new comerciosModel({nombre, CIF, direccion, email, telefono, tokenJWT, paginaID:contenido._id});
+        // Creamos el comercio
+        const newComercio = new comerciosModel({ nombre, CIF, direccion, email, telefono, paginaID: contenido._id })
+
+        // Generamos el token JWT para el comercio
+        const tokenJWT = jwt.sign({ id: newComercio._id }, process.env.JWT_SECRET )
+
+        // Guardamos el token JWT en el comercio
+        newComercio.tokenJWT = tokenJWT
         await newComercio.save();
 
-        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio , tokenJWT });
-    
+        res.status(201).send({ message: 'Comercio registrado con éxito', comercio: newComercio })
+
     } catch (error) {
-        
-        next(error)
+
+        next(error);
     }
 };
 
@@ -166,6 +166,11 @@ const deleteComercio = async (req, res, next) => {
         if (!comercio) {
             return res.status(404).send({ message: 'Comercio no encontrado' });
         }
+
+        const contenidoBorrado = await contenidoModel.findById(comercio.paginaID)
+
+        //Elimina las reseñas asociadas al contenido
+        await reviewModel.deleteMany({ _id: { $in: contenidoBorrado.reviews } });
 
         // Elimina el contenido asociado
         await contenidoModel.findByIdAndDelete(comercio.paginaID);

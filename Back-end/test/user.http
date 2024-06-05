@@ -91,7 +91,7 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ###Publicar una reseña
-POST http://localhost:3000/api/user/665e5452c5f6a9059d06964d/review
+POST http://localhost:3000/api/user/66605188940b5a7f08e097e4/review
 Content-Type: application/json
 Authorization: Bearer {{token}}
 

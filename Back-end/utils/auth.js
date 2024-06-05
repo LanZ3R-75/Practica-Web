@@ -3,6 +3,7 @@ const adminModel = require('../models/nosql/admin');
 const comerciosModel = require('../models/nosql/comercios');
 const userModel = require('../models/nosql/user');
 
+
 // Middleware para la autenticación
 module.exports = (req, res, next) => {
     const token = req.header('Authorization').replace('Bearer ', '');
@@ -33,16 +34,19 @@ module.exports.isAdmin = async (req, res, next) => {
 
 // Middleware que se encarga de verificar si el comercio usa su token
 module.exports.isComercio = async (req, res, next) => {
-    try {
-        const token = req.header('Authorization').replace('Bearer ', '');
 
+    try {
+
+        const token = req.header('Authorization')?.replace('Bearer ', '');
         const comercio = await comerciosModel.findOne({ tokenJWT: token });
 
-        if (!comercio) return res.status(403).json({ message: 'Access denied' });
+        if (!comercio) return res.status(403).json({ message: 'Acceso denegado' });
 
-        req.comercio = comercio;
+        req.user = { id: comercio._id }; // Aseguramos que `req.user.id` esté disponible
         next();
+
     } catch (error) {
+        
         res.status(500).json({ message: error.message });
     }
 };

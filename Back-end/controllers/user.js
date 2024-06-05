@@ -302,6 +302,10 @@ const postReview = async (req, res, next) => {
         const contenido = await contenidoModel.findById(contenidoId)
         if(!contenido) return res.status(404).send({ message: 'Contenido no encontrado' })
 
+        //Verificar si el usuario ya ha escrito una reseña para un contenido
+        const existingReview = await reviewModel.findOne({usuarioID: userId , contenidoID: contenidoId})
+        if(existingReview) return res.status(400).send({message: 'Ya has escrito una reseña para este contenido'})
+
         const newReview = new reviewModel({
             usuarioID: userId,
             contenidoID: contenidoId,
@@ -316,6 +320,7 @@ const postReview = async (req, res, next) => {
 
         contenido.numScoring +=1;
         contenido.scoring = ((contenido.scoring * (contenido.numScoring - 1)) + puntuacion) / contenido.numScoring
+        contenido.reviews.push(newReview._id);
 
         await contenido.save()
 

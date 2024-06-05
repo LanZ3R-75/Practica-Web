@@ -38,3 +38,1158 @@ Response Body:
 	}
 }
 Response: 200 168.962 ms 
+
+Request: POST /api/user/665e5452c5f6a9059d06964d/review at Wed Jun 05 2024 12:24:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 120.114 ms 
+
+Request: GET /api/user/testSlack at Wed Jun 05 2024 12:24:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 275.912 ms 
+
+Request: GET /api/admin/comercios at Wed Jun 05 2024 12:26:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 3.996 ms 
+
+Request: POST /api/admin/login at Wed Jun 05 2024 12:26:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminUser",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzU4MzE5NCwiZXhwIjoxNzE3NjY5NTk0fQ.lLGAlUzy_4U1hr9noBRDArJ8qQ25GfortiGpS0KLIXU"
+}
+Response: 200 121.344 ms 
+
+Request: GET /api/admin/comercios at Wed Jun 05 2024 12:26:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "665e5452c5f6a9059d06964f",
+		"nombre": "Comercio 1",
+		"CIF": "CIF1234561",
+		"direccion": "Calle Falsa 123",
+		"email": "comercio1@example.com",
+		"telefono": "1234567891",
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODAwMn0.WClPyeV5dV6zTs85l5jl3HIEYlqfZdY5Z5EJbYIJTnk",
+		"paginaID": "665e5452c5f6a9059d06964d",
+		"deleted": false,
+		"createdAt": "2024-06-03T23:40:02.432Z",
+		"updatedAt": "2024-06-03T23:40:02.432Z"
+	},
+	{
+		"_id": "665e5463c5f6a9059d069654",
+		"nombre": "Comercio 2",
+		"CIF": "CIF1234562",
+		"direccion": "Calle Falsa 124",
+		"email": "comercio2@example.com",
+		"telefono": "1234567892",
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMkBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODAxOX0.GBSFaVYU9mEd0ZvhcyVtgCVEtArEpTqq70RP14VcxeI",
+		"paginaID": "665e5463c5f6a9059d069652",
+		"deleted": false,
+		"createdAt": "2024-06-03T23:40:19.522Z",
+		"updatedAt": "2024-06-03T23:40:19.
+...
+Response: 200 78.447 ms 
+
+Request: GET /api/admin/comercios/665e547ac5f6a9059d069659 at Wed Jun 05 2024 12:27:05 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "665e547ac5f6a9059d069659",
+	"nombre": "Comercio 3",
+	"CIF": "CIF1234563",
+	"direccion": "Calle Falsa 125",
+	"email": "comercio3@example.com",
+	"telefono": "1234567893",
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvM0BleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODA0Mn0.6aHh9RE_kNdMVLKiFCmfgWHL4zMxaa_Fb5s9lGECUUM",
+	"paginaID": "665e547ac5f6a9059d069657",
+	"deleted": false,
+	"createdAt": "2024-06-03T23:40:42.061Z",
+	"updatedAt": "2024-06-03T23:40:42.061Z"
+}
+Response: 200 97.721 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:38:00 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 1",
+	"CIF": "CIF0001",
+	"direccion": "Calle 1",
+	"email": "comercio1@example.com",
+	"telefono": "1234567890"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 103.930 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:40:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 1",
+	"CIF": "CIF0001",
+	"direccion": "Calle 1",
+	"email": "comercio1@example.com",
+	"telefono": "1234567890"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 441.311 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:41:09 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 1",
+	"CIF": "CIF0001",
+	"direccion": "Calle 1",
+	"email": "comercio1@example.com",
+	"telefono": "1234567890"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 345.407 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:42:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 1",
+	"CIF": "CIF0001",
+	"direccion": "Calle 1",
+	"email": "comercio1@example.com",
+	"telefono": "1234567890"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 417.831 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:45:07 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 1",
+	"CIF": "CIF0001",
+	"direccion": "Calle 1",
+	"email": "comercio1@example.com",
+	"telefono": "1234567890"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio 1",
+		"CIF": "CIF0001",
+		"direccion": "Calle 1",
+		"email": "comercio1@example.com",
+		"telefono": "1234567890",
+		"paginaID": "666041b36ee3d318171684de",
+		"_id": "666041b36ee3d318171684e0",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWIzNmVlM2QzMTgxNzE2ODRlMCIsImlhdCI6MTcxNzU4NDMwN30.filPt9d0hJBCVkVKmCoQhdtGKDNuEZeeOT8xH5mI-Jc",
+		"createdAt": "2024-06-05T10:45:07.316Z",
+		"updatedAt": "2024-06-05T10:45:07.316Z"
+	},
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWIzNmVlM2QzMTgxNzE2ODRlMCIsImlhdCI6MTcxNzU4NDMwN30.filPt9d0hJBCVkVKmCoQhdtGKDNuEZeeOT8xH5mI-Jc"
+}
+Response: 201 138.533 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:45:52 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 2",
+	"CIF": "CIF0002",
+	"direccion": "Calle 2",
+	"email": "comercio2@example.com",
+	"telefono": "0987654321"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio 2",
+		"CIF": "CIF0002",
+		"direccion": "Calle 2",
+		"email": "comercio2@example.com",
+		"telefono": "0987654321",
+		"paginaID": "666041e0b9bc68d084386bd5",
+		"_id": "666041e0b9bc68d084386bd7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWUwYjliYzY4ZDA4NDM4NmJkNyIsImlhdCI6MTcxNzU4NDM1Mn0.YuRt1abVkCZN8Q8wQX4Zkzkxw_EUsHP19Z7_kQt4S-k",
+		"createdAt": "2024-06-05T10:45:52.592Z",
+		"updatedAt": "2024-06-05T10:45:52.592Z"
+	}
+}
+Response: 201 168.982 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:46:06 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 3",
+	"CIF": "CIF0003",
+	"direccion": "Calle 3",
+	"email": "comercio3@example.com",
+	"telefono": "1122334455"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "666041eeb9bc68d084386bdb",
+		"_id": "666041eeb9bc68d084386bdd",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T10:46:06.854Z"
+	}
+}
+Response: 201 132.933 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:46:17 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 4",
+	"CIF": "CIF0004",
+	"direccion": "Calle 4",
+	"email": "comercio4@example.com",
+	"telefono": "5566778899"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"_id": "666041f9b9bc68d084386be3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	}
+}
+Response: 201 151.200 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:46:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 5",
+	"CIF": "CIF0005",
+	"direccion": "Calle 5",
+	"email": "comercio5@example.com",
+	"telefono": "6677889900"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio 5",
+		"CIF": "CIF0005",
+		"direccion": "Calle 5",
+		"email": "comercio5@example.com",
+		"telefono": "6677889900",
+		"paginaID": "66604205b9bc68d084386be7",
+		"_id": "66604205b9bc68d084386be9",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-05T10:46:29.067Z"
+	}
+}
+Response: 201 132.868 ms 
+
+Request: POST /api/admin/comercios at Wed Jun 05 2024 12:49:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio 6",
+	"CIF": "CIF0006",
+	"direccion": "Calle 6",
+	"email": "comercio6@example.com",
+	"telefono": "6677889911"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio 6",
+		"CIF": "CIF0006",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "6677889911",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"_id": "666042b8b9bc68d084386bef",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-05T10:49:28.864Z"
+	}
+}
+Response: 201 142.037 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:03:33 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Tienda",
+	"titulo": "Tienda TOP",
+	"resumen": "La mejor tienda de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestra tienda.",
+		"Ofrecemos una gran variedad de productos."
+	],
+	"fotos": [
+		"foto1_comercio1.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Comercio no encontrado"
+}
+Response: 404 84.334 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:05:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Tienda",
+	"titulo": "Tienda TOP",
+	"resumen": "La mejor tienda de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestra tienda.",
+		"Ofrecemos una gran variedad de productos."
+	],
+	"fotos": [
+		"foto1_comercio1.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "666041b36ee3d318171684de",
+		"text": [
+			"Bienvenidos a nuestra tienda.",
+			"Ofrecemos una gran variedad de productos."
+		],
+		"fotos": [
+			"foto1_comercio1.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:45:07.277Z",
+		"updatedAt": "2024-06-05T11:05:29.302Z",
+		"actividad": "Tienda",
+		"ciudad": "Madrid",
+		"resumen": "La mejor tienda de la ciudad.",
+		"titulo": "Tienda TOP"
+	}
+}
+Response: 200 121.559 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:10:08 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": [],
+	"scoring": 0,
+	"numScoring": 0,
+	"reviews": []
+}
+Response Body:
+{
+	"message": "Contenido ya existe para este comercio"
+}
+Response: 400 113.356 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:10:19 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 148.612 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:10:24 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": [],
+	"scoring": 0,
+	"numScoring": 0,
+	"reviews": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "666047a0fbe5c7bc5511cb23",
+		"createdAt": "2024-06-05T11:10:24.024Z",
+		"updatedAt": "2024-06-05T11:10:24.024Z"
+	}
+}
+Response: 200 145.227 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:10:44 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 136.419 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:11:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": [],
+	"scoring": 0,
+	"numScoring": 0,
+	"reviews": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "666047fcfbe5c7bc5511cb2c",
+		"createdAt": "2024-06-05T11:11:56.805Z",
+		"updatedAt": "2024-06-05T11:11:56.805Z"
+	}
+}
+Response: 200 142.628 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:13:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 138.083 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:16:52 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "666049249f0d7b9c1cff397f",
+		"createdAt": "2024-06-05T11:16:52.173Z",
+		"updatedAt": "2024-06-05T11:16:52.173Z"
+	}
+}
+Response: 200 170.432 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:17:11 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Tienda",
+	"titulo": "Tienda TOP",
+	"resumen": "La mejor tienda de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestra tienda.",
+		"Ofrecemos una gran variedad de productos."
+	],
+	"fotos": [
+		"foto1_comercio1.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "666049249f0d7b9c1cff397f",
+		"ciudad": "Madrid",
+		"actividad": "Tienda",
+		"titulo": "Tienda TOP",
+		"resumen": "La mejor tienda de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestra tienda.",
+			"Ofrecemos una gran variedad de productos."
+		],
+		"fotos": [
+			"foto1_comercio1.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T11:16:52.173Z",
+		"updatedAt": "2024-06-05T11:17:11.328Z"
+	}
+}
+Response: 200 120.936 ms 
+
+Request: POST /api/comercios/contenido/texts at Wed Jun 05 2024 13:17:16 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"text": "Este texto es increiblemente increible"
+}
+Response Body:
+{
+	"message": "Texto añadido correctamente",
+	"texto": [
+		"Bienvenidos a nuestra tienda.",
+		"Ofrecemos una gran variedad de productos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 194.310 ms 
+
+Request: DELETE /api/comercios/contenido/texts/0 at Wed Jun 05 2024 13:17:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Texto eliminado correctamente",
+	"texto": [
+		"Ofrecemos una gran variedad de productos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 138.956 ms 
+
+Request: POST /api/comercios/contenido/fotos at Wed Jun 05 2024 13:17:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 340.671 ms 
+
+Request: DELETE /api/comercios/contenido/fotos/0 at Wed Jun 05 2024 13:17:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 359.866 ms 
+
+Request: GET /api/comercios/contenido/intereses at Wed Jun 05 2024 13:18:57 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Acceso denegado"
+}
+Response: 403 78.336 ms 
+
+Request: POST /api/comercios/contenido/texts at Wed Jun 05 2024 13:19:45 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"text": "Este texto es increiblemente increible"
+}
+Response Body:
+{
+	"message": "Texto añadido correctamente",
+	"texto": [
+		"Ofrecemos una gran variedad de productos.",
+		"Este texto es increiblemente increible",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 140.232 ms 
+
+Request: GET /api/comercios/contenido/intereses at Wed Jun 05 2024 13:20:00 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"emails": []
+}
+Response: 200 138.020 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:22:06 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Barcelona",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante Sabores",
+	"resumen": "Deliciosa comida en el corazón de la ciudad.",
+	"text": [
+		"Disfruta de nuestra cocina.",
+		"Platos preparados con ingredientes frescos."
+	],
+	"fotos": [
+		"foto1_comercio2.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "666041e0b9bc68d084386bd5",
+		"text": [
+			"Disfruta de nuestra cocina.",
+			"Platos preparados con ingredientes frescos."
+		],
+		"fotos": [
+			"foto1_comercio2.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:45:52.535Z",
+		"updatedAt": "2024-06-05T11:22:06.441Z",
+		"actividad": "Restaurante",
+		"ciudad": "Barcelona",
+		"resumen": "Deliciosa comida en el corazón de la ciudad.",
+		"titulo": "Restaurante Sabores"
+	}
+}
+Response: 200 103.565 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:22:58 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 144.183 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:23:07 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "66604a9b9f0d7b9c1cff39a3",
+		"createdAt": "2024-06-05T11:23:07.046Z",
+		"updatedAt": "2024-06-05T11:23:07.046Z"
+	}
+}
+Response: 200 134.799 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:23:14 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Valencia",
+	"actividad": "Librería",
+	"titulo": "Librería Central",
+	"resumen": "Tu librería de confianza.",
+	"text": [
+		"Gran variedad de libros.",
+		"Encuentra tus títulos favoritos."
+	],
+	"fotos": [
+		"foto1_comercio3.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66604a9b9f0d7b9c1cff39a3",
+		"ciudad": "Valencia",
+		"actividad": "Librería",
+		"titulo": "Librería Central",
+		"resumen": "Tu librería de confianza.",
+		"text": [
+			"Gran variedad de libros.",
+			"Encuentra tus títulos favoritos."
+		],
+		"fotos": [
+			"foto1_comercio3.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T11:23:07.046Z",
+		"updatedAt": "2024-06-05T11:23:14.430Z"
+	}
+}
+Response: 200 96.109 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:23:53 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Sevilla",
+	"actividad": "Cafetería",
+	"titulo": "Café Aromas",
+	"resumen": "El mejor café de la ciudad.",
+	"text": [
+		"Ven a disfrutar de nuestro café.",
+		"Ambiente acogedor y tranquilo."
+	],
+	"fotos": [
+		"foto1_comercio4.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "666041f9b9bc68d084386be1",
+		"text": [
+			"Ven a disfrutar de nuestro café.",
+			"Ambiente acogedor y tranquilo."
+		],
+		"fotos": [
+			"foto1_comercio4.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:46:17.052Z",
+		"updatedAt": "2024-06-05T11:23:53.195Z",
+		"actividad": "Cafetería",
+		"ciudad": "Sevilla",
+		"resumen": "El mejor café de la ciudad.",
+		"titulo": "Café Aromas"
+	}
+}
+Response: 200 107.027 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:24:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Bilbao",
+	"actividad": "Gimnasio",
+	"titulo": "Fitness Center",
+	"resumen": "Tu gimnasio en Bilbao.",
+	"text": [
+		"Equipos de última generación.",
+		"Clases dirigidas y entrenadores personales."
+	],
+	"fotos": [
+		"foto1_comercio5.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-05T11:24:29.611Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center"
+	}
+}
+Response: 200 103.444 ms 
+
+Request: PUT /api/comercios/contenido at Wed Jun 05 2024 13:25:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Granada",
+	"actividad": "Heladería",
+	"titulo": "Helados Frescos",
+	"resumen": "Los mejores helados artesanales.",
+	"text": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos."
+	],
+	"fotos": [
+		"foto1_comercio6.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "666042b8b9bc68d084386bed",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:49:28.820Z",
+		"updatedAt": "2024-06-05T11:25:28.324Z",
+		"actividad": "Heladería",
+		"ciudad": "Granada",
+		"resumen": "Los mejores helados artesanales.",
+		"titulo": "Helados Frescos"
+	}
+}
+Response: 200 106.569 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:26:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"contenidoID": "666049249f0d7b9c1cff397f",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "66604b5f9f0d7b9c1cff39b5",
+		"createdAt": "2024-06-05T11:26:23.335Z",
+		"updatedAt": "2024-06-05T11:26:23.335Z"
+	}
+}
+Response: 201 165.337 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:30:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"contenidoID": "666049249f0d7b9c1cff397f",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "66604c667156adaeada27f65",
+		"createdAt": "2024-06-05T11:30:46.181Z",
+		"updatedAt": "2024-06-05T11:30:46.181Z"
+	}
+}
+Response: 201 212.103 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:43:39 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 117.565 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:44:30 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 127.840 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:44:31 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 104.457 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:44:31 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 110.177 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:44:32 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 124.845 ms 
+
+Request: POST /api/user/666049249f0d7b9c1cff397f/review at Wed Jun 05 2024 13:44:32 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 102.801 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:46:53 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido ya existe para este comercio"
+}
+Response: 400 73.304 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:47:09 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 394.733 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:47:45 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido no encontrado"
+}
+Response: 404 125.331 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:49:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido no encontrado"
+}
+Response: 404 159.645 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:50:10 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido ya existe para este comercio"
+}
+Response: 400 64.935 ms 
+
+Request: POST /api/user/666041e0b9bc68d084386bd5/review at Wed Jun 05 2024 13:51:25 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"contenidoID": "666041e0b9bc68d084386bd5",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "6660513d940b5a7f08e097da",
+		"createdAt": "2024-06-05T11:51:25.229Z",
+		"updatedAt": "2024-06-05T11:51:25.229Z"
+	}
+}
+Response: 201 201.750 ms 
+
+Request: DELETE /api/comercios at Wed Jun 05 2024 13:52:10 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 172.907 ms 
+
+Request: POST /api/comercios at Wed Jun 05 2024 13:52:41 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "66605188940b5a7f08e097e4",
+		"createdAt": "2024-06-05T11:52:40.960Z",
+		"updatedAt": "2024-06-05T11:52:40.960Z"
+	}
+}
+Response: 200 228.974 ms 
+
+Request: POST /api/user/66605188940b5a7f08e097e4/review at Wed Jun 05 2024 13:53:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"contenidoID": "66605188940b5a7f08e097e4",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "666051cc940b5a7f08e097ea",
+		"createdAt": "2024-06-05T11:53:48.524Z",
+		"updatedAt": "2024-06-05T11:53:48.524Z"
+	}
+}
+Response: 201 180.530 ms 
+
+Request: DELETE /api/admin/comercios/66605188940b5a7f08e097e4 at Wed Jun 05 2024 13:54:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio no encontrado"
+}
+Response: 404 68.703 ms 
+
+Request: DELETE /api/admin/comercios/666041e0b9bc68d084386bd7 at Wed Jun 05 2024 13:55:12 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado físicamente"
+}
+Response: 200 218.272 ms 

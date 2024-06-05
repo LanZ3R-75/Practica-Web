@@ -13,19 +13,19 @@ router.post('/register',postRegisterAdmin)
 router.post('/login',loginAdmin)
 
 //Ruta para registrar un nuevo comercio
-router.post('/comercios', auth, postComercio)
+router.post('/comercios', auth, auth.isAdmin, postComercio)
 
 //Ruta para modificar un comercio
-router.put('/comercios/:id',auth, putComercio)
+router.put('/comercios/:id',auth, auth.isAdmin, putComercio)
 
 //Ruta para obtener todos los comercios
-router.get('/comercios',auth, getComercios)
+router.get('/comercios',auth, auth.isAdmin, getComercios)
 
 //Ruta para obtener un comercio en especifico 
-router.get('/comercios/:id',auth, getComercio)
+router.get('/comercios/:id',auth, auth.isAdmin, getComercio)
 
 //Ruta para asignar borrar un comercio
-router.delete('/comercios/:id',auth, deleteComercio)
+router.delete('/comercios/:id',auth, auth.isAdmin, deleteComercio)
 
 module.exports = router
 

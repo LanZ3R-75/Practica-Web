@@ -1,10 +1,10 @@
 ##Variables 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvM0BleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODA0Mn0.6aHh9RE_kNdMVLKiFCmfgWHL4zMxaa_Fb5s9lGECUUM
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWUwYjliYzY4ZDA4NDM4NmJkNyIsImlhdCI6MTcxNzU4NDM1Mn0.YuRt1abVkCZN8Q8wQX4Zkzkxw_EUsHP19Z7_kQt4S-k
 
-###Crear una nueva pagina de contenido
-POST http://localhost:3000/api/comercios/665a22a88870c0d87106f958
+###Crear una nueva pagina de contenido 
+POST http://localhost:3000/api/comercios
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMkBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzE4MzE0NH0.18bQUxVciMhN4OYVYYE2rWNjYPh8q04QLMwYgW-Amis
+Authorization: Bearer {{token}}
 
 {
   "ciudad": "Madrid",
@@ -12,36 +12,31 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY
   "titulo": "Restaurante TOP",
   "resumen": "El mejor restaurante de la ciudad.",
   "text": ["Bienvenidos a nuestro restaurante.", "Ofrecemos una gran variedad de platos."],
-  "fotos": [],
-  "scoring": 0,
-  "numScoring": 0,
-  "reviews": []
+  "fotos": []
+  
 }
 
 ###Borramos el contenido de un comercio
-DELETE http://localhost:3000/api/comercios/665a22a88870c0d87106f958
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMkBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzE4MzE0NH0.18bQUxVciMhN4OYVYYE2rWNjYPh8q04QLMwYgW-Amis
+DELETE http://localhost:3000/api/comercios
+Authorization: Bearer {{token}}
 
 ### Actualizar Contenido
-PUT http://localhost:3000/api/comercios/contenido/665e547ac5f6a9059d069659
+PUT http://localhost:3000/api/comercios/contenido
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "ciudad": "Valencia",
-  "actividad": "Tienda",
-  "titulo": "Tienda TOP",
-  "resumen": "La mejor tienda de la ciudad.",
-  "text": ["Bienvenidos a nuestra tienda.", "Ofrecemos una gran variedad de productos."],
-  "fotos": [],
-  "scoring": 0,
-  "numScoring": 0,
-  "reviews": []
+  "ciudad": "Granada",
+  "actividad": "Heladería",
+  "titulo": "Helados Frescos",
+  "resumen": "Los mejores helados artesanales.",
+  "text": ["Helados de todos los sabores.", "Ingredientes naturales y frescos."],
+  "fotos": ["foto1_comercio6.jpg"]
 
 }
 
 ### Publicar un texto
-POST http://localhost:3000/api/comercios/contenido/665e547ac5f6a9059d069659/texts
+POST http://localhost:3000/api/comercios/contenido/texts
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -50,11 +45,11 @@ Authorization: Bearer {{token}}
 }
 
 ###Borrar texto
-DELETE http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/texts/0
+DELETE http://localhost:3000/api/comercios/contenido/texts/0
 Authorization: Bearer {{token}}
 
-### Subir una foto
-POST http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/fotos HTTP/1.1
+### Subir una foto ---->FALTA
+POST http://localhost:3000/api/comercios/contenido/fotos HTTP/1.1
 Content-Type: multipart/form-data; boundary=boundary
 Authorization: Bearer {{token}}
 
@@ -65,12 +60,12 @@ Content-Type: image/jpg
 < ./shishaBar.jpg
 --boundary--
 
-###Borrar foto
-DELETE http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/fotos/0
+###Borrar foto ---->FALTA
+DELETE http://localhost:3000/api/comercios/contenido/fotos/0
 Authorization: Bearer {{token}}
 
 ###Mostrar correo de usuarios de la misma ciudad y con el mismo interes
-GET http://localhost:3000/api/comercios/contenido/intereses/665e5452c5f6a9059d06964f
+GET http://localhost:3000/api/comercios/contenido/intereses
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbWVyY2lvMUBleGFtcGxlLmNvbSIsImlhdCI6MTcxNzQ1ODAwMn0.WClPyeV5dV6zTs85l5jl3HIEYlqfZdY5Z5EJbYIJTnk
+Authorization: Bearer {{token}}
 
