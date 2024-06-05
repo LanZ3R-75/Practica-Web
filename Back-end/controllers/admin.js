@@ -3,7 +3,7 @@ const{comerciosModel, adminModel, contenidoModel} = require("../models")
 const jwt = require('jsonwebtoken')
 
 //Ruta para Registro de Admin
-const postRegisterAdmin = async (req, res) => {
+const postRegisterAdmin = async (req, res, next) => {
 
     const {username, password} = req.body
 
@@ -24,12 +24,12 @@ const postRegisterAdmin = async (req, res) => {
 
     }catch(error){
 
-        res.status(500).send({message: error.message})
+        next(error)
     }
 }
 
 //Ruta para Login de Administradores
-const loginAdmin = async (req, res) => {
+const loginAdmin = async (req, res, next) => {
 
     const { username, password } = req.body;
 
@@ -46,14 +46,14 @@ const loginAdmin = async (req, res) => {
 
     } catch (error) {
 
-        res.status(500).send({ message: error.message });
+        next(error)
     }
 };
 
 
 
 // Ruta para registrar un nuevo comercio
-const postComercio = async (req, res) => {
+const postComercio = async (req, res, next) => {
 
     const {nombre, CIF, direccion, email, telefono} = req.body
 
@@ -91,12 +91,12 @@ const postComercio = async (req, res) => {
     
     } catch (error) {
         
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 };
 
 //Ruta para modificar un nuevo comercio
-const putComercio = async (req, res) =>{
+const putComercio = async (req, res, next) =>{
 
     const { id } = req.params; // Obtener el ID del comercio desde la URL
     const updateData = req.body; // Datos para actualizar
@@ -115,12 +115,12 @@ const putComercio = async (req, res) =>{
 
     } catch (error) {
 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 }
 
 //Ruta para obtener todos los comercios
-const getComercios = async (req, res)=>{
+const getComercios = async (req, res, next)=>{
 
     try {
 
@@ -130,14 +130,14 @@ const getComercios = async (req, res)=>{
 
     } catch (error) {
         //Muestra el error 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 
 }
 
 
 //Ruta para Obtener un comercio por su id
-const getComercio = async (req, res)=>{
+const getComercio = async (req, res, next)=>{
 
     const { id } = req.params;
 
@@ -151,13 +151,13 @@ const getComercio = async (req, res)=>{
 
     } catch (error) {
         //Muestra el error 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 
 }
 
 //Ruta para Borrar un comercio 
-const deleteComercio = async (req, res) => {
+const deleteComercio = async (req, res, next) => {
     const { id } = req.params;
 
     try {
@@ -174,8 +174,10 @@ const deleteComercio = async (req, res) => {
         await comerciosModel.findByIdAndDelete(id);
 
         res.send({ message: 'Comercio y contenido eliminado físicamente' });
+
     } catch (error) {
-        res.status(500).send({ error: error.message });
+
+         next(error)
     }
 };
 

@@ -2,14 +2,14 @@
 ###                             VARIABLES
 ###----------------------------------------------------------------------------
 
-@token = holaquease
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWZiZWYyNTYwZTQ5NDgxNGUxNWNmOCIsImlhdCI6MTcxNzU1MDg0MCwiZXhwIjoxNzE3NjM3MjQwfQ.0J8FtcebA_7KIcbyQt08KUriz2A7nF3Nr00N1PrsDFc
 
 ###----------------------------------------------------------------------------
 ###                    Pruebas para usuarios publicos
 ###----------------------------------------------------------------------------
 
 ###Consultar todos los contenidos
-GET http://localhost:3000/api/user/comercios/contenido
+GET http://localhost:3000/api/user/comercios/contenido?ordenar=desc
 Content-Type: application/json
 
 ###Consultar los contenidos por ciudad
@@ -33,9 +33,10 @@ POST http://localhost:3000/api/user/register
 Content-Type: application/json
 
 {
-  "username": "Pepe",
+  "nombre": "Daniel",
   "password": "passwordSegura",
-  "email": "pepe@example.com",
+  "email": "daniel@example.com",
+  "edad" : "21",
   "ciudad": "Madrid",
   "intereses": ["Restaurante", "Cafetería"],
   "ofertas": true
@@ -50,6 +51,58 @@ POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-    "email": "nuevoUsuario@example.com",
-    "password": "passwordSegura"
+  "email": "daniel@example.com",
+  "password": "passwordSegura"
 }
+
+### Modificar algun dato del usuario
+POST http://localhost:3000/api/user
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "ciudad": "Bilbao",
+  "intereses": [ "Museo", "Restaurante" ],
+  "ofertas": true
+}
+
+### Actualizar Correo Electrónico
+PUT http://localhost:3000/api/user/email
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "email": "daniel12345@example.com"
+}
+
+### Actualizar la contraseña del usuario
+PUT http://localhost:3000/api/user/password
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "oldPassword": "passwordSegura",
+  "newPassword": "nuevaPasswordSegura"
+}
+
+### Darse de baja como usuario
+DELETE http://localhost:3000/api/user/baja
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###Publicar una reseña
+POST http://localhost:3000/api/user/665e5452c5f6a9059d06964d/review
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "comentario": "Excelente servicio y comida deliciosa.",
+  "puntuacion": 5
+}
+
+//--------------------------------------------------------------------------------------------------------------------------
+//                                      Prueba de SLACK
+//--------------------------------------------------------------------------------------------------------------------------
+
+### Prueba de Slack
+GET http://localhost:3000/api/user/testSlack

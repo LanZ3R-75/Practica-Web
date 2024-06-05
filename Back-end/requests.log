@@ -1,0 +1,40 @@
+
+Request: GET /api/user/testSlack at Wed Jun 05 2024 06:32:13 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 311.884 ms 
+
+Request: GET /api/user/testSlack at Wed Jun 05 2024 06:35:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 313.432 ms 
+
+Request: PUT /api/user/email at Wed Jun 05 2024 06:41:02 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "daniel12345@example.com"
+}
+Response Body:
+{
+	"message": "Correo electrónico actualizado con éxito",
+	"user": {
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	}
+}
+Response: 200 168.962 ms 

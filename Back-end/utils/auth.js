@@ -4,24 +4,14 @@ const comerciosModel = require('../models/nosql/comercios');
 const userModel = require('../models/nosql/user');
 
 // Middleware para la autenticación
-module.exports = async (req, res, next) => {
+module.exports = (req, res, next) => {
     const token = req.header('Authorization').replace('Bearer ', '');
-    
+
     if (!token) return res.status(401).json({ message: 'No hay token, autorización denegada' });
-    
+
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         req.user = decoded;
-        
-        const user = await userModel.findById(decoded.id);
-        if (!user) {
-            const admin = await adminModel.findById(decoded.id);
-            if (!admin) throw new Error('Autenticación fallida');
-            req.user = admin;
-        } else {
-            req.user = user;
-        }
-        
         next();
     } catch (error) {
         res.status(401).send({ message: 'El token no es válido' });
@@ -48,7 +38,7 @@ module.exports.isComercio = async (req, res, next) => {
 
         const comercio = await comerciosModel.findOne({ tokenJWT: token });
 
-        if (!comercio) return res.status(403).json({ message: 'Acceso denegado' });
+        if (!comercio) return res.status(403).json({ message: 'Access denied' });
 
         req.comercio = comercio;
         next();

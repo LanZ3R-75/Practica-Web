@@ -41,12 +41,12 @@ Authorization: Bearer {{token}}
 }
 
 ### Publicar un texto
-POST http://localhost:3000/api/comercios/contenido/665786cdc663c63590307de7/texts
+POST http://localhost:3000/api/comercios/contenido/665e547ac5f6a9059d069659/texts
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "text": "Este es el segundo texto añadido"
+  "text": "Este texto es increiblemente increible"
 }
 
 ###Borrar texto

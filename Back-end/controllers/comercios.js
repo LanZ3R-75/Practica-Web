@@ -11,18 +11,13 @@ const path = require('path')
 
 //Creamos la pagina de contenido (Solo si no existe una ya)
 
-const createContenido = async (req, res) => {
+const createContenido = async (req, res, next) => {
     const { id } = req.params;
 
     try {
         // Verificar si el comercio existe
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '');
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         // Verificar si el comercio ya tiene contenido
         if (comercio.paginaID) {
@@ -41,13 +36,13 @@ const createContenido = async (req, res) => {
 
     } catch (error) {
 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 };
 
 //Borrar la pagina de contenido
 
-const deleteContenido = async(req, res) =>{
+const deleteContenido = async(req, res, next) =>{
 
     const { id } = req.params;
 
@@ -56,11 +51,6 @@ const deleteContenido = async(req, res) =>{
         // Verificar si el comercio existe
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '');
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         //Verificamos que el comercio tenga contenido
         const contenidoID = comercio.paginaID
@@ -79,12 +69,12 @@ const deleteContenido = async(req, res) =>{
 
     } catch (error) {
 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 }
 
 // Actualizar el contenido de un comercio
-const updateContenido = async (req, res) => {
+const updateContenido = async (req, res, next) => {
 
     const { id } = req.params;
 
@@ -92,13 +82,6 @@ const updateContenido = async (req, res) => {
         const comercio = await comerciosModel.findById(id);
 
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '');
-
-        if (comercio.tokenJWT !== token) {
-
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         const updateContenido = await contenidoModel.findByIdAndUpdate(comercio.paginaID, req.body, { new: true });
         if (!updateContenido) return res.status(404).send({ message: 'Página web no encontrada' });
@@ -107,13 +90,13 @@ const updateContenido = async (req, res) => {
 
     } catch (error) {
 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 };
 
 //Subir texto
 
-const uploadText = async (req, res) => {
+const uploadText = async (req, res, next) => {
 
     const { id } = req.params;
     const { text } = req.body;
@@ -122,11 +105,6 @@ const uploadText = async (req, res) => {
 
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '');
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         const contenido = await contenidoModel.findById(comercio.paginaID);
         contenido.text.push(text);
@@ -137,12 +115,12 @@ const uploadText = async (req, res) => {
 
     } catch (error) {
 
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 };
 
 // Borrar texto
-const deleteText = async (req, res) => {
+const deleteText = async (req, res, next) => {
 
     const { id, textIndex } = req.params;
 
@@ -150,11 +128,6 @@ const deleteText = async (req, res) => {
 
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '');
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         const contenido = await contenidoModel.findById(comercio.paginaID);
         if (!contenido.text[textIndex]) {
@@ -166,23 +139,21 @@ const deleteText = async (req, res) => {
         await contenido.save();
 
         res.status(200).send({ message: 'Texto eliminado correctamente', texto: contenido.text });
+
     } catch (error) {
-        res.status(500).send({ error: error.message });
+
+        next(error)
     }
 };
 
 // Subir foto
-const uploadFoto = async (req, res) => {
+const uploadFoto = async (req, res, next) => {
     const { id } = req.params;
 
     try {
+
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '').trim();
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         const contenido = await contenidoModel.findById(comercio.paginaID);
         if (!req.file) {
@@ -195,14 +166,16 @@ const uploadFoto = async (req, res) => {
         await contenido.save();
 
         res.status(200).send({ message: 'Foto añadida correctamente', fotos: contenido.fotos });
+
     } catch (error) {
-        res.status(500).send({ error: error.message });
+       
+        next(error)
     }
 };
 
 //Borrar imagenes
 
-const deleteFoto = async (req, res) => {
+const deleteFoto = async (req, res, next) => {
 
     const { id, fotoIndex} = req.params;
 
@@ -210,11 +183,6 @@ const deleteFoto = async (req, res) => {
 
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
-
-        const token = req.header('Authorization').replace('Bearer ', '');
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
 
         const contenido = await contenidoModel.findById(comercio.paginaID);
         const fotoPath = contenido.fotos[fotoIndex];
@@ -235,13 +203,13 @@ const deleteFoto = async (req, res) => {
         
     } catch (error) {
         
-        res.status(500).send({ error: error.message });
+        next(error)
     }
 }
 
 //Optener el correo segun la ciudad y los intereses
 
-const consultarIntereses = async (req, res) => {
+const consultarIntereses = async (req, res, next) => {
 
     const { id } = req.params;
 
@@ -250,25 +218,22 @@ const consultarIntereses = async (req, res) => {
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
 
-        const token = req.header('Authorization').replace('Bearer ', '');
-        if (comercio.tokenJWT !== token) {
-            return res.status(403).send({ message: 'Acceso denegado' });
-        }
-
         // Buscar usuarios que coincidan con la ciudad y los intereses del contenido del comercio
         const contenido = await contenidoModel.findById(comercio.paginaID);
 
         const users = await userModel.find({
             ciudad: contenido.ciudad,
-            intereses: contenido.actividad,
+            intereses: { $in: [contenido.actividad] },
             ofertas:true
             
         }, 'email');
 
         const emails = users.map(user => user.email);
         res.status(200).send({ emails });
+        
     } catch (error) {
-        res.status(500).send({ message: error.message });
+        
+        next(error)
     }
 };
 
