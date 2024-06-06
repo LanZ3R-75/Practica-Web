@@ -1,5 +1,12 @@
-###Variables
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzU4MzE5NCwiZXhwIjoxNzE3NjY5NTk0fQ.lLGAlUzy_4U1hr9noBRDArJ8qQ25GfortiGpS0KLIXU
+###----------------------------------------------------------------------------
+###                             Variables
+###----------------------------------------------------------------------------
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTY4NjE4ZTY0YzI4YjA3NTYwODFiYyIsImlhdCI6MTcxNzY0NzE0OCwiZXhwIjoxNzE3NzMzNTQ4fQ.4oOuZyfkWLVYbGef-Fm0yO1HQ4FuQyjPGnn0CS9HfaU
+
+###----------------------------------------------------------------------------
+###       Pruebas para Administradores
+###----------------------------------------------------------------------------
+
 ### Registrar Admin
 POST http://localhost:3000/api/admin/register
 Content-Type: application/json
@@ -17,6 +24,10 @@ Content-Type: application/json
   "username": "adminUser",
   "password": "securePassword"
 }
+
+###----------------------------------------------------------------------------
+###                     Pruebas para Comercios
+###----------------------------------------------------------------------------
 
 ### Crear Comercio
 POST http://localhost:3000/api/admin/comercios
@@ -51,4 +62,48 @@ Authorization: Bearer {{token}}
 
 ### Borrar Comercio 
 DELETE http://localhost:3000/api/admin/comercios/666041e0b9bc68d084386bd7
+Authorization: Bearer {{token}}
+
+###----------------------------------------------------------------------------
+###               Pruebas para usuarios Registrados
+###----------------------------------------------------------------------------
+
+### Obtener todos los usuarios registrados
+GET http://localhost:3000/api/admin/users
+Authorization: Bearer {{token}}
+
+### Obtener un usuarios registrados en especifico
+GET http://localhost:3000/api/admin/user/665fbef2560e494814e15cf8
+Authorization: Bearer {{token}}
+
+### Actualizar un usuario
+PUT http://localhost:3000/api/admin/user/6661376ca0880e5f860fc6ae
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "nombre" : "nuevoNombre",
+  "email" : "nuevoEmail@gmail.com"
+}
+
+### Actualizar la contraseña de un usuario
+PUT http://localhost:3000/api/admin/user/6661376ca0880e5f860fc6ae/password
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "newPassword" : "nuevaContraseñaAunMasSegura"
+}
+
+### Actualizar el correo electronico de un usuario
+PUT http://localhost:3000/api/admin/user/6661376ca0880e5f860fc6ae/email
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "newEmail" : "nueviiiiiiiiiiiisimoEmail@gmail.com"
+}
+
+### Obtener un usuarios registrados en especifico
+DELETE  http://localhost:3000/api/admin/user/6661445c482ddd2c5011b490
 Authorization: Bearer {{token}}

@@ -1,6 +1,10 @@
 //Importamos las rutas necesarias
-const{comerciosModel, adminModel, contenidoModel, reviewModel} = require("../models")
+const{comerciosModel, adminModel, contenidoModel, reviewModel, userModel} = require("../models")
 const jwt = require('jsonwebtoken')
+
+//--------------------------------------------------------------------------------------------------------------------------
+//                                  GESTION DE ADMINISTRADORES
+//--------------------------------------------------------------------------------------------------------------------------
 
 //Ruta para Registro de Admin
 const postRegisterAdmin = async (req, res, next) => {
@@ -49,6 +53,10 @@ const loginAdmin = async (req, res, next) => {
         next(error)
     }
 };
+
+//--------------------------------------------------------------------------------------------------------------------------
+//                                  GESTION DE COMERCIOS
+//--------------------------------------------------------------------------------------------------------------------------
 
 // Ruta para registrar un nuevo comercio
 const postComercio = async (req, res, next) => {
@@ -186,4 +194,174 @@ const deleteComercio = async (req, res, next) => {
     }
 };
 
-module.exports = {postRegisterAdmin, loginAdmin, postComercio, putComercio, getComercios,getComercio, deleteComercio}
+//--------------------------------------------------------------------------------------------------------------------------
+//                                  GESTION DE USUARIOS REGISTRADOS
+//--------------------------------------------------------------------------------------------------------------------------
+
+// Obtener la lista de todos los usuarios registrados
+
+const getAllUsers = async (req, res, next) => {
+
+    try {
+
+        const users = await userModel.find({})
+
+        res.status(200).send(users)
+
+    } catch (error) {
+
+        next(error)
+    }
+}
+
+// Obtener un usuario por el id
+
+const getUser = async (req, res, next) => {
+
+    const { id } = req.params
+
+    try {
+
+        const user = await userModel.findById(id)
+        if(!user) return res.status(404).send({message: 'Usuario no encontrado'})
+        
+        res.status(200).send(user)
+        
+    } catch (error) {
+        
+        next(error)
+    }
+}
+
+// Actualizar un usuario
+
+const updateUser =  async( req, res, next) => {
+
+    const { id } = req.params
+
+    try {
+
+        const user = await userModel.findByIdAndUpdate(id, req.body, {new: true})
+        if(!user) return res.status(404).send({message: 'Usuario no encontrado'})
+        
+        res.status(200).send({message : 'Usuario actualizado correctamente',user})
+        
+    } catch (error) {
+        
+        next(error)
+    }
+
+}
+
+// Actualizar la contraseña del usuario
+
+const updateUserPassword =  async( req, res, next) => {
+
+    const { id } = req.params
+    const { newPassword } = req.body 
+
+    try {
+
+        const user = await userModel.findById(id);
+        if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
+
+        user.password = newPassword
+        await user.save()
+        
+        res.status(200).send({message : 'Cotraseña actualizada con exito' })
+        
+    } catch (error) {
+        
+        next(error)
+    }
+
+}
+
+// Actualizar el correo del usuario
+
+const updateUserEmail = async (req, res, next) => {
+
+    const { id } = req.params;
+    const { newEmail } = req.body;
+
+    try {
+
+        const existingEmail = await userModel.findOne({ email: newEmail });
+        if (existingEmail) return res.status(400).send({ message: 'El correo electrónico ya está en uso' });
+
+        const user = await userModel.findById(id);
+        if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
+
+        user.email = newEmail;
+        await user.save();
+
+        res.status(200).send({ message: 'Correo electrónico actualizado correctamente', user });
+
+    } catch (error) {
+
+        next(error);
+    }
+}
+
+// Borrar un usuario
+
+const deleteUser = async (req, res, next) => {
+
+    const {id} = req.params
+
+    try {
+
+        const user = await userModel.findById(id);
+        if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
+
+        // Buscar todas las reseñas del usuario
+        const userReviews = await reviewModel.find({ usuarioID: id });
+
+        // Eliminar las reseñas del contenido asociado
+        for (let review of userReviews) {
+            
+            const contenido = await contenidoModel.findById(review.contenidoID);
+
+            if (contenido) {
+
+                // Filtra el array de reseñas de 'contenido' para eliminar la reseña cuyo '_id' coincide con 'review._id'
+                contenido.reviews = contenido.reviews.filter(r => r.toString() !== review._id.toString());
+                contenido.numScoring -= 1;
+                contenido.scoring = contenido.numScoring > 0 ? 
+                    ((contenido.scoring * (contenido.numScoring + 1)) - review.puntuacion) / contenido.numScoring : 0;
+
+                await contenido.save();
+
+            } else {
+                
+            }
+        }
+
+        // Eliminar las reseñas del usuario
+        await reviewModel.deleteMany({ usuarioID: id });
+
+        // Eliminar la cuenta del usuario
+        await userModel.findByIdAndDelete(id);
+
+        res.status(200).send({ message: 'Cuenta de usuario y reseñas asociadas eliminadas con éxito' });
+
+    } catch (error) {
+
+        next(error);
+    }
+}
+
+module.exports = {  postRegisterAdmin,
+                    loginAdmin, 
+                    postComercio, 
+                    putComercio, 
+                    getComercios,
+                    getComercio, 
+                    deleteComercio,
+                    getAllUsers,
+                    getUser,
+                    updateUser,
+                    updateUserPassword,
+                    updateUserEmail,
+                    deleteUser
+                }

@@ -198,15 +198,15 @@ const loginUser = async (req, res, next) =>{
 // Modificar datos de un usuario
 const updateUser = async (req, res, next) => {
 
-    const userId = req.user.id
+    const {id} = req.user
     const { ciudad, intereses , ofertas } = req.body
 
     try {
 
-        const usuario = await userModel.findById(userId)
+        const usuario = await userModel.findById(id)
         if(!usuario) return res.status(404).send({message: 'Usuario no encontrado'})
 
-        const updateUsuario = await userModel.findByIdAndUpdate(userId, { ciudad, intereses, ofertas }, { new: true })
+        const updateUsuario = await userModel.findByIdAndUpdate(id, { ciudad, intereses, ofertas }, { new: true })
         if (!updateUsuario) return res.status(404).send({ message: 'Página web no encontrada' });
 
         res.status(200).send({ message: 'Usuario actualizado con éxito', contenido: updateUsuario });
@@ -221,12 +221,12 @@ const updateUser = async (req, res, next) => {
 // Actualizar el correo electrónico del usuario
 const updateEmail = async (req, res, next) => {
 
-    const userId = req.user.id;
+    const {id} = req.user;
     const { email } = req.body;
 
     try {
 
-        const user = await userModel.findById(userId);
+        const user = await userModel.findById(id);
         if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
 
         const existingUser = await userModel.findOne({ email });
@@ -248,12 +248,12 @@ const updateEmail = async (req, res, next) => {
 
 const updatePassword = async(req, res, next) => {
 
-    const userId = req.user.id
+    const {id} = req.user
     const { oldPassword, newPassword } = req.body
 
     try {
 
-        const user = await userModel.findById(userId);
+        const user = await userModel.findById(id);
         if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
 
         const existingUser = await user.comparePassword(oldPassword);
@@ -274,28 +274,55 @@ const updatePassword = async(req, res, next) => {
 
 const deleteUser = async (req, res, next) => {
 
-    const userId = req.user.id
+    const {id} = req.user
 
     try {
+        const user = await userModel.findById(id);
+        if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
 
-        const user = await userModel.findByIdAndDelete(userId)
-        if(!user) return res.status(404).send({message: 'Usuario no encontrado'})
-        
-        res.status(200).send({ message: 'Usuario dado de baja correctamente'});
-        
+        // Buscar todas las reseñas del usuario
+        const userReviews = await reviewModel.find({ usuarioID: id });
+
+        // Eliminar las reseñas del contenido asociado
+        for (let review of userReviews) {
+            
+            const contenido = await contenidoModel.findById(review.contenidoID);
+
+            if (contenido) {
+
+                // Filtra el array de reseñas de 'contenido' para eliminar la reseña cuyo '_id' coincide con 'review._id'
+                contenido.reviews = contenido.reviews.filter(r => r.toString() !== review._id.toString());
+                contenido.numScoring -= 1;
+                contenido.scoring = contenido.numScoring > 0 ? 
+                    ((contenido.scoring * (contenido.numScoring + 1)) - review.puntuacion) / contenido.numScoring : 0;
+
+                await contenido.save();
+
+            } else {
+                
+            }
+        }
+
+        // Eliminar las reseñas del usuario
+        await reviewModel.deleteMany({ usuarioID: id });
+
+        // Eliminar la cuenta del usuario
+        await userModel.findByIdAndDelete(id);
+
+        res.status(200).send({ message: 'Cuenta de usuario y reseñas asociadas eliminadas con éxito' });
+
     } catch (error) {
 
-        next(error)
+        next(error);
     }
-}
-
+};
 // Publicar una Reseña
 
 const postReview = async (req, res, next) => {
 
     const { comentario, puntuacion } = req.body
     const { contenidoId } = req.params
-    const { userId } = req.user.id
+    const { id } = req.user
 
     try {
 
@@ -303,11 +330,11 @@ const postReview = async (req, res, next) => {
         if(!contenido) return res.status(404).send({ message: 'Contenido no encontrado' })
 
         //Verificar si el usuario ya ha escrito una reseña para un contenido
-        const existingReview = await reviewModel.findOne({usuarioID: userId , contenidoID: contenidoId})
+        const existingReview = await reviewModel.findOne({usuarioID: id , contenidoID: contenidoId})
         if(existingReview) return res.status(400).send({message: 'Ya has escrito una reseña para este contenido'})
 
         const newReview = new reviewModel({
-            usuarioID: userId,
+            usuarioID: id,
             contenidoID: contenidoId,
             comentario,
             puntuacion,

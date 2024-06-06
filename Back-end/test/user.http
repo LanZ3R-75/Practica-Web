@@ -2,7 +2,7 @@
 ###                             VARIABLES
 ###----------------------------------------------------------------------------
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWZiZWYyNTYwZTQ5NDgxNGUxNWNmOCIsImlhdCI6MTcxNzU1MDg0MCwiZXhwIjoxNzE3NjM3MjQwfQ.0J8FtcebA_7KIcbyQt08KUriz2A7nF3Nr00N1PrsDFc
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjE0NDVjNDgyZGRkMmM1MDExYjQ5MCIsImlhdCI6MTcxNzY1MDUzNSwiZXhwIjoxNzE3NzM2OTM1fQ.H-0BWfo98S74nN57mbtl0RyC0jaIGP3kQEhVkY8bay8
 
 ###----------------------------------------------------------------------------
 ###                    Pruebas para usuarios publicos
@@ -33,11 +33,11 @@ POST http://localhost:3000/api/user/register
 Content-Type: application/json
 
 {
-  "nombre": "Daniel",
+  "nombre": "Pepe",
   "password": "passwordSegura",
-  "email": "daniel@example.com",
-  "edad" : "21",
-  "ciudad": "Madrid",
+  "email": "pepe@example.com",
+  "edad" : "26",
+  "ciudad": "Barcelona",
   "intereses": ["Restaurante", "Cafetería"],
   "ofertas": true
 }
@@ -51,7 +51,7 @@ POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-  "email": "daniel@example.com",
+  "email": "pepe@example.com",
   "password": "passwordSegura"
 }
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "email": "daniel12345@example.com"
+  "email": "megaprueba@example.com"
 }
 
 ### Actualizar la contraseña del usuario
@@ -91,13 +91,13 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ###Publicar una reseña
-POST http://localhost:3000/api/user/66605188940b5a7f08e097e4/review
+POST http://localhost:3000/api/user/66604a9b9f0d7b9c1cff39a3/review
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
   "comentario": "Excelente servicio y comida deliciosa.",
-  "puntuacion": 5
+  "puntuacion": 5 
 }
 
 //--------------------------------------------------------------------------------------------------------------------------
