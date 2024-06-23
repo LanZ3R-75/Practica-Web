@@ -2,7 +2,7 @@
 ###                             VARIABLES
 ###----------------------------------------------------------------------------
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjE0NDVjNDgyZGRkMmM1MDExYjQ5MCIsImlhdCI6MTcxNzY1MDUzNSwiZXhwIjoxNzE3NzM2OTM1fQ.H-0BWfo98S74nN57mbtl0RyC0jaIGP3kQEhVkY8bay8
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Nzc3MGUzMjQ2MjNjNjBlNTJhMGY5YyIsImlhdCI6MTcxOTEwNTE3OSwiZXhwIjoxNzE5MTkxNTc5fQ.e7A8CiflsoNsa12KbplIbJycRQjSIcx66PdNZBKdWCk
 
 ###----------------------------------------------------------------------------
 ###                    Pruebas para usuarios publicos
@@ -33,10 +33,10 @@ POST http://localhost:3000/api/user/register
 Content-Type: application/json
 
 {
-  "nombre": "Pepe",
+  "nombre": "Cucurella",
   "password": "passwordSegura",
-  "email": "pepe@example.com",
-  "edad" : "26",
+  "email": "Cucurella@example.com",
+  "edad" : "18",
   "ciudad": "Barcelona",
   "intereses": ["Restaurante", "Cafetería"],
   "ofertas": true
@@ -51,7 +51,7 @@ POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-  "email": "pepe@example.com",
+  "email": "Cucurella@example.com",
   "password": "passwordSegura"
 }
 
@@ -90,8 +90,8 @@ DELETE http://localhost:3000/api/user/baja
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
-###Publicar una reseña
-POST http://localhost:3000/api/user/66604a9b9f0d7b9c1cff39a3/review
+### Publicar una reseña
+POST http://localhost:3000/api/user/666041f9b9bc68d084386be1/review
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -99,6 +99,11 @@ Authorization: Bearer {{token}}
   "comentario": "Excelente servicio y comida deliciosa.",
   "puntuacion": 5 
 }
+
+### Listar todas las reviews del usuario
+GET http://localhost:3000/api/user/reviews
+Content-Type: application/json
+Authorization: Bearer {{token}}
 
 //--------------------------------------------------------------------------------------------------------------------------
 //                                      Prueba de SLACK

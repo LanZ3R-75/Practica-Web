@@ -2734,3 +2734,2754 @@ Response Body:
 	"message": "Cuenta de usuario y reseñas asociadas eliminadas con éxito"
 }
 Response: 200 242.800 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:11:44 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminUser",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 59.499 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:12:17 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 384.325 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:12:31 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 434.886 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:13:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"mesage": "Administrador registrado con exito"
+}
+Response: 201 141.619 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:13:57 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 32.030 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:14:25 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminUser"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La contraseña es requerida.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña no puede estar vacía.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 4.584 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:22:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZkZmQyYTA0MGQ2MzY2NGYyZjU3ZCIsImlhdCI6MTcxODAxODU0MiwiZXhwIjoxNzE4MTA0OTQyfQ.znU3WrbYWoDThLq_sWstxPfMQluPIjsd0utv34NUI6c"
+}
+Response: 200 114.976 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:22:36 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La contraseña es requerida.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña no puede estar vacía.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 1.521 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:22:54 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZkZmQyYTA0MGQ2MzY2NGYyZjU3ZCIsImlhdCI6MTcxODAxODU3NCwiZXhwIjoxNzE4MTA0OTc0fQ.8nCnuhcuWqhlUmVA4hKPM8G8XTxgA-TtQ86AiZ3Mj_g"
+}
+Response: 200 123.504 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:24:13 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007",
+	"direccion": "Calle Prueba Admin",
+	"email": "pruebaadmin@example.com",
+	"telefono": "6677889977"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "CIF0007",
+			"msg": "El CIF debe tener 9 caracteres.",
+			"path": "CIF",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"value": "6677889977",
+			"msg": "El teléfono debe tener 9 caracteres.",
+			"path": "telefono",
+			"location": "body"
+		}
+	]
+}
+Response: 403 41.677 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:25:17 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AP",
+	"direccion": "Calle 6",
+	"email": "comercio6@example.com",
+	"telefono": "667788777"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 101.860 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:25:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AP",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin6@example.com",
+	"telefono": "667788777"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AP",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin6@example.com",
+		"telefono": "667788777",
+		"paginaID": "6666e2af452a3d47a07b5b24",
+		"_id": "6666e2af452a3d47a07b5b26",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlMmFmNDUyYTNkNDdhMDdiNWIyNiIsImlhdCI6MTcxODAxODczNX0.YjWAfs3rGO7ARWml4jlNnb_SHGtENCQ1z0CB7IRKHZE",
+		"createdAt": "2024-06-10T11:25:35.924Z",
+		"updatedAt": "2024-06-10T11:25:35.924Z"
+	}
+}
+Response: 201 191.952 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:26:36 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AP",
+	"direccion": "Calle 6",
+	"telefono": "667788777"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 66.289 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:26:45 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AP",
+	"direccion": "Calle 6",
+	"telefono": "667788777"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 63.761 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:27:15 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AP",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin6@example.com",
+	"telefono": "667788777"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 64.369 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:27:39 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 371.272 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:30:54 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin6@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 60.081 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:31:11 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 366.454 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:31:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e41aa76adbdc07bbee00",
+		"_id": "6666e41aa76adbdc07bbee02",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlNDFhYTc2YWRiZGMwN2JiZWUwMiIsImlhdCI6MTcxODAxOTA5OH0.TY1Yg3W0O_6-gOPUF5p03SJereB6Thr8Pk9oMGR5hdY",
+		"createdAt": "2024-06-10T11:31:38.863Z",
+		"updatedAt": "2024-06-10T11:31:38.863Z"
+	}
+}
+Response: 201 129.342 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:34:16 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El teléfono es requerido.",
+			"path": "telefono",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El teléfono no puede estar vacío.",
+			"path": "telefono",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El teléfono debe tener 9 caracteres.",
+			"path": "telefono",
+			"location": "body"
+		}
+	]
+}
+Response: 403 27.522 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:34:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La dirección es requerida.",
+			"path": "direccion",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La dirección no puede estar vacía.",
+			"path": "direccion",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La dirección debe tener entre 5 y 100 caracteres.",
+			"path": "direccion",
+			"location": "body"
+		}
+	]
+}
+Response: 403 36.779 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:34:47 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El CIF es requerido.",
+			"path": "CIF",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El CIF no puede estar vacío.",
+			"path": "CIF",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El CIF debe tener 9 caracteres.",
+			"path": "CIF",
+			"location": "body"
+		}
+	]
+}
+Response: 403 26.661 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:34:55 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 400.995 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:39:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El correo electrónico es requerido.",
+			"path": "email",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El correo electrónico no puede estar vacío.",
+			"path": "email",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "Debe ser un correo electrónico válido.",
+			"path": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 403 39.351 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:40:16 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La contraseña es requerida.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña no puede estar vacía.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 1.560 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:42:59 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 39.774 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:43:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La contraseña es requerida.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña no puede estar vacía.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 1.488 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:43:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"password": "securePassword"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El nombre de usuario es requerido.",
+			"path": "username",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El nombre de usuario no puede estar vacío.",
+			"path": "username",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El nombre de usuario debe tener entre 2 y 20 caracteres.",
+			"path": "username",
+			"location": "body"
+		}
+	]
+}
+Response: 403 0.755 ms 
+
+Request: POST /api/admin/register at Mon Jun 10 2024 13:43:43 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 28.546 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:48:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"password": "securePassword"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El nombre de usuario es requerido.",
+			"path": "username",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El nombre de usuario no puede estar vacío.",
+			"path": "username",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El nombre de usuario debe tener entre 2 y 20 caracteres.",
+			"path": "username",
+			"location": "body"
+		}
+	]
+}
+Response: 403 5.540 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:48:36 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La contraseña es requerida.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña no puede estar vacía.",
+			"path": "password",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 1.240 ms 
+
+Request: POST /api/admin/login at Mon Jun 10 2024 13:48:42 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZkZmQyYTA0MGQ2MzY2NGYyZjU3ZCIsImlhdCI6MTcxODAyMDEyMiwiZXhwIjoxNzE4MTA2NTIyfQ.QYgPLpp2-UsO2gRq4KAPfFkN8BvYeKlWaxcv6JbUfiU"
+}
+Response: 200 105.214 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 13:49:02 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e82d3a61f396bd4a1992",
+		"_id": "6666e82d3a61f396bd4a1994",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+		"createdAt": "2024-06-10T11:49:01.992Z",
+		"updatedAt": "2024-06-10T11:49:01.992Z"
+	}
+}
+Response: 201 156.380 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 10 2024 13:49:07 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 200 63.911 ms 
+
+Request: GET /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:49:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "6666e82d3a61f396bd4a1994",
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778",
+	"paginaID": "6666e82d3a61f396bd4a1992",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+	"createdAt": "2024-06-10T11:49:01.992Z",
+	"updatedAt": "2024-06-10T11:49:01.992Z"
+}
+Response: 200 52.773 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:49:40 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6666e82d3a61f396bd4a1994",
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e82d3a61f396bd4a1992",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+		"createdAt": "2024-06-10T11:49:01.992Z",
+		"updatedAt": "2024-06-10T11:49:01.992Z"
+	}
+}
+Response: 200 62.114 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:49:49 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6666e82d3a61f396bd4a1994",
+		"nombre": "Super Comercio 1",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e82d3a61f396bd4a1992",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+		"createdAt": "2024-06-10T11:49:01.992Z",
+		"updatedAt": "2024-06-10T11:49:40.587Z"
+	}
+}
+Response: 200 58.367 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:49:50 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6666e82d3a61f396bd4a1994",
+		"nombre": "Super Comercio 1",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e82d3a61f396bd4a1992",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+		"createdAt": "2024-06-10T11:49:01.992Z",
+		"updatedAt": "2024-06-10T11:49:49.363Z"
+	}
+}
+Response: 200 57.041 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:50:02 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6666e82d3a61f396bd4a1994",
+		"nombre": "Super Comercio 1",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e82d3a61f396bd4a1992",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+		"createdAt": "2024-06-10T11:49:01.992Z",
+		"updatedAt": "2024-06-10T11:49:50.685Z"
+	}
+}
+Response: 200 63.584 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:50:05 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6666e82d3a61f396bd4a1994",
+		"nombre": "Super Comercio 1111111111",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666e82d3a61f396bd4a1992",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlODJkM2E2MWYzOTZiZDRhMTk5NCIsImlhdCI6MTcxODAyMDE0MX0.qdf2kHFkxvkmqz7h5YsrvbXlwnGmBc7Xa0LVA0-cOI4",
+		"createdAt": "2024-06-10T11:49:01.992Z",
+		"updatedAt": "2024-06-10T11:50:02.126Z"
+	}
+}
+Response: 200 55.738 ms 
+
+Request: DELETE /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 13:51:19 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado físicamente"
+}
+Response: 200 183.897 ms 
+
+Request: GET /api/admin/users at Mon Jun 10 2024 14:02:13 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	}
+]
+Response: 200 77.807 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Mon Jun 10 2024 14:02:18 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-05T04:41:02.104Z"
+}
+Response: 200 67.499 ms 
+
+Request: POST /api/user/register at Mon Jun 10 2024 14:02:36 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Pepe",
+	"password": "passwordSegura",
+	"email": "pepe@example.com",
+	"edad": "26",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"nombre": "Pepe",
+	"email": "pepe@example.com",
+	"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+	"edad": 26,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"_id": "6666eb5c3c108bd9108f92ed",
+	"createdAt": "2024-06-10T12:02:36.856Z",
+	"updatedAt": "2024-06-10T12:02:36.856Z"
+}
+Response: 200 154.105 ms 
+
+Request: GET /api/admin/users at Mon Jun 10 2024 14:02:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:02:36.856Z"
+	}
+]
+Response: 200 63.439 ms 
+
+Request: GET /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:02:54 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "6666eb5c3c108bd9108f92ed",
+	"nombre": "Pepe",
+	"email": "pepe@example.com",
+	"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+	"edad": 26,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-10T12:02:36.856Z",
+	"updatedAt": "2024-06-10T12:02:36.856Z"
+}
+Response: 200 62.872 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:03:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:03:04.951Z"
+	}
+}
+Response: 200 78.143 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:03:39 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:03:39.680Z"
+	}
+}
+Response: 200 81.135 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:04:16 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:04:15.996Z"
+	}
+}
+Response: 200 79.333 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 14:05:30 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio no encontrado"
+}
+Response: 404 90.899 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:05:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:05:38.170Z"
+	}
+}
+Response: 200 85.051 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:05:50 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid",
+	"edad": 27
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:05:50.151Z"
+	}
+}
+Response: 200 80.370 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:05:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid",
+	"edad": 27
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:05:51.655Z"
+	}
+}
+Response: 200 73.836 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:05:52 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid",
+	"edad": 27
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$0Qw/tJdyTcj/8qR2HzF1xOPStCLi3og6TyrD7cEOrSi7.Tc3vsl96",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:05:52.822Z"
+	}
+}
+Response: 200 85.668 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed/password at Mon Jun 10 2024 14:06:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"newPassword": "nuevaContraseñaAunMasSegura"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "nuevaContraseñaAunMasSegura",
+			"msg": "La nueva contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "newPassword",
+			"location": "body"
+		}
+	]
+}
+Response: 403 40.512 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed/password at Mon Jun 10 2024 14:07:02 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"newPassword": "P@ssw0rd"
+}
+Response Body:
+{
+	"message": "Cotraseña actualizada con exito"
+}
+Response: 200 211.566 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed/email at Mon Jun 10 2024 14:07:10 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"newEmail": "nueviiiiiiiiiiiisimoEmail@gmail.com"
+}
+Response Body:
+{
+	"message": "Correo electrónico actualizado correctamente",
+	"user": {
+		"_id": "6666eb5c3c108bd9108f92ed",
+		"nombre": "nuevoNombre",
+		"email": "nueviiiiiiiiiiiisimoEmail@gmail.com",
+		"password": "$2a$10$xUyLbSOD6.p4HQu2LvlVzew3Sg4ppYebrbAYfkCDWA9XQN1erNLEW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-10T12:02:36.856Z",
+		"updatedAt": "2024-06-10T12:07:10.261Z"
+	}
+}
+Response: 200 123.982 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed/email at Mon Jun 10 2024 14:07:18 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El nuevo correo electrónico es requerido.",
+			"path": "newEmail",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El nuevo correo electrónico no puede estar vacío.",
+			"path": "newEmail",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "Debe ser un correo electrónico válido.",
+			"path": "newEmail",
+			"location": "body"
+		}
+	]
+}
+Response: 403 28.676 ms 
+
+Request: PUT /api/admin/user/6666eb5c3c108bd9108f92ed/email at Mon Jun 10 2024 14:07:25 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"newEmail": "nueviiiiiiiiiiiisimoEmail@gmail.com"
+}
+Response Body:
+{
+	"message": "El correo electrónico ya está en uso"
+}
+Response: 400 65.971 ms 
+
+Request: DELETE /api/admin/user/6666eb5c3c108bd9108f92ed at Mon Jun 10 2024 14:07:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Cuenta de usuario y reseñas asociadas eliminadas con éxito"
+}
+Response: 200 162.601 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:10:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666ed34e2cff3733888040a",
+		"_id": "6666ed34e2cff3733888040c",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlZDM0ZTJjZmYzNzMzODg4MDQwYyIsImlhdCI6MTcxODAyMTQyOH0.i1vLzwud3_V9_Ss6V_MyWW0v6fTxDXjbLpMLZ9RpUgk",
+		"createdAt": "2024-06-10T12:10:28.710Z",
+		"updatedAt": "2024-06-10T12:10:28.710Z"
+	}
+}
+Response: 201 144.546 ms 
+
+Request: DELETE /api/admin/comercios/6666ed34e2cff3733888040c at Mon Jun 10 2024 14:11:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado correctamente"
+}
+Response: 200 198.085 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:11:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El teléfono es requerido.",
+			"path": "telefono",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El teléfono no puede estar vacío.",
+			"path": "telefono",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El teléfono debe tener 9 caracteres.",
+			"path": "telefono",
+			"location": "body"
+		}
+	]
+}
+Response: 403 33.838 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:13:02 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666edcde2cff37338880417",
+		"_id": "6666edcde2cff37338880419",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlZGNkZTJjZmYzNzMzODg4MDQxOSIsImlhdCI6MTcxODAyMTU4MX0.4AWP3uYPLThbzySYd5SAUTdgMt6YBcEaBARBa31WKZg",
+		"createdAt": "2024-06-10T12:13:01.994Z",
+		"updatedAt": "2024-06-10T12:13:01.994Z"
+	}
+}
+Response: 201 144.956 ms 
+
+Request: PUT /api/admin/comercios/6666e82d3a61f396bd4a1994 at Mon Jun 10 2024 14:13:13 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio no encontrado"
+}
+Response: 404 60.461 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 10 2024 14:13:17 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 200 59.906 ms 
+
+Request: PUT /api/admin/comercios/6666edcde2cff37338880419 at Mon Jun 10 2024 14:13:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6666edcde2cff37338880419",
+		"nombre": "Super Comercio 1111111111",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666edcde2cff37338880417",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlZGNkZTJjZmYzNzMzODg4MDQxOSIsImlhdCI6MTcxODAyMTU4MX0.4AWP3uYPLThbzySYd5SAUTdgMt6YBcEaBARBa31WKZg",
+		"createdAt": "2024-06-10T12:13:01.994Z",
+		"updatedAt": "2024-06-10T12:13:27.927Z"
+	}
+}
+Response: 200 61.013 ms 
+
+Request: DELETE /api/admin/comercios/6666edcde2cff37338880419 at Mon Jun 10 2024 14:15:14 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado correctamente"
+}
+Response: 200 188.832 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:15:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AR",
+		"direccion": "Calle 6",
+		"email": "pruebaadmin7@example.com",
+		"telefono": "667788778",
+		"paginaID": "6666ee72e2cff37338880429",
+		"_id": "6666ee72e2cff3733888042b",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZlZTcyZTJjZmYzNzMzODg4MDQyYiIsImlhdCI6MTcxODAyMTc0Nn0.7fHspEayo2S_dE87J-vTlRg8QPiCUwpNm1Pj-yNYf70",
+		"createdAt": "2024-06-10T12:15:46.829Z",
+		"updatedAt": "2024-06-10T12:15:46.829Z"
+	}
+}
+Response: 201 138.121 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:15:47 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 61.994 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:15:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 58.515 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:15:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 63.959 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:15:49 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 59.603 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 10 2024 14:15:50 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AR",
+	"direccion": "Calle 6",
+	"email": "pruebaadmin7@example.com",
+	"telefono": "667788778"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 72.263 ms 
+
+Request: POST /api/admin/login at Sat Jun 22 2024 06:34:08 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZkZmQyYTA0MGQ2MzY2NGYyZjU3ZCIsImlhdCI6MTcxOTAzMDg0OCwiZXhwIjoxNzE5MTE3MjQ4fQ.rZd2sdrt1fzo2eMpRR9xNBOXuAKApTDXQWtztdLen1o"
+}
+Response: 200 117.648 ms 
+
+Request: GET /api/admin/comercios at Sat Jun 22 2024 06:34:32 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 200 68.245 ms 
+
+Request: GET /api/user/reviews at Sat Jun 22 2024 06:44:32 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 279.753 ms 
+
+Request: POST /api/user/register at Sat Jun 22 2024 06:45:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Pepe",
+	"password": "passwordSegura",
+	"email": "pepe@example.com",
+	"edad": "26",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"nombre": "Pepe",
+	"email": "pepe@example.com",
+	"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+	"edad": 26,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"_id": "667656ffd4b6ce17310ef231",
+	"createdAt": "2024-06-22T04:45:51.164Z",
+	"updatedAt": "2024-06-22T04:45:51.164Z"
+}
+Response: 200 242.740 ms 
+
+Request: POST /api/user/login at Sat Jun 22 2024 06:46:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "pepe@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzY1NmZmZDRiNmNlMTczMTBlZjIzMSIsImlhdCI6MTcxOTAzMTU2NCwiZXhwIjoxNzE5MTE3OTY0fQ.NFpMjeNELHy9VGv5qqosRHw2r203NphPuh9LlUivPZs
+Response: 200 95.626 ms 
+
+Request: GET /api/user/reviews at Sat Jun 22 2024 06:46:21 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 321.305 ms 
+
+Request: POST /api/user/66604a9b9f0d7b9c1cff39a3/review at Sat Jun 22 2024 06:46:33 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "66604a9b9f0d7b9c1cff39a3",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "66765728d4b6ce17310ef237",
+		"createdAt": "2024-06-22T04:46:32.996Z",
+		"updatedAt": "2024-06-22T04:46:32.996Z"
+	}
+}
+Response: 201 189.363 ms 
+
+Request: GET /api/user/reviews at Sat Jun 22 2024 06:46:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 273.601 ms 
+
+Request: GET /api/user/reviews at Sat Jun 22 2024 06:47:36 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66765728d4b6ce17310ef237",
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "66604a9b9f0d7b9c1cff39a3",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"createdAt": "2024-06-22T04:46:32.996Z",
+		"updatedAt": "2024-06-22T04:46:32.996Z"
+	}
+]
+Response: 200 101.591 ms 
+
+Request: POST /api/user/6666ee72e2cff3733888042b/review at Sat Jun 22 2024 06:48:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Contenido no encontrado"
+}
+Response: 404 62.971 ms 
+
+Request: POST /api/user/6666ee72e2cff37338880429/review at Sat Jun 22 2024 06:48:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "6666ee72e2cff37338880429",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "667657aed4b6ce17310ef242",
+		"createdAt": "2024-06-22T04:48:46.117Z",
+		"updatedAt": "2024-06-22T04:48:46.117Z"
+	}
+}
+Response: 201 161.456 ms 
+
+Request: POST /api/user/666041f9b9bc68d084386be1/review at Sat Jun 22 2024 06:49:01 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "666041f9b9bc68d084386be1",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "667657bdd4b6ce17310ef248",
+		"createdAt": "2024-06-22T04:49:01.716Z",
+		"updatedAt": "2024-06-22T04:49:01.716Z"
+	}
+}
+Response: 201 158.736 ms 
+
+Request: GET /api/user/reviews at Sat Jun 22 2024 06:49:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66765728d4b6ce17310ef237",
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "66604a9b9f0d7b9c1cff39a3",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"createdAt": "2024-06-22T04:46:32.996Z",
+		"updatedAt": "2024-06-22T04:46:32.996Z"
+	},
+	{
+		"_id": "667657aed4b6ce17310ef242",
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "6666ee72e2cff37338880429",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"createdAt": "2024-06-22T04:48:46.117Z",
+		"updatedAt": "2024-06-22T04:48:46.117Z"
+	},
+	{
+		"_id": "667657bdd4b6ce17310ef248",
+		"usuarioID": "667656ffd4b6ce17310ef231",
+		"contenidoID": "666041f9b9bc68d084386be1",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"createdAt": "2024-06-22T04:49:01.716Z",
+		"updatedAt": "2024-06-22T04:49:01.716Z"
+	}
+]
+Response: 200 92.278 ms 
+
+Request: POST /api/admin/register at Sat Jun 22 2024 07:12:08 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 40.198 ms 
+
+Request: POST /api/admin/comercios at Sat Jun 22 2024 07:12:36 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AD",
+	"direccion": "Calle P",
+	"email": "pruebaadminD@example.com",
+	"telefono": "667788776"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AD",
+		"direccion": "Calle P",
+		"email": "pruebaadminD@example.com",
+		"telefono": "667788776",
+		"paginaID": "66765d44f717750f8d527908",
+		"_id": "66765d44f717750f8d52790a",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzY1ZDQ0ZjcxNzc1MGY4ZDUyNzkwYSIsImlhdCI6MTcxOTAzMzE1Nn0.EprPnFh1HxW5SMScsEY1UaJNFKRsupvsfeZNrm7QwlA",
+		"createdAt": "2024-06-22T05:12:36.728Z",
+		"updatedAt": "2024-06-22T05:12:36.728Z"
+	}
+}
+Response: 201 174.413 ms 
+
+Request: GET /api/admin/comercios at Sat Jun 22 2024 07:13:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 200 117.031 ms 
+
+Request: DELETE /api/comercios at Sat Jun 22 2024 07:14:17 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 171.515 ms 
+
+Request: POST /api/comercios at Sat Jun 22 2024 07:14:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "66765daff717750f8d527915",
+		"createdAt": "2024-06-22T05:14:23.339Z",
+		"updatedAt": "2024-06-22T05:14:23.339Z"
+	}
+}
+Response: 200 125.891 ms 
+
+Request: DELETE /api/comercios at Sat Jun 22 2024 07:14:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 140.924 ms 
+
+Request: POST /api/comercios at Sat Jun 22 2024 07:14:40 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La ciudad es obligatoria",
+			"path": "ciudad",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La ciudad no puede estar vacia",
+			"path": "ciudad",
+			"location": "body"
+		}
+	]
+}
+Response: 403 32.911 ms 
+
+Request: POST /api/comercios at Sat Jun 22 2024 07:14:49 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "66765dc9f717750f8d527920",
+		"createdAt": "2024-06-22T05:14:49.365Z",
+		"updatedAt": "2024-06-22T05:14:49.365Z"
+	}
+}
+Response: 200 128.071 ms 
+
+Request: PUT /api/comercios/contenido at Sat Jun 22 2024 07:25:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Granada",
+	"actividad": "Heladería",
+	"titulo": "Helados Frescos",
+	"resumen": "Los mejores helados artesanales.",
+	"text": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos."
+	],
+	"fotos": [
+		"foto1_comercio6.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66765dc9f717750f8d527920",
+		"ciudad": "Granada",
+		"actividad": "Heladería",
+		"titulo": "Helados Frescos",
+		"resumen": "Los mejores helados artesanales.",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-22T05:14:49.365Z",
+		"updatedAt": "2024-06-22T05:25:48.778Z"
+	}
+}
+Response: 200 108.080 ms 
+
+Request: POST /api/comercios/contenido/texts at Sat Jun 22 2024 07:25:53 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"text": "Este texto es increiblemente increible"
+}
+Response Body:
+{
+	"message": "Texto añadido correctamente",
+	"texto": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 113.989 ms 
+
+Request: POST /api/comercios/contenido/texts at Sat Jun 22 2024 07:26:00 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"text": ""
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "",
+			"msg": "El texto no puede estar vacio",
+			"path": "text",
+			"location": "body"
+		}
+	]
+}
+Response: 403 40.217 ms 
+
+Request: PUT /api/comercios/contenido at Sat Jun 22 2024 07:28:25 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Granada",
+	"actividad": "Heladería",
+	"titulo": "Helados Frescos",
+	"resumen": "Los mejores helados artesanales.",
+	"text": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos."
+	],
+	"fotos": [
+		"foto1_comercio6.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66765dc9f717750f8d527920",
+		"ciudad": "Granada",
+		"actividad": "Heladería",
+		"titulo": "Helados Frescos",
+		"resumen": "Los mejores helados artesanales.",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-22T05:14:49.365Z",
+		"updatedAt": "2024-06-22T05:28:25.194Z"
+	}
+}
+Response: 200 99.049 ms 
+
+Request: PUT /api/comercios/contenido at Sat Jun 22 2024 07:28:33 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"actividad": "Heladería",
+	"titulo": "Helados Frescos",
+	"resumen": "Los mejores helados artesanales.",
+	"text": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos."
+	],
+	"fotos": [
+		"foto1_comercio6.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66765dc9f717750f8d527920",
+		"ciudad": "Granada",
+		"actividad": "Heladería",
+		"titulo": "Helados Frescos",
+		"resumen": "Los mejores helados artesanales.",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-22T05:14:49.365Z",
+		"updatedAt": "2024-06-22T05:28:33.921Z"
+	}
+}
+Response: 200 91.277 ms 
+
+Request: POST /api/comercios/contenido/texts at Sat Jun 22 2024 07:29:30 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"text": "Este texto es increiblemente increible"
+}
+Response Body:
+{
+	"message": "Texto añadido correctamente",
+	"texto": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 157.488 ms 
+
+Request: POST /api/comercios/contenido/texts at Sat Jun 22 2024 07:29:37 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "El texto es obligatorio",
+			"path": "text",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "El texto no puede estar vacio",
+			"path": "text",
+			"location": "body"
+		}
+	]
+}
+Response: 403 32.892 ms 
+
+Request: DELETE /api/comercios/contenido/texts/0 at Sat Jun 22 2024 07:33:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Texto eliminado correctamente",
+	"texto": [
+		"Ingredientes naturales y frescos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 144.564 ms 
+
+Request: DELETE /api/comercios/contenido/texts/0 at Sat Jun 22 2024 07:33:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Texto eliminado correctamente",
+	"texto": [
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 106.810 ms 
+
+Request: DELETE /api/comercios/contenido/texts/ at Sat Jun 22 2024 07:33:58 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response: 404 1.322 ms 
+
+Request: DELETE /api/comercios/contenido/texts at Sat Jun 22 2024 07:34:03 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response: 404 0.700 ms 
+
+Request: DELETE /api/comercios/contenido/texts/-2 at Sat Jun 22 2024 07:34:10 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "-2",
+			"msg": "El indice del texto a borrar tiene que ser un entero",
+			"path": "textIndex",
+			"location": "params"
+		}
+	]
+}
+Response: 403 31.639 ms 
+
+Request: POST /api/user/register at Sun Jun 23 2024 02:48:01 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Pepe",
+	"password": "passwordSegura",
+	"email": "pepe@example.com",
+	"edad": "26",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "El usuario ya existe"
+}
+Response: 400 55.025 ms 
+
+Request: POST /api/user/register at Sun Jun 23 2024 02:48:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Cucurella",
+	"password": "passwordSegura",
+	"email": "Cucurella@example.com",
+	"edad": "16",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "16",
+			"msg": "Has de ser mayor de edad para registrarse",
+			"path": "edad",
+			"location": "body"
+		}
+	]
+}
+Response: 403 2.333 ms 
+
+Request: POST /api/user/register at Sun Jun 23 2024 02:48:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Cucurella",
+	"password": "passwordSegura",
+	"email": "Cucurella@example.com",
+	"edad": "18",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"nombre": "Cucurella",
+	"email": "Cucurella@example.com",
+	"password": "$2a$10$jhul0BcphTqwuDZwXLnXD.7t8zPMJU2BTiYdUc7fsNbpyynOU5oC6",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"_id": "667770e324623c60e52a0f9c",
+	"createdAt": "2024-06-23T00:48:35.613Z",
+	"updatedAt": "2024-06-23T00:48:35.613Z"
+}
+Response: 200 139.174 ms 
+
+Request: POST /api/user/register at Sun Jun 23 2024 02:51:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Cucurella",
+	"password": "passwordSegura",
+	"email": "Cucurella@example.com",
+	"edad": "18",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 298.706 ms 
+
+Request: POST /api/user/register at Sun Jun 23 2024 02:53:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Cucurella",
+	"password": "passwordSegura",
+	"email": "Cucurella@example.com",
+	"edad": "18",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 278.883 ms 
+
+Request: POST /api/admin/register at Sun Jun 23 2024 02:54:43 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 41.177 ms 
+
+Request: POST /api/admin/register at Sun Jun 23 2024 02:54:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "adminDany",
+	"password": "securePassword"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 31.768 ms 
+
+Request: POST /api/user/register at Sun Jun 23 2024 02:56:31 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Cucurella",
+	"password": "passwordSegura",
+	"email": "Cucurella@example.com",
+	"edad": "18",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "El usuario ya existe"
+}
+Response: 400 41.389 ms 
+
+Request: POST /api/user/login at Sun Jun 23 2024 03:12:59 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "Cucurella@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Nzc3MGUzMjQ2MjNjNjBlNTJhMGY5YyIsImlhdCI6MTcxOTEwNTE3OSwiZXhwIjoxNzE5MTkxNTc5fQ.e7A8CiflsoNsa12KbplIbJycRQjSIcx66PdNZBKdWCk
+Response: 200 112.814 ms 
+
+Request: POST /api/user/login at Sun Jun 23 2024 03:13:33 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "Cucurella@example.com",
+	"password": ""
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "",
+			"msg": "La contraseña no puede estar vacia",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 1.920 ms 
+
+Request: POST /api/user at Sun Jun 23 2024 03:44:07 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Bilbao",
+	"intereses": [
+		"Museo",
+		"Restaurante"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "Usuario actualizado con éxito",
+	"contenido": {
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "Cucurella@example.com",
+		"password": "$2a$10$jhul0BcphTqwuDZwXLnXD.7t8zPMJU2BTiYdUc7fsNbpyynOU5oC6",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"Restaurante"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-23T00:48:35.613Z",
+		"updatedAt": "2024-06-23T01:44:07.477Z"
+	}
+}
+Response: 200 130.300 ms 
+
+Request: POST /api/user at Sun Jun 23 2024 03:44:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Bilbao",
+	"intereses": [
+		"Museo",
+		"Restaurante"
+	],
+	"ofertas": "puta"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "puta",
+			"msg": "El campo de ofertas debe de ser un valor booleano",
+			"path": "ofertas",
+			"location": "body"
+		}
+	]
+}
+Response: 403 31.053 ms 
+
+Request: POST /api/user at Sun Jun 23 2024 03:44:42 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "",
+	"intereses": [
+		"Museo",
+		"Restaurante"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "",
+			"msg": "La ciudad no puede estar vacia",
+			"path": "ciudad",
+			"location": "body"
+		}
+	]
+}
+Response: 403 31.232 ms 
+
+Request: POST /api/user at Sun Jun 23 2024 03:44:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Bilbao",
+	"intereses": [
+		"Museo",
+		"Restaurante"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "Usuario actualizado con éxito",
+	"contenido": {
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "Cucurella@example.com",
+		"password": "$2a$10$jhul0BcphTqwuDZwXLnXD.7t8zPMJU2BTiYdUc7fsNbpyynOU5oC6",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"Restaurante"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-23T00:48:35.613Z",
+		"updatedAt": "2024-06-23T01:44:46.253Z"
+	}
+}
+Response: 200 131.844 ms 
+
+Request: PUT /api/user/email at Sun Jun 23 2024 03:51:17 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "megaprueba@example.com"
+}
+Response Body:
+{
+	"message": "Correo electrónico actualizado con éxito",
+	"user": {
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$jhul0BcphTqwuDZwXLnXD.7t8zPMJU2BTiYdUc7fsNbpyynOU5oC6",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"Restaurante"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-23T00:48:35.613Z",
+		"updatedAt": "2024-06-23T01:51:17.763Z"
+	}
+}
+Response: 200 137.265 ms 
+
+Request: PUT /api/user/email at Sun Jun 23 2024 03:51:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": ""
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "",
+			"msg": "El nombre no puede estar vacio",
+			"path": "email",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"value": "",
+			"msg": "El correo electronico debe de ser valido",
+			"path": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 403 31.931 ms 
+
+Request: PUT /api/user/email at Sun Jun 23 2024 03:51:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "megaprueba@example.com"
+}
+Response Body:
+{
+	"message": "El correo electrónico ya está en uso"
+}
+Response: 400 87.246 ms 
+
+Request: PUT /api/user/password at Sun Jun 23 2024 03:54:39 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"oldPassword": "passwordSegura",
+	"newPassword": "nuevaPasswordSegura"
+}
+Response Body:
+{
+	"message": "Contraseña actualizado con éxito"
+}
+Response: 200 238.914 ms 
+
+Request: PUT /api/user/password at Sun Jun 23 2024 03:54:46 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"oldPassword": "",
+	"newPassword": "nuevaPasswordSegura"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "",
+			"msg": "La contraseña antigua no puede estar vacia",
+			"path": "oldPassword",
+			"location": "body"
+		}
+	]
+}
+Response: 403 35.712 ms 
+
+Request: PUT /api/user/password at Sun Jun 23 2024 03:54:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"oldPassword": "passwordSegura",
+	"newPassword": "nuevaPasswordSegura"
+}
+Response Body:
+{
+	"message": "Contraseña antigua incorrecta"
+}
+Response: 400 115.075 ms 
+
+Request: PUT /api/user/password at Sun Jun 23 2024 03:54:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"oldPassword": "passwordSegura",
+	"newPassword": ""
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "",
+			"msg": "La contraseña nueva no puede estar vacia",
+			"path": "newPassword",
+			"location": "body"
+		}
+	]
+}
+Response: 403 30.081 ms 
+
+Request: POST /api/user/666041f9b9bc68d084386be1/review at Sun Jun 23 2024 04:03:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 513.858 ms 
+
+Request: POST /api/user/666041f9b9bc68d084386be1/review at Sun Jun 23 2024 04:04:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"usuarioID": "667770e324623c60e52a0f9c",
+		"contenidoID": "666041f9b9bc68d084386be1",
+		"comentario": "Excelente servicio y comida deliciosa.",
+		"puntuacion": 5,
+		"_id": "667782c8c0d583b09e81c00d",
+		"createdAt": "2024-06-23T02:04:56.438Z",
+		"updatedAt": "2024-06-23T02:04:56.438Z"
+	}
+}
+Response: 201 232.689 ms 
+
+Request: POST /api/user/666041f9b9bc68d084386be1/review at Sun Jun 23 2024 04:04:59 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": 5
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 87.380 ms 
+
+Request: POST /api/user/666041f9b9bc68d084386be1/review at Sun Jun 23 2024 04:05:09 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa."
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"msg": "La puntuacion es obligatoria",
+			"path": "puntuacion",
+			"location": "body"
+		},
+		{
+			"type": "field",
+			"msg": "La puntuacion a de ser un numero entero entre 1 y 5",
+			"path": "puntuacion",
+			"location": "body"
+		}
+	]
+}
+Response: 403 34.144 ms 
+
+Request: POST /api/user/666041f9b9bc68d084386be1/review at Sun Jun 23 2024 04:05:18 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Excelente servicio y comida deliciosa.",
+	"puntuacion": -1000
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": -1000,
+			"msg": "La puntuacion a de ser un numero entero entre 1 y 5",
+			"path": "puntuacion",
+			"location": "body"
+		}
+	]
+}
+Response: 403 287.178 ms 

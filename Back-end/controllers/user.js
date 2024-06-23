@@ -1,6 +1,7 @@
 const {contenidoModel, userModel, reviewModel} = require('../models')
 const jwt = require('jsonwebtoken');
 const review = require('../models/nosql/review');
+const { matchedData } = require('express-validator')
 
 //--------------------------------------------------------------------------------------------------------------------------
 //                                         GESTION DE USUARIOS PUBLICOS
@@ -139,23 +140,14 @@ const getContenidoByID = async (req, res, next) => {
 
 const registerUser = async (req, res, next) => {
 
-    const { nombre, email, password, edad, ciudad, intereses, ofertas } = req.body
+    const data = matchedData(req)
 
     try {
 
-        const existingUser = await userModel.findOne({email})
+        const existingUser = await userModel.findOne({email: data.email})
         if(existingUser) return res.status(400).send({message: 'El usuario ya existe'})
 
-        const newUser = new userModel({
-            nombre,
-            email,
-            edad,
-            password,
-            ciudad,
-            intereses,
-            ofertas
-
-        })
+        const newUser = new userModel(data)
 
         await newUser.save()
 
@@ -175,14 +167,14 @@ const registerUser = async (req, res, next) => {
 // Iniciar sesion
 const loginUser = async (req, res, next) =>{
 
-    const { email , password } = req.body
+    const data = matchedData(req)
 
     try {
 
-        const user = await userModel.findOne({email})
+        const user = await userModel.findOne({email: data.email})
         if(!user) return res.status(404).send({message : 'Usuario no encontrado'})
         
-        const isMatch = await user.comparePassword(password)
+        const isMatch = await user.comparePassword(data.password)
         if(!isMatch) return res.status(400).send({message : 'Contraseña incorrecta'})
         
         const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: '24h'})
@@ -199,7 +191,7 @@ const loginUser = async (req, res, next) =>{
 const updateUser = async (req, res, next) => {
 
     const {id} = req.user
-    const { ciudad, intereses , ofertas } = req.body
+    const { ciudad, intereses , ofertas } = matchedData(req)
 
     try {
 
@@ -222,7 +214,7 @@ const updateUser = async (req, res, next) => {
 const updateEmail = async (req, res, next) => {
 
     const {id} = req.user;
-    const { email } = req.body;
+    const { email } = matchedData(req);
 
     try {
 
@@ -249,7 +241,7 @@ const updateEmail = async (req, res, next) => {
 const updatePassword = async(req, res, next) => {
 
     const {id} = req.user
-    const { oldPassword, newPassword } = req.body
+    const { oldPassword, newPassword } = matchedData(req)
 
     try {
 
@@ -320,7 +312,7 @@ const deleteUser = async (req, res, next) => {
 
 const postReview = async (req, res, next) => {
 
-    const { comentario, puntuacion } = req.body
+    const { comentario, puntuacion } = matchedData(req)
     const { contenidoId } = req.params
     const { id } = req.user
 
@@ -360,6 +352,33 @@ const postReview = async (req, res, next) => {
 
 }
 
+// Listar todas las reviews escritas por un usuario
+
+const getUserReview = async (req, res, next) => {
+
+    const { id } = req.user
+
+    try {
+
+        const user = await userModel.findById(id)
+        if(!user) return res.status(404).send({message: 'Usuario no encontrado'})
+
+        const reviews = await reviewModel.find({usuarioID:id})
+        if(!reviews) return res.status(404).send({message: 'El usuario no ha publicado ninguna review'})
+
+        res.status(200).send(reviews)
+
+        
+    } catch (error) {
+        
+        next(error)
+    }
+
+
+
+}
+
+
 //Prueba de error de slack
 const pruebaSlack = async (req, res, next) =>{
 
@@ -385,5 +404,6 @@ module.exports = {  getContenido,
                     updatePassword,
                     deleteUser,
                     postReview,
+                    getUserReview,
                     pruebaSlack
                 }

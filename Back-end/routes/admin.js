@@ -17,17 +17,27 @@ const { postRegisterAdmin,
         updateUserPassword,
         updateUserEmail,
         deleteUser
-        } = require('../controllers/admin')
+    } = require('../controllers/admin')
+
+const {
+        validatorCreateAdmin,
+        validatorLoginAdmin,
+        validatorCreateComercio,
+        validatorUpdateComercio,
+        validatorUpdateUser,
+        validatorUpdatePassword,
+        validatorUpdateEmail
+    } = require('../validators/admin')
 
 //--------------------------------------------------------------------------------------------------------------------------
 //                                  RUTAS DE ADMINISTRADOR
 //--------------------------------------------------------------------------------------------------------------------------
 
 //Ruta para registar un administrador
-router.post('/register',postRegisterAdmin)
+router.post('/register',validatorCreateAdmin, postRegisterAdmin)
 
 //Ruta para loguear un administrador
-router.post('/login',loginAdmin)
+router.post('/login',validatorLoginAdmin, loginAdmin)
 
 
 //--------------------------------------------------------------------------------------------------------------------------
@@ -35,10 +45,10 @@ router.post('/login',loginAdmin)
 //--------------------------------------------------------------------------------------------------------------------------
 
 //Ruta para registrar un nuevo comercio
-router.post('/comercios', auth, auth.isAdmin, postComercio)
+router.post('/comercios', auth, auth.isAdmin, validatorCreateComercio, postComercio)
 
 //Ruta para modificar un comercio
-router.put('/comercios/:id',auth, auth.isAdmin, putComercio)
+router.put('/comercios/:id',auth, auth.isAdmin, validatorUpdateComercio, putComercio)
 
 //Ruta para obtener todos los comercios
 router.get('/comercios',auth, auth.isAdmin, getComercios)
@@ -60,15 +70,15 @@ router.get('/users', auth, auth.isAdmin, getAllUsers)
 router.get('/user/:id', auth, auth.isAdmin, getUser )
 
 //Ruta para actualizar un usuario
-router.put('/user/:id', auth, auth.isAdmin, updateUser)
+router.put('/user/:id', auth, auth.isAdmin, validatorUpdateUser, updateUser)
 
 //Ruta para actualizar la contraseña de un usuario
-router.put('/user/:id/password', auth, auth.isAdmin, updateUserPassword)
+router.put('/user/:id/password', auth, auth.isAdmin, validatorUpdatePassword, updateUserPassword)
 
 //Ruta para actualizar el email de un usuario
-router.put('/user/:id/email', auth, auth.isAdmin, updateUserEmail)
+router.put('/user/:id/email', auth, auth.isAdmin,validatorUpdateEmail, updateUserEmail)
 
-//Ruta para actualizar el email de un usuario
+//Ruta para eliminar un usuario
 router.delete('/user/:id', auth, auth.isAdmin, deleteUser)
 
 module.exports = router

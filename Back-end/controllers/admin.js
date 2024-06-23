@@ -1,4 +1,5 @@
 //Importamos las rutas necesarias
+const { matchedData } = require("express-validator")
 const{comerciosModel, adminModel, contenidoModel, reviewModel, userModel} = require("../models")
 const jwt = require('jsonwebtoken')
 
@@ -9,7 +10,7 @@ const jwt = require('jsonwebtoken')
 //Ruta para Registro de Admin
 const postRegisterAdmin = async (req, res, next) => {
 
-    const {username, password} = req.body
+    const {username, password} = matchedData(req)
 
     try{
 
@@ -35,7 +36,7 @@ const postRegisterAdmin = async (req, res, next) => {
 //Ruta para Login de Administradores
 const loginAdmin = async (req, res, next) => {
 
-    const { username, password } = req.body;
+    const { username, password } = matchedData(req)
 
     try {
 
@@ -61,7 +62,7 @@ const loginAdmin = async (req, res, next) => {
 // Ruta para registrar un nuevo comercio
 const postComercio = async (req, res, next) => {
 
-    const { nombre, CIF, direccion, email, telefono } = req.body;
+    const { nombre, CIF, direccion, email, telefono } = matchedData(req);
 
     try {
         // Verificar si ya existe un comercio con el mismo CIF, email o teléfono
@@ -107,11 +108,11 @@ const postComercio = async (req, res, next) => {
 const putComercio = async (req, res, next) =>{
 
     const { id } = req.params; // Obtener el ID del comercio desde la URL
-    const updateData = req.body; // Datos para actualizar
+    const updateData = matchedData(req) // Datos para actualizar
 
     try {
 
-        const updatedComercio = await comerciosModel.findByIdAndUpdate(id, updateData);
+        const updatedComercio = await comerciosModel.findByIdAndUpdate(id, updateData, {new:true});
 
         if (!updatedComercio) {
 
@@ -186,11 +187,11 @@ const deleteComercio = async (req, res, next) => {
         // Elimina el comercio
         await comerciosModel.findByIdAndDelete(id);
 
-        res.send({ message: 'Comercio y contenido eliminado físicamente' });
+        res.send({ message: 'Comercio y contenido eliminado correctamente' });
 
     } catch (error) {
 
-         next(error)
+        next(error)
     }
 };
 
@@ -238,10 +239,11 @@ const getUser = async (req, res, next) => {
 const updateUser =  async( req, res, next) => {
 
     const { id } = req.params
+    const updateData = matchedData(req)
 
     try {
 
-        const user = await userModel.findByIdAndUpdate(id, req.body, {new: true})
+        const user = await userModel.findByIdAndUpdate(id, updateData, {new: true})
         if(!user) return res.status(404).send({message: 'Usuario no encontrado'})
         
         res.status(200).send({message : 'Usuario actualizado correctamente',user})
@@ -258,7 +260,7 @@ const updateUser =  async( req, res, next) => {
 const updateUserPassword =  async( req, res, next) => {
 
     const { id } = req.params
-    const { newPassword } = req.body 
+    const { newPassword } = matchedData(req) 
 
     try {
 
@@ -282,7 +284,7 @@ const updateUserPassword =  async( req, res, next) => {
 const updateUserEmail = async (req, res, next) => {
 
     const { id } = req.params;
-    const { newEmail } = req.body;
+    const { newEmail } = matchedData(req)
 
     try {
 

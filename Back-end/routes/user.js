@@ -17,10 +17,19 @@ const { getContenido,
         updatePassword,
         deleteUser,
         postReview,
+        getUserReview,
         pruebaSlack
-        
-
         } = require ('../controllers/user')
+
+const { 
+        validatorRegisterUser,
+        validatorLoginUser,
+        validatorUpdateUser,
+        validatorUpdateEmail,
+        validatorUpdatePassword,
+        validatorPostReview
+
+        } = require('../validators/user')
 
 //--------------------------------------------------------------------------------------------------------------------------
 //RUTA PARA USUARIOS PUBLICOS
@@ -42,29 +51,33 @@ router.get('/comercios/contenido/ciudad/actividad', getContenidoByCiudadAndActiv
 router.get('/comercios/contenido/:id', getContenidoByID)
 
 //Ruta para registrar un usuario
-router.post('/register', registerUser)
+router.post('/register', validatorRegisterUser, registerUser)
 
 //--------------------------------------------------------------------------------------------------------------------------
 //RUTAS PARA USUARIOS REGISTRADOS
 //--------------------------------------------------------------------------------------------------------------------------
 
 //Ruta para iniciar sesion un usuario
-router.post('/login', loginUser)
+router.post('/login', validatorLoginUser, loginUser)
 
 //Ruta para actualizar un usuario
-router.post('/', auth, auth.isUser, updateUser)
+router.post('/', auth, auth.isUser, validatorUpdateUser, updateUser)
 
 //Ruta para actualizar el correo de un usuario
-router.put('/email',auth, auth.isUser, updateEmail)
+router.put('/email',auth, auth.isUser, validatorUpdateEmail, updateEmail)
 
 //Ruta para actualizar la contraseña de un usuario
-router.put('/password',auth, auth.isUser, updatePassword)
+router.put('/password',auth, auth.isUser, validatorUpdatePassword, updatePassword)
 
 //Ruta para darse de baja como usuario
 router.delete('/baja',auth, auth.isUser, deleteUser)
 
-//Ruta para poner una reseña
-router.post('/:contenidoId/review', auth, auth.isUser, postReview)
+//Ruta para publicar una reseña
+router.post('/:contenidoId/review', auth, auth.isUser, validatorPostReview, postReview)
+
+//Ruta para obtener todas las reviews de un usuario
+router.get('/reviews', auth, auth.isUser, getUserReview)
+
 
 //--------------------------------------------------------------------------------------------------------------------------
 //                                      Prueba de SLACK

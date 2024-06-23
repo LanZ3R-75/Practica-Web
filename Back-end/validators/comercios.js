@@ -1,29 +1,108 @@
 // Importa la función check de express-validator para validar campos de la solicitud y la función validateResults para manejar los resultados de la validación.
-const {check} = require("express-validator")
+const {check, param} = require("express-validator")
 const validateResults = require("../utils/handleValidator")
 
-// Define un arreglo de validaciones para la creación de un ítem.
-const validatorCreateItem = [
+// Validador para crear un contenido nuevo
+const validatorCreateContenido = [
 
-    check("nombre").exists().notEmpty().isLength({min:2, max:20}), // Verifica que el campo 'nombre' exista, no esté vacío, y tenga una longitud entre 2 y 20 caracteres.
-    check("CIF").exists().notEmpty(), // Verifica que el campo 'CIF' exista y no esté vacío.
-    check("direccion").exists().notEmpty().isLength({min:5, max:50}),  // Verifica que el campo 'direccion' exista, no esté vacío, y tenga una longitud entre 5 y 50 caracteres.
-    check("email").exists().notEmpty().isEmail(),  // Verifica que el campo 'email' exista, no esté vacío, y sea un correo electrónico válido.
-    check("telefono").exists().notEmpty().isLength({ min: 9, max: 9 }), // Verifica que el campo 'telefono' exista, no esté vacío, y tenga exactamente 9 caracteres.
-    check("id_pagina").exists().notEmpty().isNumeric(),// Verifica que el campo 'id_pagina' exista, no esté vacío, y sea numérico
+    check("ciudad")
+        .exists().withMessage("La ciudad es obligatoria")
+        .notEmpty().withMessage("La ciudad no puede estar vacia"),
 
-    (req, res, next) => validateResults(req, res, next)  // Middleware personalizado que utiliza validateResults para manejar los errores de validación.
+    check("actividad")
+        .exists().withMessage("La actividad es obligatoria")
+        .notEmpty().withMessage("La actividad no puede estar vacia"),
+
+    check("titulo")
+        .exists().withMessage("El titulo es obligatorio")
+        .notEmpty().withMessage("El titulo no puede estar vacio"),
+
+    check("resumen")
+        .exists().withMessage("La ciudad es obligatoria")
+        .notEmpty().withMessage("La ciudad no puede estar vacia"),
+
+    check("text")
+        .optional()
+        .isArray(),
+    
+    check("fotos")
+        .optional()
+        .isArray(),
+
+    (req, res, next) => validateResults(req, res, next)  
 ]
 
-// Define un arreglo de validaciones para la comprobar que existe el CIF de un ítem.
-const validatorGetItem = [
+// Validador para la actualizacion de un contenido
+const validatorUpdateContenido = [
 
-    check("cif").exists().notEmpty(),  // Verifica que el parámetro 'cif' exista y no esté vacío.
+    check("ciudad")
+        .optional()
+        .notEmpty().withMessage("La ciudad no puede estar vacia"),
+
+    check("actividad")
+        .optional()
+        .notEmpty().withMessage("La actividad no puede estar vacia"),
+
+    check("titulo")
+        .optional()
+        .notEmpty().withMessage("El titulo no puede estar vacio"),
+
+    check("resumen")
+        .optional()
+        .notEmpty().withMessage("La ciudad no puede estar vacia"),
+
+    check("text")
+        .optional()
+        .isArray(),
+    
+    check("fotos")
+        .optional()
+        .isArray(),
+
+    (req, res, next) => validateResults(req, res, next)  
+]
+
+// Validador para crear un texto
+const validatorUploadText = [
+
+    check("text")
+        .exists().withMessage("El texto es obligatorio")
+        .notEmpty().withMessage("El texto no puede estar vacio"),
+
+    (req, res, next) => validateResults(req, res, next)  
+]
+
+// Validador para borrar un texto
+const validatorDeleteText = [
+
+    param("textIndex")
+        .exists().withMessage("El indice del texto a borrar es obligatorio")
+        .isInt({min:0}).withMessage("El indice del texto a borrar tiene que ser un entero"),
+
+    (req, res, next) => validateResults(req, res, next)  
+]
+
+// Validador para subir una foto
+const validatorUploadFoto = [
 
     (req, res, next) => {
 
-        return validateResults(req, res, next) // Utiliza validateResults como middleware para procesar y manejar los resultados de la validación.
+        if (!req.file){
+            return res.status(400).send({message: "No se ha subido ninguna foto"})
+        }
+
+        next()
     }
 ]
 
-module.exports = {validatorCreateItem, validatorGetItem}
+// Validador para borrar una foto
+const validatorDeleteFoto = [
+
+    param("fotoIndex")
+        .exists().withMessage("El indice de la foto a borrar es obligatorio")
+        .isInt({min:0}).withMessage("El indice de la foto a borrar tiene que ser un entero"),
+
+    (req, res, next) => validateResults(req, res, next)  
+]
+
+module.exports = {validatorCreateContenido, validatorUpdateContenido, validatorUploadText, validatorDeleteText, validatorUploadFoto, validatorDeleteFoto}

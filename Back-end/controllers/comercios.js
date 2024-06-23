@@ -8,6 +8,7 @@ const{comerciosModel, contenidoModel, userModel, reviewModel} = require("../mode
 const jwt = require('jsonwebtoken')
 const fs = require('fs')
 const path = require('path')
+const { matchedData } = require("express-validator")
 
 //Creamos la pagina de contenido (Solo si no existe una ya)
 
@@ -26,7 +27,8 @@ const createContenido = async (req, res, next) => {
         }
 
         // Crear nuevo contenido
-        const nuevoContenido = new contenidoModel({ ...req.body });
+        const cleanData = matchedData(req);
+        const nuevoContenido = new contenidoModel(cleanData);
         await nuevoContenido.save();
 
         // Actualizar el comercio con el nuevo id de la pagina
@@ -87,7 +89,9 @@ const updateContenido = async (req, res, next) => {
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
 
-        const updateContenido = await contenidoModel.findByIdAndUpdate(comercio.paginaID, req.body, { new: true });
+        const cleanData = matchedData(req);
+
+        const updateContenido = await contenidoModel.findByIdAndUpdate(comercio.paginaID, cleanData, { new: true });
         if (!updateContenido) return res.status(404).send({ message: 'Página web no encontrada' });
 
         res.status(200).send({ message: 'Página web actualizada con éxito', contenido: updateContenido });
@@ -103,7 +107,7 @@ const updateContenido = async (req, res, next) => {
 const uploadText = async (req, res, next) => {
 
     const {id} = req.user;
-    const { text } = req.body;
+    const { text } = matchedData(req);
 
     try {
 

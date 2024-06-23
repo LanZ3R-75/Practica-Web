@@ -1,5 +1,5 @@
 ##Variables 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWUwYjliYzY4ZDA4NDM4NmJkNyIsImlhdCI6MTcxNzU4NDM1Mn0.YuRt1abVkCZN8Q8wQX4Zkzkxw_EUsHP19Z7_kQt4S-k
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzY1ZDQ0ZjcxNzc1MGY4ZDUyNzkwYSIsImlhdCI6MTcxOTAzMzE1Nn0.EprPnFh1HxW5SMScsEY1UaJNFKRsupvsfeZNrm7QwlA
 
 ###Crear una nueva pagina de contenido 
 POST http://localhost:3000/api/comercios

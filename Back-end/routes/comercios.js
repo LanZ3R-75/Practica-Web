@@ -6,7 +6,25 @@ const router = express.Router()
 const multer = require("multer");
 const path = require("path");
 const auth = require('../utils/auth');
-const { createContenido, deleteContenido, uploadFoto, deleteFoto, uploadText, deleteText, updateContenido, consultarIntereses} = require("../controllers/comercios");
+
+const { createContenido, 
+        deleteContenido, 
+        uploadFoto, 
+        deleteFoto, 
+        uploadText, 
+        deleteText, 
+        updateContenido, 
+        consultarIntereses
+    } = require("../controllers/comercios");
+
+const { validatorCreateContenido,
+        validatorUpdateContenido,
+        validatorUploadText,
+        validatorDeleteText,
+        validatorUploadFoto,
+        validatorDeleteFoto
+
+    } = require("../validators/comercios");
 
 //GESTION DEL MULTER
 
@@ -37,25 +55,25 @@ const upload = multer({
 //RUTAS
 
 // Ruta para crear un nuevo contenido
-router.post("/", auth, auth.isComercio, createContenido); 
+router.post("/", auth, auth.isComercio,validatorCreateContenido, createContenido); 
 
 // Ruta para crear un nuevo contenido
 router.delete("/", auth, auth.isComercio, deleteContenido); 
 
 // Ruta para actualizar contenido de comercio
-router.put("/contenido", auth, auth.isComercio, updateContenido) 
+router.put("/contenido", auth, auth.isComercio, validatorUpdateContenido, updateContenido) 
 
 // Ruta para subir texto
-router.post("/contenido/texts", auth.isComercio, uploadText); 
+router.post("/contenido/texts", auth.isComercio, validatorUploadText, uploadText); 
 
 //Ruta para eliminar un texto
-router.delete("/contenido/texts/:textIndex", auth.isComercio, deleteText); 
+router.delete("/contenido/texts/:textIndex", auth.isComercio, validatorDeleteText, deleteText); 
 
 //Ruta para subir fotos
-router.post("/contenido/fotos", auth.isComercio, upload.single('photo'), uploadFoto);
+router.post("/contenido/fotos", auth.isComercio, upload.single('photo'), validatorUploadFoto, uploadFoto);
 
 //Ruta para eliminar una foto
-router.delete("/contenido/fotos/:fotoIndex", auth.isComercio, deleteFoto); 
+router.delete("/contenido/fotos/:fotoIndex", auth.isComercio, validatorDeleteFoto, deleteFoto); 
 
 // Ruta para consultar intereses de usuarios
 router.get('/contenido/intereses', auth.isComercio, consultarIntereses);
