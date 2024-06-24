@@ -1,5 +1,4 @@
-"use client"
-// src/components/admin/AdminDashboard.jsx
+"use client";
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -47,8 +46,11 @@ const AdminDashboard = () => {
     }
   };
 
+  const handleRegisterComercio = () => {
+    router.push('/admin/registrarComercio');
+  };
+
   return (
-    
     <div className="container mx-auto px-4">
       <h1 className="text-2xl font-bold my-4">Admin Dashboard</h1>
       <section>
@@ -75,6 +77,12 @@ const AdminDashboard = () => {
 
       <section className="mt-8">
         <h2 className="text-xl font-semibold mb-2">Comercios</h2>
+        <button
+          onClick={handleRegisterComercio}
+          className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
+        >
+          Registrar Nuevo Comercio
+        </button>
         <table className="min-w-full bg-white">
           <thead>
             <tr>

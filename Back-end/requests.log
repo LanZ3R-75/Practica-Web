@@ -5814,3 +5814,1611 @@ Response Body:
 			"R
 ...
 Response: 304 52.483 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:18:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNjI4MSwiZXhwIjoxNzE5MjkyNjgxfQ.jHIvMIfBAFLNHz4giZ5yUCPZ0PUgJ4LZiU-5iRWCnMk"
+}
+Response: 200 108.073 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:18:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 63.026 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:18:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 55.087 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:18:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 56.561 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:18:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 200 57.145 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:18:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 51.158 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:18:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 52.853 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:20:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 52.681 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:20:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 54.355 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:20:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 86.177 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:20:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 95.333 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:21:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNjQ4OSwiZXhwIjoxNzE5MjkyODg5fQ.Vu10a11UgSVr_0MQv-AqCQttyTfTcDf9xWqRDXYZzuQ"
+}
+Response: 200 90.542 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:21:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 51.824 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:21:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 55.595 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:21:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 52.350 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:21:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 50.363 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:22:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 50.829 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:22:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 53.297 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:22:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 51.066 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:22:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 50.458 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:25:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNjcxMCwiZXhwIjoxNzE5MjkzMTEwfQ.8n_C-nd532msu_O0Ug0SYzDLh3VtRmuS8dtDz0Ms8yU"
+}
+Response: 200 90.427 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:25:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 49.577 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:25:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 50.918 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:25:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 46.706 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:25:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 50.618 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:27:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNjg1NSwiZXhwIjoxNzE5MjkzMjU1fQ.LPCoDLTHLly0x7n-gPSWlzz_8EtXDxu1YF5v1FXJlqU"
+}
+Response: 200 86.715 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:27:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 51.297 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:27:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 56.786 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:27:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 49.691 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:27:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 49.895 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:31:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 53.302 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:31:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 62.388 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:31:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 49.813 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:31:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 53.739 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 53.484 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 56.303 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 52.012 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 56.757 ms 
+
+Request: POST /api/admin/comercios at Mon Jun 24 2024 07:44:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"nombre": "Tienda de Prueba",
+	"CIF": "CIF123456",
+	"direccion": "Calle Falsa 123",
+	"email": "testeo2@gmail.com",
+	"telefono": "987654321"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Tienda de Prueba",
+		"CIF": "CIF123456",
+		"direccion": "Calle Falsa 123",
+		"email": "testeo2@gmail.com",
+		"telefono": "987654321",
+		"paginaID": "667907d208bf68f460116fef",
+		"_id": "667907d208bf68f460116ff1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzkwN2QyMDhiZjY4ZjQ2MDExNmZmMSIsImlhdCI6MTcxOTIwNzg5MH0.EUprTXLu_ox2ea_jBhxjdkLrZ5XWGIpj6eIes_IsSng",
+		"createdAt": "2024-06-24T05:44:50.873Z",
+		"updatedAt": "2024-06-24T05:44:50.873Z"
+	}
+}
+Response: 201 189.822 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:45:55 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 58.403 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:45:55 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 200 64.964 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:45:55 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 63.198 ms 
+
+Request: GET /api/admin/comercios at Mon Jun 24 2024 07:45:55 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "666041eeb9bc68d084386bdd",
+		"nombre": "Comercio 3",
+		"CIF": "CIF0003",
+		"direccion": "Calle 3",
+		"email": "comercio3@example.com",
+		"telefono": "1122334455",
+		"paginaID": "66604a9b9f0d7b9c1cff39a3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWVlYjliYzY4ZDA4NDM4NmJkZCIsImlhdCI6MTcxNzU4NDM2Nn0.HOW0v5pzIAGGf5o6XsRO2t7X4Jd56xmoN-3-GNgcKJg",
+		"createdAt": "2024-06-05T10:46:06.854Z",
+		"updatedAt": "2024-06-05T11:23:07.083Z"
+	},
+	{
+		"_id": "666041f9b9bc68d084386be3",
+		"nombre": "Comercio 4",
+		"CIF": "CIF0004",
+		"direccion": "Calle 4",
+		"email": "comercio4@example.com",
+		"telefono": "5566778899",
+		"paginaID": "666041f9b9bc68d084386be1",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MWY5YjliYzY4ZDA4NDM4NmJlMyIsImlhdCI6MTcxNzU4NDM3N30.nqjXK8TbtAXgfSVolcJhsZmKWTgEKumqWQJIdc0d1mE",
+		"createdAt": "2024-06-05T10:46:17.089Z",
+		"updatedAt": "2024-06-05T10:46:17.089Z"
+	},
+	{
+		"_id": 
+...
+Response: 304 67.485 ms 
