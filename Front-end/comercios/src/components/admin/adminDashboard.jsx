@@ -35,7 +35,7 @@ const AdminDashboard = () => {
 
   const fetchComercios = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/admin/comercios', {
+      const response = await fetch('http://localhost:3000/api/admin/comercios', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
         },
