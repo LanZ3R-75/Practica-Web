@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 0, 123, 255; /* Azul Primario */
+  --color-primary-dark: 0, 86, 179; /* Azul Oscuro */
+  --color-background: 255, 255, 255; /* Blanco */
+  --color-secondary: 108, 117, 125; /* Gris Medio */
+  --color-secondary-light: 248, 249, 250; /* Gris Claro */
+  --color-success: 40, 167, 69; /* Verde */
+  --color-danger: 220, 53, 69; /* Rojo */
+  --color-warning: 255, 193, 7; /* Amarillo */
+  --color-info: 253, 126, 20; /* Naranja */
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: rgb(var(--color-primary));
+}
+
+button {
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-background));
+}
+
+button.success {
+  background-color: rgb(var(--color-success));
+}
+
+button.danger {
+  background-color: rgb(var(--color-danger));
+}
+
+button.warning {
+  background-color: rgb(var(--color-warning));
+}
+
+button.info {
+  background-color: rgb(var(--color-info));
+}
+
+.navbar {
+  background-color: rgb(var(--color-primary-dark));
+  color: rgb(var(--color-background));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

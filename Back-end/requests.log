@@ -5485,3 +5485,332 @@ Response Body:
 	]
 }
 Response: 403 287.178 ms 
+
+Request: GET /admin at Mon Jun 24 2024 06:38:00 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 2.263 ms 
+
+Request: GET /admin at Mon Jun 24 2024 06:38:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 0.825 ms 
+
+Request: GET /admin at Mon Jun 24 2024 06:38:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 0.526 ms 
+
+Request: GET /admin at Mon Jun 24 2024 06:38:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 0.465 ms 
+
+Request: GET /admin at Mon Jun 24 2024 06:38:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 0.468 ms 
+
+Request: GET /admin at Mon Jun 24 2024 06:38:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 0.192 ms 
+
+Request: GET / at Mon Jun 24 2024 06:38:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 0.513 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 06:47:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin",
+	"password": "admin"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "admin",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 5.711 ms 
+
+Request: POST /api/admin/register at Mon Jun 24 2024 06:48:21 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin",
+	"password": "admin"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "admin",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 1.135 ms 
+
+Request: POST /api/admin/register at Mon Jun 24 2024 06:48:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"mesage": "Administrador registrado con exito"
+}
+Response: 201 153.731 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 06:49:03 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNDU0MywiZXhwIjoxNzE5MjkwOTQzfQ.5U6z5jNIgsYW_0U_eWg7GEx34qmjeTZ-z2IdMrXhGC0"
+}
+Response: 200 94.412 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 06:51:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNDY3MiwiZXhwIjoxNzE5MjkxMDcyfQ.cdJbvFOyE23WevN1SELGP5syVgx6EuhJYbiqWDVgRoM"
+}
+Response: 200 91.322 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 06:51:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNDY4OSwiZXhwIjoxNzE5MjkxMDg5fQ.NTDZgIqZl67HABPRtR74IY8PnLDduMP_I9s5qid1-pc"
+}
+Response: 200 89.459 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 06:55:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNDk0NCwiZXhwIjoxNzE5MjkxMzQ0fQ.3cQ_6DHpdjvIW0xsv9KZ4AC03T1B7gE1r0uZuPKEDo8"
+}
+Response: 200 86.852 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 06:56:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNDk4OSwiZXhwIjoxNzE5MjkxMzg5fQ.pp4ngnVU7B8h5UWoh1e6mqCVwlOor3lkblIbfk7GTZY"
+}
+Response: 200 86.621 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:00:52 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTI1MiwiZXhwIjoxNzE5MjkxNjUyfQ.EmP_UFelZ4wF0nCHTtj95GwI1jpnC3yB6yrx6toRXgs"
+}
+Response: 200 90.689 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:02:05 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTMyNSwiZXhwIjoxNzE5MjkxNzI1fQ.bOCTBAVdQCJGDllCSUHkMcEPc8VIrsd7swS65tKBHNA"
+}
+Response: 200 87.866 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:02:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "1212"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "1212",
+			"msg": "La contraseña debe tener entre 6 y 20 caracteres.",
+			"path": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 403 0.835 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:02:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTM0NiwiZXhwIjoxNzE5MjkxNzQ2fQ.LQZaDZ3FwnUQEvx9TdDJ4AcigqnNzISsc5iTAHYiAdM"
+}
+Response: 200 86.758 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:05:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTUxMCwiZXhwIjoxNzE5MjkxOTEwfQ.E6U3o4uV9WYieiPQBha9mm17wfzk5uUhwApwyIF6tIM"
+}
+Response: 200 92.028 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:07:54 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTY3NCwiZXhwIjoxNzE5MjkyMDc0fQ.XVpq-_NFYuPGrISkUwUOKUV53UGXRJvAdYs66rwA9rE"
+}
+Response: 200 85.382 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTY5NSwiZXhwIjoxNzE5MjkyMDk1fQ.1sbIBcLyHDmpk4aTmVQ43Iy5xc6vGU76CyXR8y0GI7Q"
+}
+Response: 200 94.482 ms 
+
+Request: POST /api/admin/login at Mon Jun 24 2024 07:08:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzhmYWE2ZDE5NTcyZTVkYTc2OWE3YSIsImlhdCI6MTcxOTIwNTczMCwiZXhwIjoxNzE5MjkyMTMwfQ.nPqucN4neS16EdPK16vNuFCdXTskiU-Unr6JiGkPOXQ"
+}
+Response: 200 88.798 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:11:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 200 64.287 ms 
+
+Request: GET /api/admin/users at Mon Jun 24 2024 07:11:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-05T04:41:02.104Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667770e324623c60e52a0f9c",
+		"nombre": "Cucurella",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$OGqLTvyyuk1C08NT7LD/7O5RLkiQ95l6yuJKil6fW.JuoRsu8c98u",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"R
+...
+Response: 304 52.483 ms 
