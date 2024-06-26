@@ -33,9 +33,9 @@ POST http://localhost:3000/api/user/register
 Content-Type: application/json
 
 {
-  "nombre": "Cucurella",
+  "nombre": "user",
   "password": "passwordSegura",
-  "email": "Cucurella@example.com",
+  "email": "user@example.com",
   "edad" : "18",
   "ciudad": "Barcelona",
   "intereses": ["Restaurante", "Cafetería"],

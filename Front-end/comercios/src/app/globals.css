@@ -74,6 +74,27 @@ button.info {
   color: rgb(var(--color-background));
 }
 
+.no-outline {
+  outline: none;
+}
+.no-outline:focus {
+  outline: none;
+}
+
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  background-color: rgb(228, 228, 228);
+  z-index: 1;
+}
+
+
+.shadow-table {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
