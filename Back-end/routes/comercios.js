@@ -7,7 +7,10 @@ const multer = require("multer");
 const path = require("path");
 const auth = require('../utils/auth');
 
-const { createContenido, 
+const { loginComercio,
+        getComercioyContenido,
+        deleteComercio,
+        createContenido, 
         deleteContenido, 
         uploadFoto, 
         deleteFoto, 
@@ -17,7 +20,8 @@ const { createContenido,
         consultarIntereses
     } = require("../controllers/comercios");
 
-const { validatorCreateContenido,
+const { validatorLoginComercio,
+        validatorCreateContenido,
         validatorUpdateContenido,
         validatorUploadText,
         validatorDeleteText,
@@ -54,11 +58,20 @@ const upload = multer({
 
 //RUTAS
 
-// Ruta para crear un nuevo contenido
-router.post("/", auth, auth.isComercio,validatorCreateContenido, createContenido); 
+// Ruta para loggear un comercio
+router.post('/login',validatorLoginComercio, loginComercio)
+
+// Ruta para optener el contenido asociado al comercio
+router.get('/info',auth, auth.isComercio, getComercioyContenido);
 
 // Ruta para crear un nuevo contenido
-router.delete("/", auth, auth.isComercio, deleteContenido); 
+router.post("/", auth, auth.isComercio, validatorCreateContenido, createContenido); 
+
+// Ruta para borrar un comercio
+router.delete("/", auth, auth.isComercio, deleteComercio); 
+
+// Ruta para borrar un contenido
+router.delete("/contenido", auth, auth.isComercio, deleteContenido); 
 
 // Ruta para actualizar contenido de comercio
 router.put("/contenido", auth, auth.isComercio, validatorUpdateContenido, updateContenido) 

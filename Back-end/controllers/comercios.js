@@ -10,6 +10,59 @@ const fs = require('fs')
 const path = require('path')
 const { matchedData } = require("express-validator")
 
+// Login de un comercio
+
+const loginComercio = async (req, res, next) => {
+    const { email, cif } = matchedData(req);
+
+    try {
+        const comercio = await comerciosModel.findOne({ email });
+        if (!comercio) {
+            return res.status(404).send({ message: 'Comercio no encontrado' });
+        }
+
+        if (comercio.CIF !== cif) {
+            return res.status(400).send({ message: 'Credenciales incorrectas' });
+        }
+
+        // Verificar si el token JWT ya existe
+        let token = comercio.tokenJWT;
+        if (!token) {
+            // Generar un nuevo token JWT si no existe
+            token = jwt.sign({ id: comercio._id }, process.env.JWT_SECRET, { expiresIn: '24h' });
+            comercio.tokenJWT = token;
+            await comercio.save();
+        }
+
+        res.status(200).send({ token, comercio });
+
+    } catch (error) {
+        next(error);
+    }
+};
+
+// Obtenemos el contenido asociado al comercio
+const getComercioyContenido = async (req, res, next) => {
+    const { id } = req.user;
+
+    try {
+        const comercio = await comerciosModel.findById(id).populate('paginaID');
+        if (!comercio) {
+            return res.status(404).send({ message: 'Comercio no encontrado' });
+        }
+
+        res.status(200).send({
+            nombre: comercio.nombre,
+            email: comercio.email,
+            CIF: comercio.CIF,
+            contenido: comercio.paginaID
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+
 //Creamos la pagina de contenido (Solo si no existe una ya)
 
 const createContenido = async (req, res, next) => {
@@ -78,6 +131,37 @@ const deleteContenido = async(req, res, next) =>{
         next(error)
     }
 }
+
+//Ruta para Borrar un comercio 
+
+const deleteComercio = async (req, res, next) => {
+    const { id } = req.user;
+
+    try {
+        // Encuentra el comercio para obtener el id del contenido asociado
+        const comercio = await comerciosModel.findById(id);
+        if (!comercio) {
+            return res.status(404).send({ message: 'Comercio no encontrado' });
+        }
+
+        const contenidoBorrado = await contenidoModel.findById(comercio.paginaID)
+
+        //Elimina las reseñas asociadas al contenido
+        await reviewModel.deleteMany({ _id: { $in: contenidoBorrado.reviews } });
+
+        // Elimina el contenido asociado
+        await contenidoModel.findByIdAndDelete(comercio.paginaID);
+
+        // Elimina el comercio
+        await comerciosModel.findByIdAndDelete(id);
+
+        res.send({ message: 'Comercio y contenido eliminado correctamente' });
+
+    } catch (error) {
+
+        next(error)
+    }
+};
 
 // Actualizar el contenido de un comercio
 const updateContenido = async (req, res, next) => {
@@ -248,4 +332,4 @@ const consultarIntereses = async (req, res, next) => {
     }
 };
 
-module.exports = { createContenido, deleteContenido, updateContenido, uploadText, deleteText ,uploadFoto, deleteFoto, consultarIntereses };
+module.exports = { loginComercio, getComercioyContenido, deleteComercio, createContenido, deleteContenido, updateContenido, uploadText, deleteText ,uploadFoto, deleteFoto, consultarIntereses };

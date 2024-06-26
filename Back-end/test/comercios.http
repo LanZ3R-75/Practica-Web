@@ -1,5 +1,22 @@
 ##Variables 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzY1ZDQ0ZjcxNzc1MGY4ZDUyNzkwYSIsImlhdCI6MTcxOTAzMzE1Nn0.EprPnFh1HxW5SMScsEY1UaJNFKRsupvsfeZNrm7QwlA
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE
+### Login de Comercio
+POST http://localhost:3000/api/comercios/login
+Content-Type: application/json
+
+{
+  "email": "mercadona@mercadona.com",
+  "cif": "CIF333333"
+}
+
+### Borrar comercio
+DELETE http://localhost:3000/api/comercios
+Authorization: Bearer {{token}}
+
+
+### Obtener la informacion del Comercio
+GET http://localhost:3000/api/comercios/info
+Authorization: Bearer {{token}}
 
 ###Crear una nueva pagina de contenido 
 POST http://localhost:3000/api/comercios
@@ -17,7 +34,7 @@ Authorization: Bearer {{token}}
 }
 
 ###Borramos el contenido de un comercio
-DELETE http://localhost:3000/api/comercios
+DELETE http://localhost:3000/api/comercios/contenido
 Authorization: Bearer {{token}}
 
 ### Actualizar Contenido

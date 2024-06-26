@@ -2,6 +2,17 @@
 const {check, param} = require("express-validator")
 const validateResults = require("../utils/handleValidator")
 
+// Validador para loggeor un comercio
+const validatorLoginComercio = [
+    check('email')
+        .exists().withMessage('El campo email es requerido')
+        .isEmail().withMessage('Debe ser un correo electrónico válido'),
+    check('cif')
+        .exists().withMessage('El campo CIF es requerido')
+        .notEmpty().withMessage('El CIF no puede estar vacío'),
+    (req, res, next) => validateResults(req, res, next)
+];
+
 // Validador para crear un contenido nuevo
 const validatorCreateContenido = [
 
@@ -105,4 +116,4 @@ const validatorDeleteFoto = [
     (req, res, next) => validateResults(req, res, next)  
 ]
 
-module.exports = {validatorCreateContenido, validatorUpdateContenido, validatorUploadText, validatorDeleteText, validatorUploadFoto, validatorDeleteFoto}
+module.exports = { validatorLoginComercio, validatorCreateContenido, validatorUpdateContenido, validatorUploadText, validatorDeleteText, validatorUploadFoto, validatorDeleteFoto}
