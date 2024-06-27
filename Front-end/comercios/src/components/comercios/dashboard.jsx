@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
+import Navbar from "../navBar/navBar";
 
 const ComercioDashboard = () => {
   const router = useRouter();
@@ -302,8 +303,11 @@ const ComercioDashboard = () => {
   }
 
   return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-2xl font-bold my-4">Comercio Dashboard</h1>
+    <>
+      <Navbar />
+
+      <div className="container mx-auto px-4 mt-20 ">
+      <h1 className="text-2xl font-bold my-4 ">Comercio Dashboard</h1>
       <section>
         <div className="flex">
             <h2 className="text-xl font-semibold mb-2">Información del Comercio</h2>
@@ -477,6 +481,7 @@ const ComercioDashboard = () => {
       </section>
       
     </div>
+    </>
   );
   
 }

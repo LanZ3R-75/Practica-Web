@@ -1,13 +1,14 @@
-// src/components/comercio/LoginComercio.jsx
 "use client";
+// src/components/comercio/LoginComercio.jsx
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Swal from 'sweetalert2';
+import Navbar from "../navBar/navBar";
 
 const LoginComercio = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [cif, setCif] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -27,46 +28,83 @@ const LoginComercio = () => {
         router.push("/comercios/dashboard");
       } else {
         const errorData = await response.json();
-        setErrorMessage(errorData.message || "Error al iniciar sesión");
+        Swal.fire({
+          icon: 'error',
+          title: 'Error al iniciar sesión',
+          text: errorData.message || 'Error al iniciar sesión',
+        });
       }
     } catch (error) {
-      setErrorMessage("Error al iniciar sesión");
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al iniciar sesión',
+        text: 'Error al iniciar sesión',
+      });
       console.error("Error:", error);
     }
   };
 
   return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-2xl font-bold my-4">Login Comercio</h1>
-      <form onSubmit={handleLogin}>
-        {errorMessage && <div className="text-red-500">{errorMessage}</div>}
-        <div className="mb-4">
-          <label className="block text-gray-700">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-            required
-          />
+    <>
+      <Navbar />
+      <div className="relative h-screen w-screen overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/fondo.png')" }}
+        >
+          <div className="absolute inset-0 backdrop-filter backdrop-blur-lg"></div>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">CIF</label>
-          <input
-            type="text"
-            name="cif"
-            value={cif}
-            onChange={(e) => setCif(e.target.value)}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-            required
-          />
+        <div className="relative z-10 flex justify-center items-center h-full w-full">
+          <div className="w-full max-w-xs">
+            <form
+              className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 "
+              onSubmit={handleLogin}
+            >
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="mb-6">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="cif"
+                >
+                  CIF
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                  id="cif"
+                  type="text"
+                  placeholder="CIF"
+                  value={cif}
+                  onChange={(e) => setCif(e.target.value)}
+                />
+              </div>
+              <div className="flex items-center justify-between">
+                <button
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="submit"
+                >
+                  Iniciar Sesión
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
-          Iniciar Sesión
-        </button>
-      </form>
-    </div>
+      </div>
+    </>
   );
 };
 

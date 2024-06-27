@@ -1,6 +1,7 @@
 // src/components/admin/RegisterComercio.jsx
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Navbar from '../navBar/navBar';
 
 const RegisterComercio = () => {
   const [form, setForm] = useState({
@@ -46,7 +47,9 @@ const RegisterComercio = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <>
+    <Navbar/>
+    <div className="container mx-auto px-4 mt-20">
       <h1 className="text-2xl font-bold my-4">Registrar Comercio</h1>
       {error && <div className="text-red-500 mb-4">{error}</div>}
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -115,6 +118,7 @@ const RegisterComercio = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 

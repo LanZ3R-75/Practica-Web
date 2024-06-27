@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Navbar from "../navBar/navBar";
 
 const AdminDashboard = () => {
   const router = useRouter();
@@ -116,7 +117,10 @@ const AdminDashboard = () => {
   );
 
   return (
-    <div className="container mx-auto px-4">
+    <>
+    <Navbar/>
+    
+    <div className="container mx-auto px-4 mt-20">
       <h1 className="text-2xl font-bold my-4">Admin Dashboard</h1>
       <section>
         <h2 className="text-xl font-semibold mb-2">Users</h2>
@@ -130,9 +134,9 @@ const AdminDashboard = () => {
           />
         </div>
         <div className="overflow-y-auto max-h-60 sticky-header shadow-table">
-          <table className="min-w-full bg-white ">
+          <table className="min-w-full bg-white">
             <thead className="">
-              <tr>
+            <tr className="text-gray-100">
                 <th className="py-2 px-4 border-b">ID</th>
                 <th className="py-2 px-4 border-b">Name</th>
                 <th className="py-2 px-4 border-b">Email</th>
@@ -184,7 +188,7 @@ const AdminDashboard = () => {
         <div className="overflow-y-auto max-h-60 sticky-header shadow-table mb-10">
           <table className="min-w-full bg-white">
             <thead >
-              <tr>
+              <tr className="text-gray-100">
                 <th className="py-2 px-4 border-b">ID</th>
                 <th className="py-2 px-4 border-b">Nombre</th>
                 <th className="py-2 px-4 border-b">Email</th>
@@ -216,6 +220,7 @@ const AdminDashboard = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

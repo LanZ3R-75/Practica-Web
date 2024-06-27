@@ -2,6 +2,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
+import Navbar from "../navBar/navBar";
 
 const EditUser = () => {
   const router = useRouter();
@@ -81,7 +82,10 @@ const EditUser = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <>
+      <Navbar/>
+    
+    <div className="container mx-auto px-4 mt-20">
       <h1 className="text-2xl font-bold my-4">Editar Usuario</h1>
       <form onSubmit={handleSubmit}>
         {errorMessage && <div className="text-red-500">{errorMessage}</div>}
@@ -150,6 +154,7 @@ const EditUser = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

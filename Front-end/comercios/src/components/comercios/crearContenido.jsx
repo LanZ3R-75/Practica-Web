@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Navbar from "../navBar/navBar";
 
 const CrearContenido = () => {
   const router = useRouter();
@@ -64,7 +65,9 @@ const CrearContenido = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <> 
+      <Navbar />
+    <div className="container mx-auto px-4 mt-20">
       <h1 className="text-2xl font-bold my-4">Crear Contenido</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -115,7 +118,7 @@ const CrearContenido = () => {
                 <button
                   type="button"
                   onClick={() => handleDeleteText(index)}
-                  className="ml-2 text-red-500"
+                  className="ml-2 text-red-500 bg-transparent"
                 >
                   <img src="/images/papelera.png" alt="Eliminar" className="h-4 w-4" />
                 </button>
@@ -148,7 +151,7 @@ const CrearContenido = () => {
                 <button
                   type="button"
                   onClick={() => handleDeleteFoto(index)}
-                  className="ml-2 text-red-500"
+                  className="ml-2 text-red-500 bg-transparent"
                 >
                   <img src="/images/papelera.png" alt="Eliminar" className="h-4 w-4" />
                 </button>
@@ -180,6 +183,7 @@ const CrearContenido = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Navbar from "../navBar/navBar";
 
 const EditComercio = ({ id }) => {
   const router = useRouter();
@@ -62,7 +63,10 @@ const EditComercio = ({ id }) => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <>
+      <Navbar/>
+    
+    <div className="container mx-auto px-4 mt-20">
       <h1 className="text-2xl font-bold my-4">Editar Comercio</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -120,6 +124,7 @@ const EditComercio = ({ id }) => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 
