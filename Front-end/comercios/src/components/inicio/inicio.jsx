@@ -24,7 +24,7 @@ export default function Home() {
             <div className="flex flex-col space-y-4">
               <button
                 className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition transform hover:scale-105"
-                onClick={() => router.push('/usuarios')}
+                onClick={() => router.push('/usuariosPublicos')}
               >
                 Continuar sin registrarse
               </button>
@@ -32,7 +32,7 @@ export default function Home() {
                 ¿Eres un usuario registrado? entonces inicia sesión{" "}
                 <span
                   className="text-green-500 underline cursor-pointer"
-                  onClick={() => router.push('/usuarios')}
+                  onClick={() => router.push('/usuariosRegistrados')}
                 >
                   aquí
                 </span>

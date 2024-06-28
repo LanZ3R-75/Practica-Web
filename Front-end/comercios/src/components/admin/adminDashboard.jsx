@@ -118,110 +118,117 @@ const AdminDashboard = () => {
 
   return (
     <>
-    <Navbar/>
-    
-    <div className="container mx-auto px-4 mt-20">
-      <h1 className="text-2xl font-bold my-4">Admin Dashboard</h1>
-      <section>
-        <h2 className="text-xl font-semibold mb-2">Users</h2>
-        <div className="flex justify-between items-center mb-4">
-          <input
-            type="text"
-            placeholder="Buscar por nombre o email"
-            value={userSearchTerm}
-            onChange={handleUserSearch}
-            className="border border-gray-300 p-2 rounded"
-          />
+      <Navbar />
+      <div className="relative h-screen w-full overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/fondo.png')" }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md"></div>
         </div>
-        <div className="overflow-y-auto max-h-60 sticky-header shadow-table">
-          <table className="min-w-full bg-white">
-            <thead className="">
-            <tr className="text-gray-100">
-                <th className="py-2 px-4 border-b">ID</th>
-                <th className="py-2 px-4 border-b">Name</th>
-                <th className="py-2 px-4 border-b">Email</th>
-                <th className="py-2 px-4 border-b">Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredUsers.map(user => (
-                <tr key={user._id}>
-                  <td className="py-2 px-4 border-b">{user._id}</td>
-                  <td className="py-2 px-4 border-b">{user.nombre}</td>
-                  <td className="py-2 px-4 border-b">{user.email}</td>
-                  <td className="py-2 px-4 border-b">
-                    <div className="flex justify-center items-center space-x-2">
-                      <button onClick={() => deleteUsuario(user._id)} className="no-outline bg-transparent">
-                        <img src="/images/papelera.png" alt="Delete" className="h-6 w-6" />
-                      </button>
-                      <button onClick={() => editUser(user._id)} className="no-outline bg-transparent">
-                        <img src="/images/editar.png" alt="Edit" className="h-6 w-6" />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="absolute inset-0 flex flex-col items-center backdrop-filter backdrop-blur-md overflow-y-auto">
+          <div className="container mx-auto px-4 mt-20 bg-transparent rounded p-6">
+            <h1 className="text-4xl text-orange-500 font-bold my-4">Admin Dashboard</h1>
+            <section>
+              <h2 className="text-xl text-green-400 font-semibold mb-2">Users</h2>
+              <div className="flex justify-between items-center mb-4">
+                <input
+                  type="text"
+                  placeholder="Buscar por nombre o email"
+                  value={userSearchTerm}
+                  onChange={handleUserSearch}
+                  className="border border-gray-300 p-2 rounded"
+                />
+              </div>
+              <div className="overflow-y-auto max-h-60 sticky-header shadow-table">
+                <table className="min-w-full bg-white">
+                  <thead className="">
+                    <tr className="text-gray-100">
+                      <th className="py-2 px-4 border-b">ID</th>
+                      <th className="py-2 px-4 border-b">Name</th>
+                      <th className="py-2 px-4 border-b">Email</th>
+                      <th className="py-2 px-4 border-b">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredUsers.map(user => (
+                      <tr key={user._id}>
+                        <td className="py-2 px-4 border-b">{user._id}</td>
+                        <td className="py-2 px-4 border-b">{user.nombre}</td>
+                        <td className="py-2 px-4 border-b">{user.email}</td>
+                        <td className="py-2 px-4 border-b">
+                          <div className="flex justify-center items-center space-x-2">
+                            <button onClick={() => deleteUsuario(user._id)} className="no-outline bg-transparent">
+                              <img src="/images/papelera.png" alt="Delete" className="h-6 w-6" />
+                            </button>
+                            <button onClick={() => editUser(user._id)} className="no-outline bg-transparent">
+                              <img src="/images/editar.png" alt="Edit" className="h-6 w-6" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section className="mt-8">
+              <h2 className="text-xl text-green-400 font-semibold mb-2">Comercios</h2>
+              <div className="flex justify-between items-center mb-4">
+                <input
+                  type="text"
+                  placeholder="Buscar por nombre o CIF"
+                  value={searchTerm}
+                  onChange={handleSearch}
+                  className="border border-gray-300 p-2 rounded"
+                />
+                <button
+                  onClick={handleRegisterComercio}
+                  className="bg-blue-500 text-white px-4 py-2 rounded"
+                >
+                  Registrar Nuevo Comercio
+                </button>
+              </div>
+              <div className="overflow-y-auto max-h-60 sticky-header shadow-table mb-10">
+                <table className="min-w-full bg-white">
+                  <thead >
+                    <tr className="text-gray-100">
+                      <th className="py-2 px-4 border-b">ID</th>
+                      <th className="py-2 px-4 border-b">Nombre</th>
+                      <th className="py-2 px-4 border-b">Email</th>
+                      <th className="py-2 px-4 border-b">CIF</th>
+                      <th className="py-2 px-4 border-b">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredComercios.map(comercio => (
+                      <tr key={comercio._id}>
+                        <td className="py-2 px-4 border-b">{comercio._id}</td>
+                        <td className="py-2 px-4 border-b">{comercio.nombre}</td>
+                        <td className="py-2 px-4 border-b">{comercio.email}</td>
+                        <td className="py-2 px-4 border-b">{comercio.CIF}</td>
+                        <td className="py-2 px-4 border-b">
+                          <div className="flex justify-center items-center space-x-2">
+                            <button onClick={() => deleteComercio(comercio._id)} className="no-outline bg-transparent">
+                              <img src="/images/papelera.png" alt="Delete" className="h-6 w-6" />
+                            </button>
+                            <button onClick={() => editComercio(comercio._id)} className="no-outline bg-transparent">
+                              <img src="/images/editar.png" alt="Edit" className="h-6 w-6" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
         </div>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="text-xl font-semibold mb-2">Comercios</h2>
-        <div className="flex justify-between items-center mb-4">
-          
-          <input
-            type="text"
-            placeholder="Buscar por nombre o CIF"
-            value={searchTerm}
-            onChange={handleSearch}
-            className="border border-gray-300 p-2 rounded"
-          />
-
-          <button
-            onClick={handleRegisterComercio}
-            className="bg-blue-500 text-white px-4 py-2 rounded"
-          >
-            Registrar Nuevo Comercio
-          </button>
-        </div>
-        <div className="overflow-y-auto max-h-60 sticky-header shadow-table mb-10">
-          <table className="min-w-full bg-white">
-            <thead >
-              <tr className="text-gray-100">
-                <th className="py-2 px-4 border-b">ID</th>
-                <th className="py-2 px-4 border-b">Nombre</th>
-                <th className="py-2 px-4 border-b">Email</th>
-                <th className="py-2 px-4 border-b">CIF</th>
-                <th className="py-2 px-4 border-b">Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredComercios.map(comercio => (
-                <tr key={comercio._id}>
-                  <td className="py-2 px-4 border-b">{comercio._id}</td>
-                  <td className="py-2 px-4 border-b">{comercio.nombre}</td>
-                  <td className="py-2 px-4 border-b">{comercio.email}</td>
-                  <td className="py-2 px-4 border-b">{comercio.CIF}</td>
-                  <td className="py-2 px-4 border-b">
-                    <div className="flex justify-center items-center space-x-2">
-                      <button onClick={() => deleteComercio(comercio._id)} className="no-outline bg-transparent">
-                        <img src="/images/papelera.png" alt="Delete" className="h-6 w-6" />
-                      </button>
-                      <button onClick={() => editComercio(comercio._id)} className="no-outline bg-transparent">
-                        <img src="/images/editar.png" alt="Edit" className="h-6 w-6" />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </div>
+      </div>
     </>
   );
+  
 };
 
 export default AdminDashboard;

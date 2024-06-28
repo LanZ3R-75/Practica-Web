@@ -1,6 +1,6 @@
 "use client"
 
-import LoginUsuarios from "@/components/usuarios/login";
+import LoginUsuarios from "@/components/usuariosRegistrados/login";
 import { useSearchParams } from "next/navigation";
 
 export default function Home() {

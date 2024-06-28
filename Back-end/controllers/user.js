@@ -1,4 +1,4 @@
-const {contenidoModel, userModel, reviewModel} = require('../models')
+const {comerciosModel, contenidoModel, userModel, reviewModel} = require('../models')
 const jwt = require('jsonwebtoken');
 const review = require('../models/nosql/review');
 const { matchedData } = require('express-validator')
@@ -16,7 +16,7 @@ const getContenido = async (req, res, next) => {
     try {
       
         // Buscar todos los contenidos
-        let contenidos = await contenidoModel.find({});
+        let contenidos = await comerciosModel.find({}).populate('paginaID');
 
         // Ordenar los contenidos si se especifica el parámetro de ordenación
         if (ordenar) {
@@ -113,7 +113,7 @@ const getContenidoByCiudadAndActividad = async (req, res, next) => {
     }
 }
 
-// Consultar contenido de un comercio por ID
+// Consultar un comercio con su contenido por  ID
 
 const getContenidoByID = async (req, res, next) => {
 
@@ -121,7 +121,7 @@ const getContenidoByID = async (req, res, next) => {
 
     try {
 
-        const contenido = await contenidoModel.findById(id)
+        const contenido = await comerciosModel.findById(id).populate('paginaID');
 
         if(!contenido){
 
@@ -135,6 +135,36 @@ const getContenidoByID = async (req, res, next) => {
         next(error)
     }
 }
+
+// Obtener las reviews con el nombre de un contenido 
+const getReviewsByContenido = async (req, res, next) => {
+    const { id } = req.params;
+
+  try {
+    // Buscar el comercio por ID
+    const comercio = await comerciosModel.findById(id).populate('paginaID');
+    if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
+
+    // Obtener las reviews asociadas al contenido del comercio
+    const reviewIds = comercio.paginaID?.reviews || [];
+
+    // Buscar las reviews y los usuarios asociados
+    const reviews = await Promise.all(
+      reviewIds.map(async (reviewId) => {
+        const review = await reviewModel.findById(reviewId).populate('usuarioID');
+        return {
+          userName: review.usuarioID.nombre,
+          scoring: review.puntuacion,
+          comentario: review.comentario
+        };
+      })
+    );
+
+    res.status(200).send(reviews);
+  } catch (error) {
+    next(error);
+  }
+  };
 
 // Registrar un usuario
 
@@ -397,6 +427,7 @@ module.exports = {  getContenido,
                     getContenidoByActividad, 
                     getContenidoByCiudadAndActividad,
                     getContenidoByID,
+                    getReviewsByContenido,
                     registerUser,
                     loginUser,
                     updateUser,

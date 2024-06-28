@@ -105,6 +105,18 @@ button.info {
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
 
 
 @layer utilities {

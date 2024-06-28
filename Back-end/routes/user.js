@@ -10,6 +10,7 @@ const { getContenido,
         getContenidoByActividad, 
         getContenidoByCiudadAndActividad,
         getContenidoByID,
+        getReviewsByContenido,
         registerUser,
         loginUser,
         updateUser,
@@ -52,6 +53,9 @@ router.get('/comercios/contenido/:id', getContenidoByID)
 
 //Ruta para registrar un usuario
 router.post('/register', validatorRegisterUser, registerUser)
+
+//Ruta pa obtener los nombres de usuario y la review asociada a un contenido
+router.get('/comercios/contenido/reviews/:id', getReviewsByContenido);
 
 //--------------------------------------------------------------------------------------------------------------------------
 //RUTAS PARA USUARIOS REGISTRADOS
