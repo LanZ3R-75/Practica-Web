@@ -209,13 +209,30 @@ const loginUser = async (req, res, next) =>{
         
         const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: '24h'})
         
-        res.status(200).send(token);
+        res.status(200).send({token});
 
     } catch (error) {
         
         next(error)
     }
 }
+
+// Obtener todos los datos del usuario
+const getUserProfile = async (req, res, next) => {
+
+    try {
+
+        const { id } = req.user;
+        const user = await userModel.findById(id).select('-password');
+       
+        if (!user) {
+            return res.status(404).json({ message: 'Usuario no encontrado' });
+        }
+        res.status(200).json(user);
+    } catch (error) {
+        next(error);
+    }
+};
 
 // Modificar datos de un usuario
 const updateUser = async (req, res, next) => {
@@ -430,6 +447,7 @@ module.exports = {  getContenido,
                     getReviewsByContenido,
                     registerUser,
                     loginUser,
+                    getUserProfile,
                     updateUser,
                     updateEmail,
                     updatePassword,

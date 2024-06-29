@@ -3,15 +3,37 @@ import { useEffect, useState } from "react";
 import ComercioCard from '../usuariosPublicos/tarjetaComercio';
 import Navbar from '../navBar/navBar';
 
-const HomePage = () => {
+const InicioRegistrados = () => {
   const [comercios, setComercios] = useState([]);
+  const [user, setUser] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [cityFilter, setCityFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState('');
 
   useEffect(() => {
+    fetchUser();
     fetchComercios();
   }, []);
+
+  const fetchUser = async () => {
+    try {
+      const token = localStorage.getItem('userToken');
+      const response = await fetch('http://localhost:3000/api/user/perfil', {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const userData = await response.json();
+        setUser(userData);
+      } else {
+        console.error('Error fetching user:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error fetching user:', error);
+    }
+  };
 
   const fetchComercios = async () => {
     try {
@@ -34,6 +56,10 @@ const HomePage = () => {
     return nombreMatch && ciudadMatch && actividadMatch;
   });
 
+
+  const comerciosCiudad = comercios.filter(comercio => comercio.paginaID?.ciudad?.toLowerCase() === user?.ciudad?.toLowerCase() && comercio.paginaID);
+  const comerciosIntereses = comercios.filter(comercio => user?.intereses?.some(interes => comercio.paginaID?.actividad?.toLowerCase() === interes.toLowerCase()) && comercio.paginaID);
+
   return (
     <>
       <Navbar />
@@ -43,8 +69,22 @@ const HomePage = () => {
       >
         <div className="absolute inset-0 bg-cover bg-center backdrop-filter backdrop-blur-md"></div>
         <div className="absolute inset-0 overflow-y-auto px-4 pt-20">
-          <div className="container mx-auto px-4 bg-transparent rounded-lg  p-6">
-            <h1 className="text-4xl text-black text-outline font-bold my-8 text-center">Comercios Registrados</h1>
+          <div className="container mx-auto px-4 bg-transparent rounded-lg p-6">
+            <h1 className="text-4xl text-black  text-outline font-bold my-8 text-center">Comercios de tu Ciudad</h1>
+            <div className="flex flex-wrap justify-center">
+              {comerciosCiudad.map(comercio => (
+                <ComercioCard key={comercio._id} comercio={comercio} />
+              ))}
+            </div>
+
+            <h1 className="text-4xl text-black  text-outline font-bold my-8 text-center">Comercios Basados en tus Intereses</h1>
+            <div className="flex flex-wrap justify-center">
+              {comerciosIntereses.map(comercio => (
+                <ComercioCard key={comercio._id} comercio={comercio} />
+              ))}
+            </div>
+
+            <h1 className="text-4xl text-black text-outline font-bold my-8 text-center">Todos los Comercios</h1>
             <div className="flex justify-center mb-4">
               <input
                 type="text"
@@ -80,4 +120,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default InicioRegistrados;

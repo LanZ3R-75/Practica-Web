@@ -20,7 +20,7 @@ export default function Home() {
 
         <div className="absolute inset-0 flex justify-center items-center backdrop-filter backdrop-blur-md">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-8">Bienvenido a Shogyo</h1>
+            <h1 className="text-5xl font-bold text-black text-outline mb-8">Bienvenido a Shogyo</h1>
             <div className="flex flex-col space-y-4">
               <button
                 className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition transform hover:scale-105"

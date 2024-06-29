@@ -47,14 +47,14 @@ const Comercio = ({ id }) => {
     return <div>Loading...</div>;
   }
 
-  const renderStars = (scoring) => {
+  const renderStars = (scoring, size = "text-base") => {
     const totalStars = 5;
     const fullStars = Math.floor(scoring);
     const halfStar = scoring % 1 >= 0.5;
     const emptyStars = totalStars - fullStars - (halfStar ? 1 : 0);
 
     return (
-      <>
+      <div className={`${size} ml-4`}>
         {Array(fullStars).fill().map((_, i) => (
           <span key={`full-${i}`} className="text-orange-400">★</span>
         ))}
@@ -62,7 +62,7 @@ const Comercio = ({ id }) => {
         {Array(emptyStars).fill().map((_, i) => (
           <span key={`empty-${i}`} className="text-gray-400">★</span>
         ))}
-      </>
+      </div>
     );
   };
 
@@ -76,10 +76,11 @@ const Comercio = ({ id }) => {
         <div className="absolute inset-0 bg-cover bg-center backdrop-filter backdrop-blur-md"></div>
         <div className="absolute inset-0 overflow-y-auto px-4 pt-20">
           <div className="container mx-auto h-full px-4 bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
-            <h1 className="text-3xl font-bold my-8">{comercio.nombre}</h1>
-            <div className="flex items-center">
-              {renderStars(comercio.paginaID.scoring)}
-              <span className="ml-2 text-gray-600">({comercio.paginaID.scoring.toFixed(1)})</span>
+            <div className="flex items-center ">
+              <h1 className="text-3xl font-bold my-8">{comercio.nombre}</h1>
+              <div className="flex items-center">{renderStars(comercio.paginaID.scoring, "text-3xl")}
+                <span className="ml-2 text-gray-600">({comercio.paginaID.scoring.toFixed(1)})</span>
+              </div>
             </div>
             <p className="text-blue-500 text-xl mt-2">{comercio.paginaID.ciudad}</p>
             <p className="text-gray-700 text-lg mt-2">{comercio.paginaID.actividad}</p>

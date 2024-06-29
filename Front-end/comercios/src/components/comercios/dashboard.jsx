@@ -82,7 +82,7 @@ const ComercioDashboard = () => {
         Swal.fire("¡El comercio ha sido eliminado!", {
           icon: "success",
         });
-        router.push('/comercios/login');
+        router.push('/comercios');
       } else {
         console.error("Error deleting comercio:", response.statusText);
       }
@@ -314,10 +314,10 @@ const ComercioDashboard = () => {
         <div className="absolute inset-0 overflow-y-auto px-4 pt-20">
           <div className="container mx-auto px-4 bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
 
-          <h1 className="text-3xl mb-6 text-orange-500 font-bold my-4 ">Comercio Dashboard</h1>
+          <h1 className="text-4xl mb-6 text-black text-outline font-bold my-4 ">Comercio Dashboard</h1>
       <section>
         <div className="flex">
-            <h2 className="text-xl text-violet-500 font-semibold mb-2">Información del Comercio</h2>
+            <h2 className="text-2xl text-black font-bold mb-2">Información del Comercio</h2>
 
             <button
             onClick={handleDeleteComercio}
@@ -338,7 +338,7 @@ const ComercioDashboard = () => {
         </div>
       </section>
       <section className="mt-8 mb-10">
-        <h2 className="text-xl text-violet-500 font-semibold mb-2">Contenido Asociado</h2>
+        <h2 className="text-2xl text-black font-bold mb-2">Contenido Asociado</h2>
         {comercio.contenido ? (
           isEditing ? (
             <>
@@ -454,7 +454,7 @@ const ComercioDashboard = () => {
                 </div>
               </div>
               <section className="mt-8">
-                <h2 className="text-xl text-violet-500 font-semibold mb-2">Consultar Intereses</h2>
+                <h2 className="text-2xl text-black font-bold mb-2">Consultar Intereses</h2>
                 <div className="mt-4">
                 <button
                     onClick={handleConsultarIntereses}

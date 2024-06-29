@@ -1,4 +1,3 @@
-// src/components/admin/EditarUsuario.jsx
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
@@ -27,7 +26,6 @@ const EditUser = () => {
         });
         const data = await response.json();
         
-        // Transform 'intereses' to an array if it is a string
         if (typeof data.intereses === 'string') {
           data.intereses = data.intereses.split(',').map(interest => interest.trim());
         }
@@ -83,77 +81,84 @@ const EditUser = () => {
 
   return (
     <>
-      <Navbar/>
-    
-    <div className="container mx-auto px-4 mt-20">
-      <h1 className="text-2xl font-bold my-4">Editar Usuario</h1>
-      <form onSubmit={handleSubmit}>
-        {errorMessage && <div className="text-red-500">{errorMessage}</div>}
-        <div className="mb-4">
-          <label className="block text-gray-700">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            value={user.nombre}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
+      <Navbar />
+      <div
+        className="relative h-screen w-full overflow-hidden"
+        style={{ backgroundImage: "url('/images/fondo.png')" }}
+      >
+        <div className="absolute inset-0 bg-cover bg-center backdrop-filter backdrop-blur-md"></div>
+        <div className="absolute inset-0 overflow-y-auto px-4 pt-20 mt-20">
+          <div className="container mx-auto px-4 bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+            <h1 className="text-2xl font-bold my-4">Editar Usuario</h1>
+            <form onSubmit={handleSubmit}>
+              {errorMessage && <div className="text-red-500">{errorMessage}</div>}
+              <div className="mb-4">
+                <label className="block text-gray-700">Nombre</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  value={user.nombre}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={user.email}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Edad</label>
+                <input
+                  type="number"
+                  name="edad"
+                  value={user.edad}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Ciudad</label>
+                <input
+                  type="text"
+                  name="ciudad"
+                  value={user.ciudad}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Intereses</label>
+                <input
+                  type="text"
+                  name="intereses"
+                  value={Array.isArray(user.intereses) ? user.intereses.join(", ") : user.intereses}
+                  onChange={handleInteresesChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Ofertas</label>
+                <input
+                  type="checkbox"
+                  name="ofertas"
+                  checked={user.ofertas}
+                  onChange={(e) => setUser({ ...user, ofertas: e.target.checked })}
+                  className="mt-1 block"
+                />
+              </div>
+              <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
+                Actualizar
+              </button>
+            </form>
+          </div>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={user.email}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Edad</label>
-          <input
-            type="number"
-            name="edad"
-            value={user.edad}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Ciudad</label>
-          <input
-            type="text"
-            name="ciudad"
-            value={user.ciudad}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Intereses</label>
-          <input
-            type="text"
-            name="intereses"
-            value={Array.isArray(user.intereses) ? user.intereses.join(", ") : user.intereses}
-            onChange={handleInteresesChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Ofertas</label>
-          <input
-            type="checkbox"
-            name="ofertas"
-            checked={user.ofertas}
-            onChange={(e) => setUser({ ...user, ofertas: e.target.checked })}
-            className="mt-1 block"
-          />
-        </div>
-        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
-          Actualizar
-        </button>
-      </form>
-    </div>
+      </div>
     </>
   );
 };

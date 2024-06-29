@@ -65,124 +65,132 @@ const CrearContenido = () => {
   };
 
   return (
-    <> 
+    <>
       <Navbar />
-    <div className="container mx-auto px-4 mt-20">
-      <h1 className="text-2xl font-bold my-4">Crear Contenido</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-gray-700">Ciudad</label>
-          <input
-            type="text"
-            name="ciudad"
-            value={contenido.ciudad}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Actividad</label>
-          <input
-            type="text"
-            name="actividad"
-            value={contenido.actividad}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Título</label>
-          <input
-            type="text"
-            name="titulo"
-            value={contenido.titulo}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Resumen</label>
-          <textarea
-            name="resumen"
-            value={contenido.resumen}
-            onChange={handleChange}
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Textos</label>
-          <ul>
-            {textos.map((texto, index) => (
-              <li key={index} className="flex justify-between items-center">
-                {texto}
-                <button
-                  type="button"
-                  onClick={() => handleDeleteText(index)}
-                  className="ml-2 text-red-500 bg-transparent"
-                >
-                  <img src="/images/papelera.png" alt="Eliminar" className="h-4 w-4" />
-                </button>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4">
-            <input
-              type="text"
-              value={newText}
-              onChange={(e) => setNewText(e.target.value)}
-              placeholder="Nuevo texto"
-              className="border border-gray-300 p-2 rounded"
-            />
-            <button
-              type="button"
-              onClick={handleAddText}
-              className="ml-2 bg-green-500 text-white px-4 py-2 rounded"
-            >
-              Añadir Texto
-            </button>
+      <div
+        className="relative h-screen w-full overflow-hidden"
+        style={{ backgroundImage: "url('/images/fondo.png')" }}
+      >
+        <div className="absolute inset-0 bg-cover bg-center backdrop-filter backdrop-blur-md"></div>
+        <div className="absolute inset-0 overflow-y-auto px-4 pt-20 mt-5">
+          <div className="container mx-auto px-4 bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+            <h1 className="text-2xl font-bold my-4">Crear Contenido</h1>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block text-gray-700">Ciudad</label>
+                <input
+                  type="text"
+                  name="ciudad"
+                  value={contenido.ciudad}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Actividad</label>
+                <input
+                  type="text"
+                  name="actividad"
+                  value={contenido.actividad}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Título</label>
+                <input
+                  type="text"
+                  name="titulo"
+                  value={contenido.titulo}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Resumen</label>
+                <textarea
+                  name="resumen"
+                  value={contenido.resumen}
+                  onChange={handleChange}
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Textos</label>
+                <ul>
+                  {textos.map((texto, index) => (
+                    <li key={index} className="flex justify-between items-center">
+                      {texto}
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteText(index)}
+                        className="ml-2 text-red-500 bg-transparent"
+                      >
+                        <img src="/images/papelera.png" alt="Eliminar" className="h-4 w-4" />
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-4">
+                  <input
+                    type="text"
+                    value={newText}
+                    onChange={(e) => setNewText(e.target.value)}
+                    placeholder="Nuevo texto"
+                    className="border border-gray-300 p-2 rounded"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleAddText}
+                    className="ml-2 bg-green-500 text-white px-4 py-2 rounded"
+                  >
+                    Añadir Texto
+                  </button>
+                </div>
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700">Fotos</label>
+                <ul>
+                  {fotos.map((foto, index) => (
+                    <li key={index} className="flex justify-between items-center">
+                      {foto}
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteFoto(index)}
+                        className="ml-2 text-red-500 bg-transparent"
+                      >
+                        <img src="/images/papelera.png" alt="Eliminar" className="h-4 w-4" />
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-4">
+                  <input
+                    type="text"
+                    value={newFoto}
+                    onChange={(e) => setNewFoto(e.target.value)}
+                    placeholder="Nueva foto"
+                    className="border border-gray-300 p-2 rounded"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleAddFoto}
+                    className="ml-2 bg-green-500 text-white px-4 py-2 rounded"
+                  >
+                    Añadir Foto
+                  </button>
+                </div>
+              </div>
+              <button
+                type="submit"
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+              >
+                Crear Contenido
+              </button>
+            </form>
           </div>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Fotos</label>
-          <ul>
-            {fotos.map((foto, index) => (
-              <li key={index} className="flex justify-between items-center">
-                {foto}
-                <button
-                  type="button"
-                  onClick={() => handleDeleteFoto(index)}
-                  className="ml-2 text-red-500 bg-transparent"
-                >
-                  <img src="/images/papelera.png" alt="Eliminar" className="h-4 w-4" />
-                </button>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4">
-            <input
-              type="text"
-              value={newFoto}
-              onChange={(e) => setNewFoto(e.target.value)}
-              placeholder="Nueva foto"
-              className="border border-gray-300 p-2 rounded"
-            />
-            <button
-              type="button"
-              onClick={handleAddFoto}
-              className="ml-2 bg-green-500 text-white px-4 py-2 rounded"
-            >
-              Añadir Foto
-            </button>
-          </div>
-        </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-        >
-          Crear Contenido
-        </button>
-      </form>
-    </div>
+      </div>
     </>
   );
 };

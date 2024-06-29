@@ -124,13 +124,13 @@ const AdminDashboard = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/fondo.png')" }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md"></div>
+          <div className="absolute inset-0  backdrop-filter backdrop-blur-md"></div>
         </div>
         <div className="absolute inset-0 flex flex-col items-center backdrop-filter backdrop-blur-md overflow-y-auto">
           <div className="container mx-auto px-4 mt-20 bg-transparent rounded p-6">
-            <h1 className="text-4xl text-orange-500 font-bold my-4">Admin Dashboard</h1>
+            <h1 className="text-4xl text-black text-outline font-bold my-4">Admin Dashboard</h1>
             <section>
-              <h2 className="text-xl text-green-400 font-semibold mb-2">Users</h2>
+              <h2 className="text-xl text-black font-semibold mb-2">Users</h2>
               <div className="flex justify-between items-center mb-4">
                 <input
                   type="text"
@@ -173,7 +173,7 @@ const AdminDashboard = () => {
               </div>
             </section>
             <section className="mt-8">
-              <h2 className="text-xl text-green-400 font-semibold mb-2">Comercios</h2>
+              <h2 className="text-xl text-black font-semibold mb-2">Comercios</h2>
               <div className="flex justify-between items-center mb-4">
                 <input
                   type="text"

@@ -2,7 +2,7 @@
 ###                             VARIABLES
 ###----------------------------------------------------------------------------
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2U5NDUyYzhkM2M1MDViNTc1NzhhMiIsImlhdCI6MTcxOTU3MjA4MSwiZXhwIjoxNzE5NjU4NDgxfQ.NXexfz7fATjMBtXjpHdeHMD5gipND8Ai8-_wFGUnlM8
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2U5NDUyYzhkM2M1MDViNTc1NzhhMiIsImlhdCI6MTcxOTY0NDYyMiwiZXhwIjoxNzE5NzMxMDIyfQ.DWjyfGornBjOvBhxuNIDE0Z3GWM9UpVyQzl3dOjRxcw
 
 ###----------------------------------------------------------------------------
 ###                    Pruebas para usuarios publicos
@@ -59,8 +59,14 @@ Content-Type: application/json
   "password": "passwordSegura"
 }
 
+### Obtener la informacion de un perfil
+GET http://localhost:3000/api/user/perfil
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
 ### Modificar algun dato del usuario
-POST http://localhost:3000/api/user
+PUT http://localhost:3000/api/user/update
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -100,8 +106,8 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "comentario": "Excelente servicio y comida deliciosa.",
-  "puntuacion": 5 
+  "comentario": "Churros Churros churros !!!!!",
+  "puntuacion": 4 
 }
 
 ### Listar todas las reviews del usuario

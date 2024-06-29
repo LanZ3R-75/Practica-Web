@@ -13,6 +13,7 @@ const { getContenido,
         getReviewsByContenido,
         registerUser,
         loginUser,
+        getUserProfile,
         updateUser,
         updateEmail,
         updatePassword,
@@ -64,8 +65,11 @@ router.get('/comercios/contenido/reviews/:id', getReviewsByContenido);
 //Ruta para iniciar sesion un usuario
 router.post('/login', validatorLoginUser, loginUser)
 
+//Ruta para obtener los datos de un usuario
+router.get('/perfil', auth, auth.isUser, getUserProfile)
+
 //Ruta para actualizar un usuario
-router.post('/', auth, auth.isUser, validatorUpdateUser, updateUser)
+router.put('/update', auth, auth.isUser, validatorUpdateUser, updateUser)
 
 //Ruta para actualizar el correo de un usuario
 router.put('/email',auth, auth.isUser, validatorUpdateEmail, updateEmail)

@@ -1,9 +1,17 @@
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('userToken');
+    if (token) {
+      setIsAuthenticated(true);
+    }
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -12,6 +20,12 @@ const Navbar = () => {
   const handleNavigation = (path) => {
     router.push(path);
     setIsOpen(false);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('userToken');
+    setIsAuthenticated(false);
+    handleNavigation('/usuariosRegistrados');
   };
 
   return (
@@ -26,24 +40,43 @@ const Navbar = () => {
         </button>
         {isOpen && (
           <div className="absolute right-0 mt-2 w-48 bg-white text-black shadow-md rounded-md transform transition-transform duration-200 ease-in-out">
-            <button
-              onClick={() => handleNavigation('/usuarios')}
-              className="block px-4 py-2 w-full text-left hover:bg-blue-100"
-            >
-              Login Usuario
-            </button>
-            <button
-              onClick={() => handleNavigation('/comercios')}
-              className="block px-4 py-2 w-full text-left hover:bg-blue-100"
-            >
-              Login Comercio
-            </button>
-            <button
-              onClick={() => handleNavigation('/admin')}
-              className="block px-4 py-2 w-full text-left hover:bg-blue-100"
-            >
-              Login Admin
-            </button>
+            {isAuthenticated ? (
+              <>
+                <button
+                  onClick={() => handleNavigation('/usuariosRegistrados/perfil')}
+                  className="block px-4 py-2 w-full text-left hover:bg-blue-100"
+                >
+                  Perfil
+                </button>
+                <button
+                  onClick={handleLogout}
+                  className="block px-4 py-2 w-full text-left hover:bg-blue-100"
+                >
+                  Cerrar sesión
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  onClick={() => handleNavigation('/usuariosRegistrados')}
+                  className="block px-4 py-2 w-full text-left hover:bg-blue-100"
+                >
+                  Login Usuario
+                </button>
+                <button
+                  onClick={() => handleNavigation('/comercios')}
+                  className="block px-4 py-2 w-full text-left hover:bg-blue-100"
+                >
+                  Login Comercio
+                </button>
+                <button
+                  onClick={() => handleNavigation('/admin')}
+                  className="block px-4 py-2 w-full text-left hover:bg-blue-100"
+                >
+                  Login Admin
+                </button>
+              </>
+            )}
           </div>
         )}
       </div>
