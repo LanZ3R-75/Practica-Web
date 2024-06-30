@@ -60,8 +60,8 @@ const InicioRegistrados = () => {
       return nombreMatch && ciudadMatch && actividadMatch;
     })
     .sort((a, b) => {
-      const compareA = a.nombre.toLowerCase();
-      const compareB = b.nombre.toLowerCase();
+      const compareA = a.paginaID.scoring;
+      const compareB = b.paginaID.scoring;
       if (sortOrder === 'asc') {
         return compareA < compareB ? -1 : compareA > compareB ? 1 : 0;
       } else {
@@ -72,8 +72,8 @@ const InicioRegistrados = () => {
   const comerciosCiudad = comercios
     .filter(comercio => comercio.paginaID?.ciudad?.toLowerCase() === user?.ciudad?.toLowerCase() && comercio.paginaID)
     .sort((a, b) => {
-      const compareA = a.nombre.toLowerCase();
-      const compareB = b.nombre.toLowerCase();
+      const compareA = a.paginaID.scoring;
+      const compareB = b.paginaID.scoring;
       if (sortOrderCiudad === 'asc') {
         return compareA < compareB ? -1 : compareA > compareB ? 1 : 0;
       } else {
@@ -84,8 +84,8 @@ const InicioRegistrados = () => {
   const comerciosIntereses = comercios
     .filter(comercio => user?.intereses?.some(interes => comercio.paginaID?.actividad?.toLowerCase() === interes.toLowerCase()) && comercio.paginaID)
     .sort((a, b) => {
-      const compareA = a.nombre.toLowerCase();
-      const compareB = b.nombre.toLowerCase();
+      const compareA = a.paginaID.scoring;
+      const compareB = b.paginaID.scoring;
       if (sortOrderIntereses === 'asc') {
         return compareA < compareB ? -1 : compareA > compareB ? 1 : 0;
       } else {
@@ -181,7 +181,7 @@ const InicioRegistrados = () => {
                 Descendente
               </button>
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center overflow-y-auto max-h-[70vh]">
               {filteredComercios.map(comercio => (
                 <ComercioCard key={comercio._id} comercio={comercio} />
               ))}

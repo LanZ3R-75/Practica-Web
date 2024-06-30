@@ -8,17 +8,19 @@ const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [cityFilter, setCityFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc'); // Estado para el orden de clasificación
+  const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
-    fetchComercios(sortOrder); // Fetch comercios with the current sort order
+    fetchComercios(sortOrder);
   }, [sortOrder]);
 
   const fetchComercios = async (order = 'asc') => {
     try {
+      console.log(`Fetching comercios with order: ${order}`);
       const response = await fetch(`http://localhost:3000/api/user/comercios/contenido?ordenar=${order}`);
       if (response.ok) {
         const data = await response.json();
+        console.log('Datos recibidos:', data); // Log para verificar los datos recibidos
         setComercios(data);
       } else {
         console.error('Error fetching comercios:', response.statusText);
@@ -36,14 +38,18 @@ const HomePage = () => {
       return nombreMatch && ciudadMatch && actividadMatch;
     })
     .sort((a, b) => {
-      const compareA = a.nombre.toLowerCase();
-      const compareB = b.nombre.toLowerCase();
+      const compareA = a.paginaID.scoring;
+      const compareB = b.paginaID.scoring;
       if (sortOrder === 'asc') {
         return compareA < compareB ? -1 : compareA > compareB ? 1 : 0;
       } else {
         return compareA > compareB ? -1 : compareA < compareB ? 1 : 0;
       }
     });
+
+  useEffect(() => {
+    console.log('Filtered comercios:', filteredComercios);
+  }, [filteredComercios]);
 
   return (
     <>
@@ -92,9 +98,13 @@ const HomePage = () => {
               </button>
             </div>
             <div className="flex flex-wrap justify-center">
-              {filteredComercios.map(comercio => (
-                <ComercioCard key={comercio._id} comercio={comercio} />
-              ))}
+              {filteredComercios.length > 0 ? (
+                filteredComercios.map(comercio => (
+                  <ComercioCard key={comercio._id} comercio={comercio} />
+                ))
+              ) : (
+                <p className="text-center text-black">No se encontraron comercios.</p>
+              )}
             </div>
           </div>
         </div>

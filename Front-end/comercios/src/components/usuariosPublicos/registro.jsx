@@ -55,7 +55,7 @@ const RegisterUsuario = () => {
           title: 'Registro exitoso',
           text: 'Ahora puedes iniciar sesión',
         });
-        router.push("/usuariosRegistrados/login");
+        router.push("/usuariosRegistrados");
       } else {
         const errorData = await response.json();
         Swal.fire({
