@@ -1,7 +1,7 @@
 ###----------------------------------------------------------------------------
 ###                             Variables
 ###----------------------------------------------------------------------------
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZkZmQyYTA0MGQ2MzY2NGYyZjU3ZCIsImlhdCI6MTcxOTAzMDg0OCwiZXhwIjoxNzE5MTE3MjQ4fQ.rZd2sdrt1fzo2eMpRR9xNBOXuAKApTDXQWtztdLen1o
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjZkZmQyYTA0MGQ2MzY2NGYyZjU3ZCIsImlhdCI6MTcxOTcyMTk4MywiZXhwIjoxNzE5ODA4MzgzfQ.1urwhXIRS17XotuZHKju7CREkhm_78YG4Jh_Jg1wBQA
 ###----------------------------------------------------------------------------
 ###       Pruebas para Administradores
 ###----------------------------------------------------------------------------
