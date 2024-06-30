@@ -95,16 +95,15 @@ const validatorDeleteText = [
 
 // Validador para subir una foto
 const validatorUploadFoto = [
-
+    
     (req, res, next) => {
-
-        if (!req.file){
-            return res.status(400).send({message: "No se ha subido ninguna foto"})
+        if (!req.file) {
+            return res.status(400).send({ message: "No se ha subido ninguna foto" });
         }
-
-        next()
+        next();
     }
-]
+];
+
 
 // Validador para borrar una foto
 const validatorDeleteFoto = [

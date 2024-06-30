@@ -78416,3 +78416,116 @@ Response Body:
 	"message": "El token no es válido"
 }
 Response: 401 0.193 ms 
+
+Request: GET /api/user/comercios/contenido at Sun Jun 30 2024 05:22:09 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 408.483 ms 
+
+Request: GET /api/user/comercios/contenido at Sun Jun 30 2024 05:22:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 103.643 ms 
+
+Request: POST /api/comercios/contenido/fotos at Sun Jun 30 2024 05:29:08 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 298.640 ms 
+
+Request: POST /api/comercios/contenido/fotos at Sun Jun 30 2024 05:38:02 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Foto añadida correctamente",
+	"fotos": [
+		"uploads\\1719718682652-shishaBar.jpg"
+	]
+}
+Response: 200 176.646 ms 
+
+Request: DELETE /api/comercios/contenido/fotos/0 at Sun Jun 30 2024 05:38:13 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Foto eliminada correctamente",
+	"fotos": []
+}
+Response: 200 141.406 ms 
+
+Request: POST /api/comercios/contenido/fotos at Sun Jun 30 2024 05:39:24 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Foto añadida correctamente",
+	"fotos": [
+		"uploads\\1719718764324-shishaBar.jpg"
+	]
+}
+Response: 200 163.379 ms 

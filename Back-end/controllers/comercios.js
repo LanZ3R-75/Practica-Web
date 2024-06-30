@@ -240,12 +240,11 @@ const deleteText = async (req, res, next) => {
 };
 
 // Subir foto
-const uploadFoto = async (req, res, next) => {
 
+const uploadFoto = async (req, res, next) => {
     const {id} = req.user;
 
     try {
-
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
 
@@ -260,12 +259,11 @@ const uploadFoto = async (req, res, next) => {
         await contenido.save();
 
         res.status(200).send({ message: 'Foto añadida correctamente', fotos: contenido.fotos });
-
     } catch (error) {
-       
-        next(error)
+        next(error);
     }
 };
+
 
 //Borrar imagenes
 

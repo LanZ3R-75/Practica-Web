@@ -35,7 +35,7 @@ const { validatorLoginComercio,
 // Configuración de almacenamiento de Multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'subidas/'); // Carpeta donde se guardarán las fotos
+        cb(null, 'uploads/'); // Carpeta donde se guardarán las fotos
     },
     filename: (req, file, cb) => {
         cb(null, `${Date.now()}-${file.originalname}`);

@@ -28,7 +28,7 @@ morganBody(app, {
 app.use("/api", require("./routes")) //Lee los routes/index.js por defecto
 
 // Middleware para servir archivos estáticos
-app.use('/subidas', express.static(path.join(__dirname, 'subidas')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const port = process.env.PORT || 3000
 
