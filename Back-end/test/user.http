@@ -2,7 +2,7 @@
 ###                             VARIABLES
 ###----------------------------------------------------------------------------
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2U5NDUyYzhkM2M1MDViNTc1NzhhMiIsImlhdCI6MTcxOTY0NDYyMiwiZXhwIjoxNzE5NzMxMDIyfQ.DWjyfGornBjOvBhxuNIDE0Z3GWM9UpVyQzl3dOjRxcw
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWZiZWYyNTYwZTQ5NDgxNGUxNWNmOCIsImlhdCI6MTcxOTcxNjUxMCwiZXhwIjoxNzE5ODAyOTEwfQ.04QlXW3IIfqOY83JBpgef2zatV0HxgpUMpsmf3Y_700
 
 ###----------------------------------------------------------------------------
 ###                    Pruebas para usuarios publicos
@@ -55,7 +55,7 @@ POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
+  "email": "daniel12345@example.com",
   "password": "passwordSegura"
 }
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ### Publicar una reseña
-POST http://localhost:3000/api/user/666041f9b9bc68d084386be1/review
+POST http://localhost:3000/api/user/6666ee72e2cff37338880429/review
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
