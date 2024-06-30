@@ -53,7 +53,7 @@ a {
 }
 
 button {
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-primary-dark));
   color: rgb(var(--color-background));
 }
 

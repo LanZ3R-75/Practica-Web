@@ -81151,3 +81151,5359 @@ Response Body:
 	"message": "Usuario no encontrado"
 }
 Response: 404 89.470 ms 
+
+Request: GET /api/user/comercios/contenido at Sun Jun 30 2024 12:31:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 76.931 ms 
+
+Request: GET /api/user/comercios/contenido at Sun Jun 30 2024 12:31:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 68.657 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:34:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 55.710 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:34:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 52.260 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:34:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 284.194 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:34:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 52.552 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:34:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.099 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:34:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 51.232 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:34:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 53.384 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:03 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 51.541 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:35:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 280.635 ms 
+
+Request: GET /api/user/comercios/contenido/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 12:35:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667fec45fd1c5efd1502a23b",
+	"nombre": "llaollao",
+	"CIF": "CIF777777",
+	"direccion": "Calle Falsa 123",
+	"email": "llaollao@llaollao.com",
+	"telefono": "638201634",
+	"paginaID": {
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 3.5,
+		"numScoring": 2,
+		"reviews": [
+			"6680c492fd1c5efd1502a455",
+			"6680cd1fd8318cc9aee2dd30"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T03:12:31.910Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ZlYzQ1ZmQxYzVlZmQxNTAyYTIzYiIsImlhdCI6MTcxOTY1OTU4OX0.j6YyIZNCjc77o1DChKXyYgQjhVM5EH4kOsT8_1oZOaE",
+	"createdAt": "2024-06-29T11:13:09.677Z",
+	"updatedAt": "2024-06-29T11:14:01.997Z"
+}
+Response: 304 52.477 ms 
+
+Request: GET /api/user/comercios/contenido/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 12:35:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667fec45fd1c5efd1502a23b",
+	"nombre": "llaollao",
+	"CIF": "CIF777777",
+	"direccion": "Calle Falsa 123",
+	"email": "llaollao@llaollao.com",
+	"telefono": "638201634",
+	"paginaID": {
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 3.5,
+		"numScoring": 2,
+		"reviews": [
+			"6680c492fd1c5efd1502a455",
+			"6680cd1fd8318cc9aee2dd30"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T03:12:31.910Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ZlYzQ1ZmQxYzVlZmQxNTAyYTIzYiIsImlhdCI6MTcxOTY1OTU4OX0.j6YyIZNCjc77o1DChKXyYgQjhVM5EH4kOsT8_1oZOaE",
+	"createdAt": "2024-06-29T11:13:09.677Z",
+	"updatedAt": "2024-06-29T11:14:01.997Z"
+}
+Response: 304 48.358 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 12:35:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "helados muy ricos"
+	},
+	{
+		"userName": "Daniel",
+		"scoring": 2,
+		"comentario": "ufff"
+	}
+]
+Response: 304 123.450 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:35:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.589 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 12:35:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "helados muy ricos"
+	},
+	{
+		"userName": "Daniel",
+		"scoring": 2,
+		"comentario": "ufff"
+	}
+]
+Response: 304 127.721 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:35:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.303 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 70.764 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 78.778 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 12:35:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.666666666666667,
+		"numScoring": 3,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T03:13:17.854Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff",
+			"6680cd4dd8318cc9aee2dd82"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02
+...
+Response: 304 93.816 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 12:35:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.666666666666667,
+		"numScoring": 3,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T03:13:17.854Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff",
+			"6680cd4dd8318cc9aee2dd82"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02
+...
+Response: 304 65.525 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 12:35:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	},
+	{
+		"userName": "Daniel",
+		"scoring": 5,
+		"comentario": "perfecto"
+	}
+]
+Response: 304 538.278 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:35:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.232 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 12:35:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	},
+	{
+		"userName": "Daniel",
+		"scoring": 5,
+		"comentario": "perfecto"
+	}
+]
+Response: 304 113.567 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:35:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.244 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 73.438 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 76.393 ms 
+
+Request: GET /api/user/comercios/contenido/666042b8b9bc68d084386bef at Sun Jun 30 2024 12:35:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "666042b8b9bc68d084386bef",
+	"nombre": "Fnac",
+	"CIF": "CIF006660",
+	"direccion": "Calle 6",
+	"email": "comercio6@example.com",
+	"telefono": "667788991",
+	"paginaID": {
+		"_id": "666042b8b9bc68d084386bed",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6680ccf0d8318cc9aee2dcc2"
+		],
+		"createdAt": "2024-06-05T10:49:28.820Z",
+		"updatedAt": "2024-06-30T03:11:44.966Z",
+		"actividad": "Bar",
+		"ciudad": "Granada",
+		"resumen": "Los mejores helados artesanales.",
+		"titulo": "Helados Frescos"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+	"createdAt": "2024-06-05T10:49:28.864Z",
+	"updatedAt": "2024-06-27T02:52:51.728Z"
+}
+Response: 304 66.205 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/666042b8b9bc68d084386bef at Sun Jun 30 2024 12:35:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Daniel",
+		"scoring": 4,
+		"comentario": "prueba"
+	}
+]
+Response: 304 110.974 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:35:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.285 ms 
+
+Request: GET /api/user/comercios/contenido/666042b8b9bc68d084386bef at Sun Jun 30 2024 12:35:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "666042b8b9bc68d084386bef",
+	"nombre": "Fnac",
+	"CIF": "CIF006660",
+	"direccion": "Calle 6",
+	"email": "comercio6@example.com",
+	"telefono": "667788991",
+	"paginaID": {
+		"_id": "666042b8b9bc68d084386bed",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6680ccf0d8318cc9aee2dcc2"
+		],
+		"createdAt": "2024-06-05T10:49:28.820Z",
+		"updatedAt": "2024-06-30T03:11:44.966Z",
+		"actividad": "Bar",
+		"ciudad": "Granada",
+		"resumen": "Los mejores helados artesanales.",
+		"titulo": "Helados Frescos"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+	"createdAt": "2024-06-05T10:49:28.864Z",
+	"updatedAt": "2024-06-27T02:52:51.728Z"
+}
+Response: 304 65.115 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/666042b8b9bc68d084386bef at Sun Jun 30 2024 12:35:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Daniel",
+		"scoring": 4,
+		"comentario": "prueba"
+	}
+]
+Response: 304 107.302 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:35:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.212 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.181 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.209 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:35:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.476 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:35:41 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 61.062 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:35:59 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 61.433 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:36:40 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 56.385 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:38:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.451 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:38:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.510 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad?ciudad=Madrid&ordenar=desc at Sun Jun 30 2024 12:38:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 2,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427",
+			"6680cd0ed8318cc9aee2dcf6"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T03:39:24.397Z"
+	},
+	{
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 3.5,
+		"numScoring": 2,
+		"reviews": [
+			"6680c492fd1c5efd1502a455",
+			"6680cd1fd8318cc9aee2dd30"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T03:12:31.910Z"
+	}
+]
+Response: 200 29.929 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad?ciudad=Madrid&ordenar=asc at Sun Jun 30 2024 12:38:39 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 3.5,
+		"numScoring": 2,
+		"reviews": [
+			"6680c492fd1c5efd1502a455",
+			"6680cd1fd8318cc9aee2dd30"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T03:12:31.910Z"
+	},
+	{
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 2,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427",
+			"6680cd0ed8318cc9aee2dcf6"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T03:39:24.397Z"
+	}
+]
+Response: 200 26.908 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:38:47 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 66.583 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:38:55 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 61.959 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:41:57 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 73.051 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:41:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 72.310 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:42:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 63.726 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:42:19 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 72.676 ms 
+
+Request: GET /api/user/comercios/contenido/actividad?actividad=Cafeter%C3%ADa&ordenar=desc at Sun Jun 30 2024 12:42:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "No se ha encontrado ningun contenido para la actividad"
+}
+Response: 404 26.965 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad?ciudad=Madrid&ordenar=desc at Sun Jun 30 2024 12:42:33 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 2,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427",
+			"6680cd0ed8318cc9aee2dcf6"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T03:39:24.397Z"
+	},
+	{
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 3.5,
+		"numScoring": 2,
+		"reviews": [
+			"6680c492fd1c5efd1502a455",
+			"6680cd1fd8318cc9aee2dd30"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T03:12:31.910Z"
+	}
+]
+Response: 200 37.761 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad?ciudad=Madrid&ordenar=asc at Sun Jun 30 2024 12:42:47 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 3.5,
+		"numScoring": 2,
+		"reviews": [
+			"6680c492fd1c5efd1502a455",
+			"6680cd1fd8318cc9aee2dd30"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T03:12:31.910Z"
+	},
+	{
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 2,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427",
+			"6680cd0ed8318cc9aee2dcf6"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T03:39:24.397Z"
+	}
+]
+Response: 200 27.196 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:44:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 327.528 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:44:18 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 65.957 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:45:36 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 67.949 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:46:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 71.102 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:46:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.898 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:47:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 281.912 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:47:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 65.492 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:48:09 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 90.392 ms 
+
+Request: POST /api/user/login at Sun Jun 30 2024 12:50:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"email": "patricia@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2EyZmIxMzgxYTJjOWM0NmIyZDc3MyIsImlhdCI6MTcxOTc0NDY0NCwiZXhwIjoxNzE5ODMxMDQ0fQ.o4SwEbLqxAPdGeakHj5Cy96cIHVvtXCkw2YzUgjrU5g"
+}
+Response: 200 129.821 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:50:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-25T02:47:13.442Z"
+}
+Response: 200 63.481 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:50:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 73.038 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:50:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-25T02:47:13.442Z"
+}
+Response: 304 55.011 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:50:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.642 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:50:49 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-25T02:47:13.442Z"
+}
+Response: 304 62.518 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:50:49 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 64.457 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:50:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.047 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:50:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-25T02:47:13.442Z"
+}
+Response: 304 59.488 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:51:00 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-25T02:47:13.442Z"
+}
+Response: 304 69.924 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:51:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-25T02:47:13.442Z"
+}
+Response: 304 67.130 ms 
+
+Request: PUT /api/user/update at Sun Jun 30 2024 12:51:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "Usuario actualizado con éxito",
+	"contenido": {
+		"_id": "667a2fb1381a2c9c46b2d773",
+		"nombre": "patricia",
+		"email": "patricia@example.com",
+		"password": "$2a$10$2y5UiOt2O6lFMEQP0r2HWOC1YkFc5e/xeeKHWxFCs9JtQBDeikT9K",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-25T02:47:13.442Z",
+		"updatedAt": "2024-06-30T10:51:07.009Z"
+	}
+}
+Response: 200 97.056 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:51:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 200 65.810 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:51:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 56.001 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:51:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.729 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:51:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 62.433 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:51:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 64.459 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 12:53:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 62.020 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:53:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 62.131 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:53:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 55.313 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:53:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.701 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:53:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 293.915 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:53:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 295.782 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:53:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 59.329 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:53:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.732 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.565 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 62.639 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 57.127 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 57.051 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.705 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.092 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.240 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 68.099 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:41 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.434 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:41 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 56.232 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:41 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.154 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.080 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 59.000 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.208 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 55.021 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.061 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.130 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.796 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 54.387 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.671 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 55.437 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.623 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.548 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 60.351 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 73.119 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 62.938 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.325 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:57:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 58.950 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:57:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 57.566 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:04 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 72.327 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:04 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 75.736 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:04 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 64.824 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:08 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 58.136 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:08 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 57.610 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:09 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.947 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:09 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 55.348 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.956 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 56.131 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.435 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 69.130 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:11 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.485 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.897 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 66.802 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 65.143 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 66.083 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.581 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 12:59:21 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 56.605 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:21 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 58.467 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 12:59:21 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.512 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:00:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 58.953 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:00:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 58.534 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:00:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 58.888 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:00:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.915 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:01:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 61.596 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:01:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 66.133 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:01:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 57.971 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:01:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.654 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:01:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 55.520 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:01:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.567 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.364 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 60.145 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.206 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 57.370 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.565 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.815 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.861 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:19 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.861 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 13:02:22 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 54.754 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 59.921 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 13:02:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 62.423 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 13:02:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 55.432 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 13:02:32 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 71.641 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.572 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 13:02:36 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 62.874 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:02:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.416 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:03:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 56.523 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:03:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 57.735 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 13:03:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 57.031 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:03:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 56.258 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 13:03:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 60.703 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 13:03:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667a2fb1381a2c9c46b2d773",
+	"nombre": "patricia",
+	"email": "patricia@example.com",
+	"edad": 18,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-25T02:47:13.442Z",
+	"updatedAt": "2024-06-30T10:51:07.009Z"
+}
+Response: 304 60.882 ms 

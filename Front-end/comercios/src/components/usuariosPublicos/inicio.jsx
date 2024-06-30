@@ -8,14 +8,15 @@ const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [cityFilter, setCityFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState('');
+  const [sortOrder, setSortOrder] = useState('asc'); // Estado para el orden de clasificación
 
   useEffect(() => {
-    fetchComercios();
-  }, []);
+    fetchComercios(sortOrder); // Fetch comercios with the current sort order
+  }, [sortOrder]);
 
-  const fetchComercios = async () => {
+  const fetchComercios = async (order = 'asc') => {
     try {
-      const response = await fetch('http://localhost:3000/api/user/comercios/contenido');
+      const response = await fetch(`http://localhost:3000/api/user/comercios/contenido?ordenar=${order}`);
       if (response.ok) {
         const data = await response.json();
         setComercios(data);
@@ -27,12 +28,22 @@ const HomePage = () => {
     }
   };
 
-  const filteredComercios = comercios.filter(comercio => {
-    const nombreMatch = comercio.nombre?.toLowerCase().includes(searchTerm.toLowerCase());
-    const ciudadMatch = comercio.paginaID?.ciudad?.toLowerCase().includes(cityFilter.toLowerCase());
-    const actividadMatch = comercio.paginaID?.actividad?.toLowerCase().includes(activityFilter.toLowerCase());
-    return nombreMatch && ciudadMatch && actividadMatch;
-  });
+  const filteredComercios = comercios
+    .filter(comercio => {
+      const nombreMatch = comercio.nombre?.toLowerCase().includes(searchTerm.toLowerCase());
+      const ciudadMatch = comercio.paginaID?.ciudad?.toLowerCase().includes(cityFilter.toLowerCase());
+      const actividadMatch = comercio.paginaID?.actividad?.toLowerCase().includes(activityFilter.toLowerCase());
+      return nombreMatch && ciudadMatch && actividadMatch;
+    })
+    .sort((a, b) => {
+      const compareA = a.nombre.toLowerCase();
+      const compareB = b.nombre.toLowerCase();
+      if (sortOrder === 'asc') {
+        return compareA < compareB ? -1 : compareA > compareB ? 1 : 0;
+      } else {
+        return compareA > compareB ? -1 : compareA < compareB ? 1 : 0;
+      }
+    });
 
   return (
     <>
@@ -67,6 +78,18 @@ const HomePage = () => {
                 onChange={(e) => setActivityFilter(e.target.value)}
                 className="border border-gray-300 p-2 rounded mx-2"
               />
+              <button
+                onClick={() => setSortOrder('asc')}
+                className={`border border-gray-300 p-2 rounded mx-2 bg-transparent ${sortOrder === 'asc' ? 'bg-sky-600' : ''}`}
+              >
+                Ascendente
+              </button>
+              <button
+                onClick={() => setSortOrder('desc')}
+                className={`border border-gray-300 p-2 rounded mx-2 bg-transparent ${sortOrder === 'desc' ? 'bg-sky-600' : ''}`}
+              >
+                Descendente
+              </button>
             </div>
             <div className="flex flex-wrap justify-center">
               {filteredComercios.map(comercio => (
