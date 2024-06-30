@@ -1,19 +1,23 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import ComercioCard from '../usuariosPublicos/tarjetaComercio';
 import Navbar from '../navBar/navBar';
 
 const HomePage = () => {
+  // Variables de estado y router
   const [comercios, setComercios] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [cityFilter, setCityFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState('');
   const [sortOrder, setSortOrder] = useState('asc');
 
+   // Hook useEffect que se ejecuta cuando cambia el orden de clasificación
   useEffect(() => {
     fetchComercios(sortOrder);
   }, [sortOrder]);
 
+  // Función para obtener los comercios del servidor
   const fetchComercios = async (order = 'asc') => {
     try {
       console.log(`Fetching comercios with order: ${order}`);
@@ -30,6 +34,7 @@ const HomePage = () => {
     }
   };
 
+  // Filtra y ordena los comercios según los filtros y el orden de clasificación
   const filteredComercios = comercios
     .filter(comercio => {
       const nombreMatch = comercio.nombre?.toLowerCase().includes(searchTerm.toLowerCase());
@@ -47,6 +52,7 @@ const HomePage = () => {
       }
     });
 
+  // hook useEffect para registrar cambios en los comercios filtrados
   useEffect(() => {
     console.log('Filtered comercios:', filteredComercios);
   }, [filteredComercios]);

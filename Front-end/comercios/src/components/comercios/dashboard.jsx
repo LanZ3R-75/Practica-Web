@@ -1,11 +1,12 @@
-// src/components/comercio/ComercioDashboard.jsx
 "use client";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 import Navbar from "../navBar/navBar";
 
 const ComercioDashboard = () => {
+  // Variables de estado y router
   const router = useRouter();
   const [comercio, setComercio] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
@@ -18,6 +19,7 @@ const ComercioDashboard = () => {
   });
   const [newText, setNewText] = useState("");
 
+  // Hook useEffect que se ejecuta al montar el componente
   useEffect(() => {
     const token = localStorage.getItem('comercioToken');
     if (!token) {
@@ -27,6 +29,7 @@ const ComercioDashboard = () => {
     }
   }, []);
 
+  // Función para obtener la información del comercio
   const fetchComercio = async (token) => {
     try {
       const response = await fetch('http://localhost:3000/api/comercios/info', {
@@ -53,6 +56,7 @@ const ComercioDashboard = () => {
     }
   };
 
+  // Función para eliminar el comercio
   const handleDeleteComercio = () => {
     Swal.fire({
       title: "¿Estás seguro?",
@@ -91,6 +95,7 @@ const ComercioDashboard = () => {
     }
   };
 
+  // Función para eliminar el contenido asociado al comercio
   const handleDeleteContenido = () => {
     Swal.fire({
       title: "¿Estás seguro?",
@@ -129,6 +134,7 @@ const ComercioDashboard = () => {
     }
   };
 
+  // Maneja los cambios en los campos del formulario de contenido
   const handleEditContentChange = (e) => {
     setEditContent({
       ...editContent,
@@ -136,6 +142,7 @@ const ComercioDashboard = () => {
     });
   };
 
+   // Función para guardar el contenido editado
   const handleSaveContent = async () => {
     const token = localStorage.getItem('comercioToken');
     try {
@@ -162,6 +169,7 @@ const ComercioDashboard = () => {
     }
   };
 
+  // Función para agregar un nuevo texto
   const handleAddText = async () => {
     const token = localStorage.getItem('comercioToken');
     try {
@@ -191,6 +199,7 @@ const ComercioDashboard = () => {
     }
   };
 
+  // Función para eliminar un texto
   const handleDeleteText = async (index) => {
     const token = localStorage.getItem('comercioToken');
     try {
@@ -217,61 +226,6 @@ const ComercioDashboard = () => {
     }
   };
 
-  const handleAddFoto = async () => {
-    const token = localStorage.getItem('comercioToken');
-    try {
-      const response = await fetch('http://localhost:3000/api/comercios/contenido/foto', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify({ foto: newFoto }),
-      });
-      if (response.ok) {
-        const data = await response.json();
-        setComercio(prev => ({
-          ...prev,
-          contenido: {
-            ...prev.contenido,
-            fotos: data.fotos
-          }
-        }));
-        setNewFoto("");
-      } else {
-        console.error("Error adding foto:", response.statusText);
-      }
-    } catch (error) {
-      console.error("Error adding foto:", error);
-    }
-  };
-
-  const handleDeleteFoto = async (index) => {
-    const token = localStorage.getItem('comercioToken');
-    try {
-      const response = await fetch(`http://localhost:3000/api/comercios/contenido/foto/${index}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-        },
-      });
-      if (response.ok) {
-        const data = await response.json();
-        setComercio(prev => ({
-          ...prev,
-          contenido: {
-            ...prev.contenido,
-            fotos: data.fotos
-          }
-        }));
-      } else {
-        console.error("Error deleting foto:", response.statusText);
-      }
-    } catch (error) {
-      console.error("Error deleting foto:", error);
-    }
-  };
-
   // Función para manejar la consulta de intereses
     const handleConsultarIntereses = async () => {
         const token = localStorage.getItem('comercioToken');
@@ -294,6 +248,7 @@ const ComercioDashboard = () => {
         }
     };
 
+  // Función para redirigir a la página de creación de contenido
   const handleCreateContenido = () => {
     router.push('/comercios/crearContenido');
   };

@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  // Hook useEffect que se ejecuta al montar el componente
   useEffect(() => {
     const token = localStorage.getItem('userToken');
     if (token) {
@@ -13,15 +14,18 @@ const Navbar = () => {
     }
   }, []);
 
+   // Función para alternar la apertura del menú
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+   // Función para manejar la navegación
   const handleNavigation = (path) => {
     router.push(path);
     setIsOpen(false);
   };
 
+  // Función para manejar el cierre de sesión
   const handleLogout = () => {
     localStorage.removeItem('userToken');
     setIsAuthenticated(false);

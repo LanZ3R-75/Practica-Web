@@ -1,23 +1,27 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import ComercioCard from '../usuariosPublicos/tarjetaComercio';
 import Navbar from '../navBar/navBar';
 
 const InicioRegistrados = () => {
+  // Estado para almacenar los comercios, el usuario y los filtros de búsqueda y ordenación
   const [comercios, setComercios] = useState([]);
   const [user, setUser] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [cityFilter, setCityFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc'); // Estado para el orden de clasificación
-  const [sortOrderCiudad, setSortOrderCiudad] = useState('asc'); // Estado para el orden de clasificación de la ciudad
-  const [sortOrderIntereses, setSortOrderIntereses] = useState('asc'); // Estado para el orden de clasificación de los intereses
+  const [sortOrder, setSortOrder] = useState('asc'); 
+  const [sortOrderCiudad, setSortOrderCiudad] = useState('asc'); 
+  const [sortOrderIntereses, setSortOrderIntereses] = useState('asc'); 
 
+  // Hook useEffect que se ejecuta al montar el componente y cuando cambia el orden de clasificación
   useEffect(() => {
     fetchUser();
     fetchComercios(sortOrder);
   }, [sortOrder]);
 
+  // Función para obtener los datos del usuario
   const fetchUser = async () => {
     try {
       const token = localStorage.getItem('userToken');
@@ -38,6 +42,7 @@ const InicioRegistrados = () => {
     }
   };
 
+  // Función para obtener los datos de los comercios
   const fetchComercios = async (order = 'asc') => {
     try {
       const response = await fetch(`http://localhost:3000/api/user/comercios/contenido?ordenar=${order}`);
@@ -52,6 +57,7 @@ const InicioRegistrados = () => {
     }
   };
 
+   // Filtra y ordena los comercios según los filtros de búsqueda y el orden de clasificación
   const filteredComercios = comercios
     .filter(comercio => {
       const nombreMatch = comercio.nombre?.toLowerCase().includes(searchTerm.toLowerCase());
@@ -69,6 +75,7 @@ const InicioRegistrados = () => {
       }
     });
 
+  // Filtra y ordena los comercios de la misma ciudad del usuario
   const comerciosCiudad = comercios
     .filter(comercio => comercio.paginaID?.ciudad?.toLowerCase() === user?.ciudad?.toLowerCase() && comercio.paginaID)
     .sort((a, b) => {
@@ -81,6 +88,7 @@ const InicioRegistrados = () => {
       }
     });
 
+  // Filtra y ordena los comercios según los intereses del usuario
   const comerciosIntereses = comercios
     .filter(comercio => user?.intereses?.some(interes => comercio.paginaID?.actividad?.toLowerCase() === interes.toLowerCase()) && comercio.paginaID)
     .sort((a, b) => {

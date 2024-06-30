@@ -1,15 +1,17 @@
 "use client";
-// src/components/admin/login.jsx
+
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Swal from 'sweetalert2';
 import Navbar from '../navBar/navBar';
 
 const AdminLogin = () => {
+  // Variables de estado y router
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
 
+  // Maneja el inicio de sesión al enviar el formulario
   const handleLogin = async (e) => {
     e.preventDefault();
     try {

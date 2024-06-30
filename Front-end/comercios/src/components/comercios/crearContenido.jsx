@@ -1,10 +1,11 @@
-// src/pages/comercios/crearContenido.jsx
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../navBar/navBar";
 
 const CrearContenido = () => {
+  // Variables de estado y router
   const router = useRouter();
   const [contenido, setContenido] = useState({
     ciudad: "",
@@ -17,6 +18,7 @@ const CrearContenido = () => {
   const [newFoto, setNewFoto] = useState("");
   const [fotos, setFotos] = useState([]);
 
+   // Maneja los cambios en los campos del formulario
   const handleChange = (e) => {
     setContenido({
       ...contenido,
@@ -24,24 +26,29 @@ const CrearContenido = () => {
     });
   };
 
+  // Maneja la adición de un nuevo texto
   const handleAddText = () => {
     setTextos([...textos, newText]);
     setNewText("");
   };
 
+  // Maneja la eliminación de un texto
   const handleDeleteText = (index) => {
     setTextos(textos.filter((_, i) => i !== index));
   };
 
+  // Maneja la adición de una nueva foto
   const handleAddFoto = () => {
     setFotos([...fotos, newFoto]);
     setNewFoto("");
   };
 
+   // Maneja la eliminación de una foto
   const handleDeleteFoto = (index) => {
     setFotos(fotos.filter((_, i) => i !== index));
   };
 
+  // Maneja el envío del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem("comercioToken");

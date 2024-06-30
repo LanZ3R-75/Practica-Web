@@ -1,10 +1,12 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import Navbar from '../navBar/navBar';
 import Swal from 'sweetalert2';
 
 const Comercio = ({ id }) => {
+  // Variables de estado y router
   const router = useRouter();
   const [comercio, setComercio] = useState(null);
   const [reviews, setReviews] = useState([]);
@@ -15,6 +17,7 @@ const Comercio = ({ id }) => {
   const [userToken, setUserToken] = useState(null);
   const [hasReviewed, setHasReviewed] = useState(false);
 
+  // Hook useEffect que se ejecuta al montar el componente
   useEffect(() => {
     const token = localStorage.getItem('userToken');
     setUserToken(token);
@@ -24,6 +27,7 @@ const Comercio = ({ id }) => {
     }
   }, [id]);
 
+  // Función para obtener los datos del comercio
   const fetchComercio = async (id) => {
     try {
       const response = await fetch(`http://localhost:3000/api/user/comercios/contenido/${id}`);
@@ -38,6 +42,7 @@ const Comercio = ({ id }) => {
     }
   };
 
+  // Función para obtener las reseñas del comercio
   const fetchReviews = async (id) => {
     try {
       const response = await fetch(`http://localhost:3000/api/user/comercios/contenido/reviews/${id}`);
@@ -64,6 +69,7 @@ const Comercio = ({ id }) => {
     }
   };
 
+   // Función para manejar los cambios en el formulario de reseña
   const handleReviewChange = (e) => {
     const { name, value } = e.target;
     setReviewContent({
@@ -72,6 +78,7 @@ const Comercio = ({ id }) => {
     });
   };
 
+  // Función para manejar el envío del formulario de reseña
   const handleReviewSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -103,6 +110,7 @@ const Comercio = ({ id }) => {
     return <div>Loading...</div>;
   }
 
+   // Función para renderizar estrellas de puntuación
   const renderStars = (scoring, size = "text-base") => {
     const totalStars = 5;
     const fullStars = Math.floor(scoring);

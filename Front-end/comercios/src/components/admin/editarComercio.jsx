@@ -1,9 +1,11 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../navBar/navBar";
 
 const EditComercio = ({ id }) => {
+  // Variables de estado y router
   const router = useRouter();
   const [comercio, setComercio] = useState({
     nombre: "",
@@ -13,6 +15,7 @@ const EditComercio = ({ id }) => {
     telefono: "",
   });
 
+   // Hook useEffect que se ejecuta al montar el componente y cuando cambia el id
   useEffect(() => {
     const fetchComercio = async () => {
       try {
@@ -33,6 +36,7 @@ const EditComercio = ({ id }) => {
     }
   }, [id]);
 
+  // Maneja los cambios en los campos del formulario
   const handleChange = (e) => {
     setComercio({
       ...comercio,
@@ -40,6 +44,7 @@ const EditComercio = ({ id }) => {
     });
   };
 
+  // Maneja el envío del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

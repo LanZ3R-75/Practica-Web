@@ -1,15 +1,19 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "../navBar/navBar";
 
 const AdminDashboard = () => {
+
+  // Variables de estado y router
   const router = useRouter();
   const [users, setUsers] = useState([]);
   const [comercios, setComercios] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [userSearchTerm, setUserSearchTerm] = useState('');
 
+  // Hook useEffect que se ejecuta al montar el componente
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
@@ -20,6 +24,7 @@ const AdminDashboard = () => {
     }
   }, []);
 
+  // Función para obtener los usuarios del servidor
   const fetchUsers = async () => {
     try {
       const response = await fetch('http://localhost:3000/api/admin/users', {
@@ -34,6 +39,7 @@ const AdminDashboard = () => {
     }
   };
 
+  // Función para obtener los comercios del servidor
   const fetchComercios = async () => {
     try {
       const response = await fetch('http://localhost:3000/api/admin/comercios', {
@@ -48,10 +54,12 @@ const AdminDashboard = () => {
     }
   };
 
+  // Función para manejar la navegación a la página de registro de comercios
   const handleRegisterComercio = () => {
     router.push('/admin/registrarComercio');
   };
 
+  // Función para eliminar un comercio
   const deleteComercio = async (id) => {
     try {
       const response = await fetch(`http://localhost:3000/api/admin/comercios/${id}`, {
@@ -62,7 +70,7 @@ const AdminDashboard = () => {
       });
 
       if (response.ok) {
-        setComercios(comercios.filter(comercio => comercio._id !== id));
+        setComercios(comercios.filter(comercio => comercio._id !== id));// Actualiza el estado eliminando el comercio borrado
       } else {
         console.error('Failed to delete comercio');
       }
@@ -71,6 +79,7 @@ const AdminDashboard = () => {
     }
   };
 
+  // Función para eliminar un usuario
   const deleteUsuario = async (id) => {
     try {
       const response = await fetch(`http://localhost:3000/api/admin/user/${id}`, {
@@ -90,27 +99,33 @@ const AdminDashboard = () => {
     }
   };
 
+   // Función para manejar la edición de un comercio
   const editComercio = (id) => {
     router.push(`/admin/editarComercio/${id}`);
   };
 
+   // Función para manejar la edición de un usuario
   const editUser = (id) => {
     router.push(`/admin/editarUsuarios/${id}`);
   };
 
+   // Función para manejar la búsqueda de comercios
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };
 
+   // Función para manejar la búsqueda de usuarios
   const handleUserSearch = (e) => {
     setUserSearchTerm(e.target.value);
   };
 
+   // Filtro de los comercios en funcion de la busqueda
   const filteredComercios = comercios.filter(comercio =>
     comercio.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
     comercio.CIF.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+   // Filtro de los usarios en funcion de la busqueda
   const filteredUsers = users.filter(user =>
     user.nombre.toLowerCase().includes(userSearchTerm.toLowerCase()) ||
     user.email.toLowerCase().includes(userSearchTerm.toLowerCase())

@@ -1,9 +1,11 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Navbar from "../navBar/navBar";
 
 const EditUser = () => {
+  // Variables de estado y router
   const router = useRouter();
   const { id } = useParams();
   const [user, setUser] = useState({
@@ -16,6 +18,7 @@ const EditUser = () => {
   });
   const [errorMessage, setErrorMessage] = useState("");
 
+  // Hook useEffect que se ejecuta al montar el componente y cuando cambia el id
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -41,6 +44,7 @@ const EditUser = () => {
     }
   }, [id]);
 
+   // Maneja los cambios en los campos del formulario
   const handleChange = (e) => {
     setUser({
       ...user,
@@ -48,6 +52,7 @@ const EditUser = () => {
     });
   };
 
+   // Maneja los cambios en el campo de intereses
   const handleInteresesChange = (e) => {
     setUser({
       ...user,
@@ -55,6 +60,7 @@ const EditUser = () => {
     });
   };
 
+   // Maneja el envío del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

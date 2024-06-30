@@ -1,14 +1,17 @@
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Swal from 'sweetalert2';
 import Navbar from "../navBar/navBar";
 
 const LoginUsuario = () => {
+  // Variables de estado y router
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+   // Maneja el inicio de sesión del usuario al enviar el formulario
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -43,6 +46,7 @@ const LoginUsuario = () => {
     }
   };
 
+  // Redirige al usuario a la página de registro
   const handleRegister = () => {
     router.push("/usuariosPublicos/registro");
   };

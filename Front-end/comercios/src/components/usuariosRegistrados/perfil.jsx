@@ -1,10 +1,12 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Swal from 'sweetalert2';
 import Navbar from "../navBar/navBar";
 
 const UserProfile = () => {
+  // Variables de estado y router
   const [user, setUser] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [isEditingEmail, setIsEditingEmail] = useState(false);
@@ -22,6 +24,7 @@ const UserProfile = () => {
 
   const router = useRouter();
 
+   // Función para obtener los datos del perfil del usuario
   const fetchUserProfile = async () => {
     try {
       const token = localStorage.getItem('userToken');
@@ -51,6 +54,7 @@ const UserProfile = () => {
     fetchUserProfile();
   }, []);
 
+  // Maneja los cambios en los campos de edición del perfil
   const handleEditContentChange = (e) => {
     const { name, value, type, checked } = e.target;
     setEditContent({
@@ -59,6 +63,7 @@ const UserProfile = () => {
     });
   };
 
+  // Función para guardar los cambios del perfil
   const handleSaveContent = async () => {
     const token = localStorage.getItem('userToken');
     try {
@@ -88,10 +93,12 @@ const UserProfile = () => {
     }
   };
 
+  // Maneja los cambios en el campo de edición del email
   const handleEditEmailChange = (e) => {
     setEditEmail(e.target.value);
   };
 
+    // Función para guardar el nuevo email
   const handleSaveEmail = async () => {
     const token = localStorage.getItem('userToken');
     try {
@@ -117,6 +124,7 @@ const UserProfile = () => {
     }
   };
 
+  // Maneja los cambios en el campo de edición de la contraseña
   const handleEditPasswordChange = (e) => {
     const { name, value } = e.target;
     setEditPassword({
@@ -125,6 +133,7 @@ const UserProfile = () => {
     });
   };
   
+    // Función para guardar la nueva contraseña
   const handleSavePassword = async () => {
     const token = localStorage.getItem('userToken');
     try {
@@ -149,6 +158,7 @@ const UserProfile = () => {
     }
   };
   
+  // Función para eliminar la cuenta del usuario
   const handleDeleteAccount = async () => {
     const result = await Swal.fire({
       title: '¿Estás seguro?',

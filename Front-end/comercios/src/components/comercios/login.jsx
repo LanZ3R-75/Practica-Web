@@ -1,15 +1,17 @@
 "use client";
-// src/components/comercio/LoginComercio.jsx
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Swal from 'sweetalert2';
 import Navbar from "../navBar/navBar";
 
 const LoginComercio = () => {
+  // Variables de estado y router
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [cif, setCif] = useState("");
 
+   // Maneja el inicio de sesión al enviar el formulario
   const handleLogin = async (e) => {
     e.preventDefault();
 

@@ -1,10 +1,12 @@
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Swal from 'sweetalert2';
 import Navbar from "../navBar/navBar";
 
 const RegisterUsuario = () => {
+  // Variables de estado y router
   const router = useRouter();
   const [formData, setFormData] = useState({
     nombre: "",
@@ -17,6 +19,7 @@ const RegisterUsuario = () => {
     ofertas: false
   });
 
+  // Maneja los cambios en los campos del formulario
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -25,6 +28,7 @@ const RegisterUsuario = () => {
     });
   };
 
+  // Maneja el registro del usuario al enviar el formulario
   const handleRegister = async (e) => {
     e.preventDefault();
 
@@ -37,7 +41,7 @@ const RegisterUsuario = () => {
       return;
     }
 
-    // Convert interests string to array
+    // Convierte la cadena de intereses en un array
     const interesesArray = formData.intereses.split(',').map(item => item.trim());
 
     try {

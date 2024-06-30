@@ -1,9 +1,11 @@
-// src/components/admin/RegisterComercio.jsx
+"use client"
+
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Navbar from '../navBar/navBar';
 
 const RegisterComercio = () => {
+  // Variables de estado y router
   const [form, setForm] = useState({
     nombre: '',
     CIF: '',
@@ -14,6 +16,7 @@ const RegisterComercio = () => {
   const [error, setError] = useState(null);
   const router = useRouter();
 
+  // Maneja los cambios en los campos del formulario
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -21,6 +24,7 @@ const RegisterComercio = () => {
     });
   };
 
+  // Maneja el envío del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);

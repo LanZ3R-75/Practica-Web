@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 const ComercioCard = ({ comercio }) => {
   const router = useRouter();
 
+  // Función para renderizar las estrellas de puntuación
   const renderStars = (scoring) => {
     const totalStars = 5;
     const fullStars = Math.floor(scoring);
@@ -23,8 +24,9 @@ const ComercioCard = ({ comercio }) => {
     );
   };
 
-  if (!comercio.paginaID) return null;
+  if (!comercio.paginaID) return null; // Si no hay datos de la página, no renderiza nada
 
+  // Maneja el clic en la tarjeta para redirigir a la página de contenidos del comercio
   const handleCardClick = () => {
     router.push(`/usuariosPublicos/contenidos/${comercio._id}`);
   };

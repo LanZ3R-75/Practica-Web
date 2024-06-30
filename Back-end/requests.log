@@ -123190,3 +123190,4773 @@ Response Body:
 	"updatedAt": "2024-06-30T19:23:14.214Z"
 }
 Response: 304 66.453 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 59.104 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 200 91.311 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 61.075 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 89.851 ms 
+
+Request: GET /api/user/comercios/contenido/66819e285ef17c9ff660d131 at Sun Jun 30 2024 22:43:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819e285ef17c9ff660d131",
+	"nombre": "Gimnasio Fitness Pro",
+	"CIF": "CIFMAD126",
+	"direccion": "Calle Serrano, 55",
+	"email": "fitnesspro@example.com",
+	"telefono": "914567890",
+	"paginaID": {
+		"_id": "66819fde5ef17c9ff660d1e1",
+		"ciudad": "Madrid",
+		"actividad": "Gimnasio",
+		"titulo": "Fitness Pro",
+		"resumen": "El gimnasio más completo de Madrid.",
+		"text": [
+			"En Fitness Pro, contamos con equipos de última generación.",
+			"Ofrecemos clases dirigidas y entrenadores personales.",
+			"¡Ven a ponerte en forma con nosotros!"
+		],
+		"fotos": [
+			"uploads/gimnasio.jpg",
+			"uploads/clases.jpg"
+		],
+		"scoring": 3,
+		"numScoring": 1,
+		"reviews": [
+			"6681b4c15ef17c9ff660d759"
+		],
+		"createdAt": "2024-06-30T18:11:42.834Z",
+		"updatedAt": "2024-06-30T19:40:49.604Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTI4NWVmMTdjOWZmNjYwZDEzMSIsImlhdCI6MTcxOTc3MDY2NH0.JnQrXTNliy8gV7bAjGxEw2cYClsZIgn9LWURUng6uRA",
+	"createdAt": "20
+...
+Response: 304 61.731 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819e285ef17c9ff660d131 at Sun Jun 30 2024 22:43:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 3,
+		"comentario": "buenas maquinas "
+	}
+]
+Response: 304 111.445 ms 
+
+Request: GET /api/user/comercios/contenido/66819e285ef17c9ff660d131 at Sun Jun 30 2024 22:43:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819e285ef17c9ff660d131",
+	"nombre": "Gimnasio Fitness Pro",
+	"CIF": "CIFMAD126",
+	"direccion": "Calle Serrano, 55",
+	"email": "fitnesspro@example.com",
+	"telefono": "914567890",
+	"paginaID": {
+		"_id": "66819fde5ef17c9ff660d1e1",
+		"ciudad": "Madrid",
+		"actividad": "Gimnasio",
+		"titulo": "Fitness Pro",
+		"resumen": "El gimnasio más completo de Madrid.",
+		"text": [
+			"En Fitness Pro, contamos con equipos de última generación.",
+			"Ofrecemos clases dirigidas y entrenadores personales.",
+			"¡Ven a ponerte en forma con nosotros!"
+		],
+		"fotos": [
+			"uploads/gimnasio.jpg",
+			"uploads/clases.jpg"
+		],
+		"scoring": 3,
+		"numScoring": 1,
+		"reviews": [
+			"6681b4c15ef17c9ff660d759"
+		],
+		"createdAt": "2024-06-30T18:11:42.834Z",
+		"updatedAt": "2024-06-30T19:40:49.604Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTI4NWVmMTdjOWZmNjYwZDEzMSIsImlhdCI6MTcxOTc3MDY2NH0.JnQrXTNliy8gV7bAjGxEw2cYClsZIgn9LWURUng6uRA",
+	"createdAt": "20
+...
+Response: 304 66.459 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 54.376 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819e285ef17c9ff660d131 at Sun Jun 30 2024 22:43:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 3,
+		"comentario": "buenas maquinas "
+	}
+]
+Response: 304 109.070 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 55.754 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 61.552 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 65.547 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 51.866 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:16 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 64.798 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 60.743 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 76.410 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 22:43:22 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 200 68.066 ms 
+
+Request: GET /api/user/comercios/contenido/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 22:43:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819d425ef17c9ff660d0d9",
+	"nombre": "Restaurante El Sabor de Madrid",
+	"CIF": "CIFMAD123",
+	"direccion": "Calle Gran Vía, 45",
+	"email": "elsabordemadrid@example.com",
+	"telefono": "912345678",
+	"paginaID": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T20:27:15.537Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR
+...
+Response: 304 56.282 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 22:43:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Javier Martínez",
+		"scoring": 5,
+		"comentario": "Viste Madrid, me lo recomendaron y quede encantado"
+	}
+]
+Response: 304 97.358 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.318 ms 
+
+Request: GET /api/user/comercios/contenido/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 22:43:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819d425ef17c9ff660d0d9",
+	"nombre": "Restaurante El Sabor de Madrid",
+	"CIF": "CIFMAD123",
+	"direccion": "Calle Gran Vía, 45",
+	"email": "elsabordemadrid@example.com",
+	"telefono": "912345678",
+	"paginaID": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T20:27:15.537Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR
+...
+Response: 304 55.222 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 22:43:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Javier Martínez",
+		"scoring": 5,
+		"comentario": "Viste Madrid, me lo recomendaron y quede encantado"
+	}
+]
+Response: 304 97.267 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:23 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.197 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 54.545 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 74.748 ms 
+
+Request: GET /api/user/comercios/contenido/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:43:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a2ac5ef17c9ff660d2b5",
+	"nombre": "Discoteca Razzmatazz",
+	"CIF": "CIFBAR125",
+	"direccion": "Carrer dels Almogàvers, 122",
+	"email": "razzmatazz@example.com",
+	"telefono": "933456789",
+	"paginaID": {
+		"_id": "6681ab385ef17c9ff660d467",
+		"ciudad": "Barcelona",
+		"actividad": "Ocio Nocturno",
+		"titulo": "Razzmatazz",
+		"resumen": "La mejor música y ambiente en Barcelona.",
+		"text": [
+			"Ven a disfrutar de una noche inolvidable en Razzmatazz.",
+			"Los mejores DJs y conciertos en vivo te esperan.",
+			"¡No te lo pierdas!"
+		],
+		"fotos": [
+			"uploads/discoteca.jpg",
+			"uploads/dj.jpg"
+		],
+		"scoring": 1,
+		"numScoring": 2,
+		"reviews": [
+			"6681c0e95ef17c9ff660dadc",
+			"6681c22c5ef17c9ff660dc49"
+		],
+		"createdAt": "2024-06-30T19:00:08.251Z",
+		"updatedAt": "2024-06-30T20:38:04.492Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhMmFjNWVmMTdjOWZmNjYwZDJiNSIsImlhdCI6MTcxOTc3MTgyMH0.9lW7rNLpH-UU7n71irYZOomQ-8QvRlGIZyAqjb4O
+...
+Response: 304 53.519 ms 
+
+Request: GET /api/user/comercios/contenido/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:43:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a2ac5ef17c9ff660d2b5",
+	"nombre": "Discoteca Razzmatazz",
+	"CIF": "CIFBAR125",
+	"direccion": "Carrer dels Almogàvers, 122",
+	"email": "razzmatazz@example.com",
+	"telefono": "933456789",
+	"paginaID": {
+		"_id": "6681ab385ef17c9ff660d467",
+		"ciudad": "Barcelona",
+		"actividad": "Ocio Nocturno",
+		"titulo": "Razzmatazz",
+		"resumen": "La mejor música y ambiente en Barcelona.",
+		"text": [
+			"Ven a disfrutar de una noche inolvidable en Razzmatazz.",
+			"Los mejores DJs y conciertos en vivo te esperan.",
+			"¡No te lo pierdas!"
+		],
+		"fotos": [
+			"uploads/discoteca.jpg",
+			"uploads/dj.jpg"
+		],
+		"scoring": 1,
+		"numScoring": 2,
+		"reviews": [
+			"6681c0e95ef17c9ff660dadc",
+			"6681c22c5ef17c9ff660dc49"
+		],
+		"createdAt": "2024-06-30T19:00:08.251Z",
+		"updatedAt": "2024-06-30T20:38:04.492Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhMmFjNWVmMTdjOWZmNjYwZDJiNSIsImlhdCI6MTcxOTc3MTgyMH0.9lW7rNLpH-UU7n71irYZOomQ-8QvRlGIZyAqjb4O
+...
+Response: 304 48.054 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:43:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Ana López",
+		"scoring": 1,
+		"comentario": "No vayais , solo hay gente buscando bronca"
+	},
+	{
+		"userName": "David Fernández",
+		"scoring": 1,
+		"comentario": "la ultima vez que fui, vino la policia y desalojo el establecimiento. No recomiendo"
+	}
+]
+Response: 304 116.557 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.228 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:43:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Ana López",
+		"scoring": 1,
+		"comentario": "No vayais , solo hay gente buscando bronca"
+	},
+	{
+		"userName": "David Fernández",
+		"scoring": 1,
+		"comentario": "la ultima vez que fui, vino la policia y desalojo el establecimiento. No recomiendo"
+	}
+]
+Response: 304 120.657 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.198 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 73.742 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 71.717 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 22:43:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 71.546 ms 
+
+Request: GET /api/user/comercios/contenido/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:43:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a5ab5ef17c9ff660d3c0",
+	"nombre": "Restaurante Macarena",
+	"CIF": "CIFSEV006",
+	"direccion": "Calle San Luis, 15",
+	"email": "macarena@example.com",
+	"telefono": "954667788",
+	"paginaID": {
+		"_id": "6681aed15ef17c9ff660d59b",
+		"ciudad": "Sevilla",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante Macarena",
+		"resumen": "Deliciosa comida andaluza en el barrio de la Macarena.",
+		"text": [
+			"En Restaurante Macarena, disfrutarás de la auténtica comida andaluza.",
+			"Platos tradicionales y un ambiente familiar."
+		],
+		"fotos": [
+			"uploads/macarena_restaurante.jpg",
+			"uploads/macarena_plato.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 3,
+		"reviews": [
+			"6681c1f25ef17c9ff660dbfb",
+			"6681c2ff5ef17c9ff660deaf",
+			"6681c3265ef17c9ff660dedc"
+		],
+		"createdAt": "2024-06-30T19:15:29.393Z",
+		"updatedAt": "2024-06-30T20:42:14.434Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhNWFiNWVmMTdjOWZmNjYwZDNjMCIsImlhdCI6MTcxOTc3
+...
+Response: 304 64.883 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:43:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "David Fernández",
+		"scoring": 5,
+		"comentario": "Dale alegria a tu cuerpo macarena "
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 5,
+		"comentario": "Que tu cuerpo es pa darle alegria cosa buena"
+	},
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 5,
+		"comentario": "Eeeeeeeeeeeeeh macarena"
+	}
+]
+Response: 304 115.630 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.245 ms 
+
+Request: GET /api/user/comercios/contenido/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:43:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a5ab5ef17c9ff660d3c0",
+	"nombre": "Restaurante Macarena",
+	"CIF": "CIFSEV006",
+	"direccion": "Calle San Luis, 15",
+	"email": "macarena@example.com",
+	"telefono": "954667788",
+	"paginaID": {
+		"_id": "6681aed15ef17c9ff660d59b",
+		"ciudad": "Sevilla",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante Macarena",
+		"resumen": "Deliciosa comida andaluza en el barrio de la Macarena.",
+		"text": [
+			"En Restaurante Macarena, disfrutarás de la auténtica comida andaluza.",
+			"Platos tradicionales y un ambiente familiar."
+		],
+		"fotos": [
+			"uploads/macarena_restaurante.jpg",
+			"uploads/macarena_plato.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 3,
+		"reviews": [
+			"6681c1f25ef17c9ff660dbfb",
+			"6681c2ff5ef17c9ff660deaf",
+			"6681c3265ef17c9ff660dedc"
+		],
+		"createdAt": "2024-06-30T19:15:29.393Z",
+		"updatedAt": "2024-06-30T20:42:14.434Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhNWFiNWVmMTdjOWZmNjYwZDNjMCIsImlhdCI6MTcxOTc3
+...
+Response: 304 62.041 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:43:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "David Fernández",
+		"scoring": 5,
+		"comentario": "Dale alegria a tu cuerpo macarena "
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 5,
+		"comentario": "Que tu cuerpo es pa darle alegria cosa buena"
+	},
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 5,
+		"comentario": "Eeeeeeeeeeeeeh macarena"
+	}
+]
+Response: 304 122.116 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:43:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.251 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 85.328 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 76.048 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 22:43:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 74.174 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:43:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 81.889 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 22:43:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 73.122 ms 
+
+Request: GET /api/user/comercios/contenido/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:44:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a5ab5ef17c9ff660d3c0",
+	"nombre": "Restaurante Macarena",
+	"CIF": "CIFSEV006",
+	"direccion": "Calle San Luis, 15",
+	"email": "macarena@example.com",
+	"telefono": "954667788",
+	"paginaID": {
+		"_id": "6681aed15ef17c9ff660d59b",
+		"ciudad": "Sevilla",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante Macarena",
+		"resumen": "Deliciosa comida andaluza en el barrio de la Macarena.",
+		"text": [
+			"En Restaurante Macarena, disfrutarás de la auténtica comida andaluza.",
+			"Platos tradicionales y un ambiente familiar."
+		],
+		"fotos": [
+			"uploads/macarena_restaurante.jpg",
+			"uploads/macarena_plato.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 3,
+		"reviews": [
+			"6681c1f25ef17c9ff660dbfb",
+			"6681c2ff5ef17c9ff660deaf",
+			"6681c3265ef17c9ff660dedc"
+		],
+		"createdAt": "2024-06-30T19:15:29.393Z",
+		"updatedAt": "2024-06-30T20:42:14.434Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhNWFiNWVmMTdjOWZmNjYwZDNjMCIsImlhdCI6MTcxOTc3
+...
+Response: 304 65.633 ms 
+
+Request: GET /api/user/comercios/contenido/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:44:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a5ab5ef17c9ff660d3c0",
+	"nombre": "Restaurante Macarena",
+	"CIF": "CIFSEV006",
+	"direccion": "Calle San Luis, 15",
+	"email": "macarena@example.com",
+	"telefono": "954667788",
+	"paginaID": {
+		"_id": "6681aed15ef17c9ff660d59b",
+		"ciudad": "Sevilla",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante Macarena",
+		"resumen": "Deliciosa comida andaluza en el barrio de la Macarena.",
+		"text": [
+			"En Restaurante Macarena, disfrutarás de la auténtica comida andaluza.",
+			"Platos tradicionales y un ambiente familiar."
+		],
+		"fotos": [
+			"uploads/macarena_restaurante.jpg",
+			"uploads/macarena_plato.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 3,
+		"reviews": [
+			"6681c1f25ef17c9ff660dbfb",
+			"6681c2ff5ef17c9ff660deaf",
+			"6681c3265ef17c9ff660dedc"
+		],
+		"createdAt": "2024-06-30T19:15:29.393Z",
+		"updatedAt": "2024-06-30T20:42:14.434Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhNWFiNWVmMTdjOWZmNjYwZDNjMCIsImlhdCI6MTcxOTc3
+...
+Response: 304 62.138 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:44:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "David Fernández",
+		"scoring": 5,
+		"comentario": "Dale alegria a tu cuerpo macarena "
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 5,
+		"comentario": "Que tu cuerpo es pa darle alegria cosa buena"
+	},
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 5,
+		"comentario": "Eeeeeeeeeeeeeh macarena"
+	}
+]
+Response: 304 141.664 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:20 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.237 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a5ab5ef17c9ff660d3c0 at Sun Jun 30 2024 22:44:21 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "David Fernández",
+		"scoring": 5,
+		"comentario": "Dale alegria a tu cuerpo macarena "
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 5,
+		"comentario": "Que tu cuerpo es pa darle alegria cosa buena"
+	},
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 5,
+		"comentario": "Eeeeeeeeeeeeeh macarena"
+	}
+]
+Response: 304 125.303 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:21 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.214 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:44:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 80.292 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:44:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 80.362 ms 
+
+Request: GET /api/user/comercios/contenido/66819def5ef17c9ff660d115 at Sun Jun 30 2024 22:44:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819def5ef17c9ff660d115",
+	"nombre": "Comercio La Central",
+	"CIF": "CIFMAD124",
+	"direccion": "Calle Fuencarral, 78",
+	"email": "lacentral@example.com",
+	"telefono": "911234567",
+	"paginaID": {
+		"_id": "66819f215ef17c9ff660d19f",
+		"ciudad": "Madrid",
+		"actividad": "Comercio",
+		"titulo": "La Central",
+		"resumen": "Tu tienda de confianza en el corazón de Madrid.",
+		"text": [
+			"En La Central, encontrarás una amplia variedad de productos de calidad.",
+			"Ofrecemos descuentos especiales durante todo el año.",
+			"Visítanos y disfruta de una experiencia de compra única."
+		],
+		"fotos": [
+			"uploads/tienda_central.jpg",
+			"uploads/productos.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 4,
+		"reviews": [
+			"6681b2d35ef17c9ff660d673",
+			"6681bef15ef17c9ff660d846",
+			"6681c10d5ef17c9ff660db06",
+			"6681c2c85ef17c9ff660dde5"
+		],
+		"createdAt": "2024-06-30T18:08:33.447Z",
+		"updatedAt": "2024-06-30T20:40:40.413Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsI
+...
+Response: 304 73.882 ms 
+
+Request: GET /api/user/comercios/contenido/66819def5ef17c9ff660d115 at Sun Jun 30 2024 22:44:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819def5ef17c9ff660d115",
+	"nombre": "Comercio La Central",
+	"CIF": "CIFMAD124",
+	"direccion": "Calle Fuencarral, 78",
+	"email": "lacentral@example.com",
+	"telefono": "911234567",
+	"paginaID": {
+		"_id": "66819f215ef17c9ff660d19f",
+		"ciudad": "Madrid",
+		"actividad": "Comercio",
+		"titulo": "La Central",
+		"resumen": "Tu tienda de confianza en el corazón de Madrid.",
+		"text": [
+			"En La Central, encontrarás una amplia variedad de productos de calidad.",
+			"Ofrecemos descuentos especiales durante todo el año.",
+			"Visítanos y disfruta de una experiencia de compra única."
+		],
+		"fotos": [
+			"uploads/tienda_central.jpg",
+			"uploads/productos.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 4,
+		"reviews": [
+			"6681b2d35ef17c9ff660d673",
+			"6681bef15ef17c9ff660d846",
+			"6681c10d5ef17c9ff660db06",
+			"6681c2c85ef17c9ff660dde5"
+		],
+		"createdAt": "2024-06-30T18:08:33.447Z",
+		"updatedAt": "2024-06-30T20:40:40.413Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsI
+...
+Response: 304 61.679 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819def5ef17c9ff660d115 at Sun Jun 30 2024 22:44:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 5,
+		"comentario": "Apoyad al comercio local!!!"
+	},
+	{
+		"userName": "María García",
+		"scoring": 5,
+		"comentario": "El dependiente es muy atento"
+	},
+	{
+		"userName": "Ana López",
+		"scoring": 3,
+		"comentario": "Diseño muy elegante, bien ubicado y trato amable"
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 5,
+		"comentario": "Cucurella!!! Cucurella!! Cucurella!!"
+	}
+]
+Response: 304 391.328 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.208 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819def5ef17c9ff660d115 at Sun Jun 30 2024 22:44:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 5,
+		"comentario": "Apoyad al comercio local!!!"
+	},
+	{
+		"userName": "María García",
+		"scoring": 5,
+		"comentario": "El dependiente es muy atento"
+	},
+	{
+		"userName": "Ana López",
+		"scoring": 3,
+		"comentario": "Diseño muy elegante, bien ubicado y trato amable"
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 5,
+		"comentario": "Cucurella!!! Cucurella!! Cucurella!!"
+	}
+]
+Response: 304 121.323 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:29 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.471 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:44:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 80.026 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:44:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 88.024 ms 
+
+Request: GET /api/user/comercios/contenido/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 22:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819e0d5ef17c9ff660d123",
+	"nombre": "Discoteca Eclipse",
+	"CIF": "CIFMAD125",
+	"direccion": "Calle de las Huertas, 14",
+	"email": "eclipse@example.com",
+	"telefono": "913456789",
+	"paginaID": {
+		"_id": "66819f8d5ef17c9ff660d1bc",
+		"ciudad": "Madrid",
+		"actividad": "Ocio Nocturno",
+		"titulo": "Discoteca Eclipse",
+		"resumen": "La mejor música y el mejor ambiente en Madrid.",
+		"text": [
+			"Ven a disfrutar de una noche inolvidable en Eclipse.",
+			"Los mejores DJs y un ambiente espectacular te esperan.",
+			"¡No te lo pierdas!"
+		],
+		"fotos": [
+			"uploads/discoteca.jpg",
+			"uploads/dj.jpg"
+		],
+		"scoring": 1,
+		"numScoring": 2,
+		"reviews": [
+			"6681b2e15ef17c9ff660d695",
+			"6681c2c15ef17c9ff660ddb5"
+		],
+		"createdAt": "2024-06-30T18:10:21.730Z",
+		"updatedAt": "2024-06-30T20:40:33.399Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTBkNWVmMTdjOWZmNjYwZDEyMyIsImlhdCI6MTcxOTc3MDYzN30.a8xxR1vvR0JLkBXpEn37FkutckOid4x7Ksd1
+...
+Response: 304 60.062 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 22:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 1,
+		"comentario": "Penoso trato"
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 1,
+		"comentario": "Cucurella!!! Cucurella!! Cucurella!!"
+	}
+]
+Response: 304 110.316 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.243 ms 
+
+Request: GET /api/user/comercios/contenido/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 22:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819e0d5ef17c9ff660d123",
+	"nombre": "Discoteca Eclipse",
+	"CIF": "CIFMAD125",
+	"direccion": "Calle de las Huertas, 14",
+	"email": "eclipse@example.com",
+	"telefono": "913456789",
+	"paginaID": {
+		"_id": "66819f8d5ef17c9ff660d1bc",
+		"ciudad": "Madrid",
+		"actividad": "Ocio Nocturno",
+		"titulo": "Discoteca Eclipse",
+		"resumen": "La mejor música y el mejor ambiente en Madrid.",
+		"text": [
+			"Ven a disfrutar de una noche inolvidable en Eclipse.",
+			"Los mejores DJs y un ambiente espectacular te esperan.",
+			"¡No te lo pierdas!"
+		],
+		"fotos": [
+			"uploads/discoteca.jpg",
+			"uploads/dj.jpg"
+		],
+		"scoring": 1,
+		"numScoring": 2,
+		"reviews": [
+			"6681b2e15ef17c9ff660d695",
+			"6681c2c15ef17c9ff660ddb5"
+		],
+		"createdAt": "2024-06-30T18:10:21.730Z",
+		"updatedAt": "2024-06-30T20:40:33.399Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTBkNWVmMTdjOWZmNjYwZDEyMyIsImlhdCI6MTcxOTc3MDYzN30.a8xxR1vvR0JLkBXpEn37FkutckOid4x7Ksd1
+...
+Response: 304 68.541 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 22:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Carlos Pérez",
+		"scoring": 1,
+		"comentario": "Penoso trato"
+	},
+	{
+		"userName": "Marc Cucurella",
+		"scoring": 1,
+		"comentario": "Cucurella!!! Cucurella!! Cucurella!!"
+	}
+]
+Response: 304 113.294 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.202 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:44:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 78.576 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 22:44:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T20:27:15.537Z"
+		},
+		"deleted": false,
+		"t
+...
+Response: 304 73.460 ms 
+
+Request: GET /api/user/comercios/contenido/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:44:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a2ac5ef17c9ff660d2b5",
+	"nombre": "Discoteca Razzmatazz",
+	"CIF": "CIFBAR125",
+	"direccion": "Carrer dels Almogàvers, 122",
+	"email": "razzmatazz@example.com",
+	"telefono": "933456789",
+	"paginaID": {
+		"_id": "6681ab385ef17c9ff660d467",
+		"ciudad": "Barcelona",
+		"actividad": "Ocio Nocturno",
+		"titulo": "Razzmatazz",
+		"resumen": "La mejor música y ambiente en Barcelona.",
+		"text": [
+			"Ven a disfrutar de una noche inolvidable en Razzmatazz.",
+			"Los mejores DJs y conciertos en vivo te esperan.",
+			"¡No te lo pierdas!"
+		],
+		"fotos": [
+			"uploads/discoteca.jpg",
+			"uploads/dj.jpg"
+		],
+		"scoring": 1,
+		"numScoring": 2,
+		"reviews": [
+			"6681c0e95ef17c9ff660dadc",
+			"6681c22c5ef17c9ff660dc49"
+		],
+		"createdAt": "2024-06-30T19:00:08.251Z",
+		"updatedAt": "2024-06-30T20:38:04.492Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhMmFjNWVmMTdjOWZmNjYwZDJiNSIsImlhdCI6MTcxOTc3MTgyMH0.9lW7rNLpH-UU7n71irYZOomQ-8QvRlGIZyAqjb4O
+...
+Response: 304 59.981 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:44:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Ana López",
+		"scoring": 1,
+		"comentario": "No vayais , solo hay gente buscando bronca"
+	},
+	{
+		"userName": "David Fernández",
+		"scoring": 1,
+		"comentario": "la ultima vez que fui, vino la policia y desalojo el establecimiento. No recomiendo"
+	}
+]
+Response: 304 110.499 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.265 ms 
+
+Request: GET /api/user/comercios/contenido/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:44:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a2ac5ef17c9ff660d2b5",
+	"nombre": "Discoteca Razzmatazz",
+	"CIF": "CIFBAR125",
+	"direccion": "Carrer dels Almogàvers, 122",
+	"email": "razzmatazz@example.com",
+	"telefono": "933456789",
+	"paginaID": {
+		"_id": "6681ab385ef17c9ff660d467",
+		"ciudad": "Barcelona",
+		"actividad": "Ocio Nocturno",
+		"titulo": "Razzmatazz",
+		"resumen": "La mejor música y ambiente en Barcelona.",
+		"text": [
+			"Ven a disfrutar de una noche inolvidable en Razzmatazz.",
+			"Los mejores DJs y conciertos en vivo te esperan.",
+			"¡No te lo pierdas!"
+		],
+		"fotos": [
+			"uploads/discoteca.jpg",
+			"uploads/dj.jpg"
+		],
+		"scoring": 1,
+		"numScoring": 2,
+		"reviews": [
+			"6681c0e95ef17c9ff660dadc",
+			"6681c22c5ef17c9ff660dc49"
+		],
+		"createdAt": "2024-06-30T19:00:08.251Z",
+		"updatedAt": "2024-06-30T20:38:04.492Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhMmFjNWVmMTdjOWZmNjYwZDJiNSIsImlhdCI6MTcxOTc3MTgyMH0.9lW7rNLpH-UU7n71irYZOomQ-8QvRlGIZyAqjb4O
+...
+Response: 304 58.146 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a2ac5ef17c9ff660d2b5 at Sun Jun 30 2024 22:44:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Ana López",
+		"scoring": 1,
+		"comentario": "No vayais , solo hay gente buscando bronca"
+	},
+	{
+		"userName": "David Fernández",
+		"scoring": 1,
+		"comentario": "la ultima vez que fui, vino la policia y desalojo el establecimiento. No recomiendo"
+	}
+]
+Response: 304 112.791 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 22:44:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.198 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 23:06:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzYzlmMWNjZDNhZDk2OTdjMTU2NiIsImlhdCI6MTcxOTc4MTU5OSwiZXhwIjoxNzE5ODY3OTk5fQ.SXTSoqgVtBmh5__UUxQiSc2Lilv3GjH1thv2SXWhP9U"
+}
+Response: 200 93.910 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:06:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 200 59.495 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:06:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 200 64.823 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:06:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 60.368 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:06:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 60.955 ms 
+
+Request: GET /api/admin/user/6681b0a25ef17c9ff660d5f4 at Sun Jun 30 2024 23:06:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 200 58.303 ms 
+
+Request: GET /api/admin/user/6681b0a25ef17c9ff660d5f4 at Sun Jun 30 2024 23:06:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 59.072 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:06:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 58.355 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:06:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 57.400 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:06:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 59.046 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:06:43 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 60.793 ms 
+
+Request: GET /api/admin/comercios/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 23:06:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819d425ef17c9ff660d0d9",
+	"nombre": "Restaurante El Sabor de Madrid",
+	"CIF": "CIFMAD123",
+	"direccion": "Calle Gran Vía, 45",
+	"email": "elsabordemadrid@example.com",
+	"telefono": "912345678",
+	"paginaID": "66819dab5ef17c9ff660d0f3",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"createdAt": "2024-06-30T18:00:34.074Z",
+	"updatedAt": "2024-06-30T18:02:19.228Z"
+}
+Response: 200 184.103 ms 
+
+Request: GET /api/admin/comercios/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 23:06:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819d425ef17c9ff660d0d9",
+	"nombre": "Restaurante El Sabor de Madrid",
+	"CIF": "CIFMAD123",
+	"direccion": "Calle Gran Vía, 45",
+	"email": "elsabordemadrid@example.com",
+	"telefono": "912345678",
+	"paginaID": "66819dab5ef17c9ff660d0f3",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"createdAt": "2024-06-30T18:00:34.074Z",
+	"updatedAt": "2024-06-30T18:02:19.228Z"
+}
+Response: 304 532.878 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:06:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 57.467 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:06:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 59.856 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:06:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 55.855 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:06:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 58.723 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:13:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 58.262 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:13:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 63.168 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:13:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 55.924 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:13:24 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 61.982 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 23:17:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzYzlmMWNjZDNhZDk2OTdjMTU2NiIsImlhdCI6MTcxOTc4MjI0NSwiZXhwIjoxNzE5ODY4NjQ1fQ.JIJCSZ9pZ9N0B-PXbrSLeotuYI_FeJve1GH7yW83Vlw"
+}
+Response: 200 99.873 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:17:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 67.120 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:17:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 69.239 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:17:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 64.997 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:17:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 67.495 ms 
+
+Request: POST /api/comercios/login at Sun Jun 30 2024 23:17:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"email": "elsabordemadrid@example.com",
+	"cif": "CIFMAD123"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"comercio": {
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	}
+}
+Response: 200 27.858 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 23:17:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "Restaurante El Sabor de Madrid",
+	"email": "elsabordemadrid@example.com",
+	"CIF": "CIFMAD123",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T20:27:15.537Z"
+	}
+}
+Response: 200 85.930 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 23:17:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "Restaurante El Sabor de Madrid",
+	"email": "elsabordemadrid@example.com",
+	"CIF": "CIFMAD123",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T20:27:15.537Z"
+	}
+}
+Response: 304 93.927 ms 
+
+Request: PUT /api/comercios/contenido at Sun Jun 30 2024 23:18:18 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "El Sabor de Madrid",
+	"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña."
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:18:18.938Z"
+	}
+}
+Response: 200 105.951 ms 
+
+Request: PUT /api/comercios/contenido at Sun Jun 30 2024 23:18:25 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "El Sabor de Madrid.",
+	"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña."
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid.",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:18:25.009Z"
+	}
+}
+Response: 200 109.327 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 23:37:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid.",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T21:18:25.009Z"
+		},
+		"deleted": false,
+		"
+...
+Response: 200 74.209 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 23:37:36 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid.",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T21:18:25.009Z"
+		},
+		"deleted": false,
+		"
+...
+Response: 304 73.863 ms 
+
+Request: GET /api/user/comercios/contenido/6681a2c05ef17c9ff660d2c3 at Sun Jun 30 2024 23:37:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a2c05ef17c9ff660d2c3",
+	"nombre": "Gimnasio Barceloneta",
+	"CIF": "CIFBAR126",
+	"direccion": "Passeig Marítim, 32",
+	"email": "barceloneta@example.com",
+	"telefono": "934567890",
+	"paginaID": {
+		"_id": "6681ab6e5ef17c9ff660d480",
+		"ciudad": "Barcelona",
+		"actividad": "Gimnasio",
+		"titulo": "Gimnasio Barceloneta",
+		"resumen": "Tu gimnasio en la playa de Barcelona.",
+		"text": [
+			"En Gimnasio Barceloneta, encontrarás equipos de última generación.",
+			"Ofrecemos clases dirigidas y entrenadores personales.",
+			"¡Ven a entrenar con vistas al mar!"
+		],
+		"fotos": [
+			"uploads/gimnasio.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6681bea65ef17c9ff660d7cc"
+		],
+		"createdAt": "2024-06-30T19:01:02.807Z",
+		"updatedAt": "2024-06-30T20:23:02.203Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhMmMwNWVmMTdjOWZmNjYwZDJjMyIsImlhdCI6MTcxOTc3MTg0MH0.LSZzisA2AJZn-0JPgkV0ps60M8aHYflbmHvQkepE9gg",
+	"createdAt": "2024-
+...
+Response: 304 58.938 ms 
+
+Request: GET /api/user/comercios/contenido/6681a2c05ef17c9ff660d2c3 at Sun Jun 30 2024 23:37:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681a2c05ef17c9ff660d2c3",
+	"nombre": "Gimnasio Barceloneta",
+	"CIF": "CIFBAR126",
+	"direccion": "Passeig Marítim, 32",
+	"email": "barceloneta@example.com",
+	"telefono": "934567890",
+	"paginaID": {
+		"_id": "6681ab6e5ef17c9ff660d480",
+		"ciudad": "Barcelona",
+		"actividad": "Gimnasio",
+		"titulo": "Gimnasio Barceloneta",
+		"resumen": "Tu gimnasio en la playa de Barcelona.",
+		"text": [
+			"En Gimnasio Barceloneta, encontrarás equipos de última generación.",
+			"Ofrecemos clases dirigidas y entrenadores personales.",
+			"¡Ven a entrenar con vistas al mar!"
+		],
+		"fotos": [
+			"uploads/gimnasio.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6681bea65ef17c9ff660d7cc"
+		],
+		"createdAt": "2024-06-30T19:01:02.807Z",
+		"updatedAt": "2024-06-30T20:23:02.203Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFhMmMwNWVmMTdjOWZmNjYwZDJjMyIsImlhdCI6MTcxOTc3MTg0MH0.LSZzisA2AJZn-0JPgkV0ps60M8aHYflbmHvQkepE9gg",
+	"createdAt": "2024-
+...
+Response: 304 72.122 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a2c05ef17c9ff660d2c3 at Sun Jun 30 2024 23:37:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "María García",
+		"scoring": 4,
+		"comentario": "Esta muy bien"
+	}
+]
+Response: 304 133.192 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:37:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.214 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/6681a2c05ef17c9ff660d2c3 at Sun Jun 30 2024 23:37:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "María García",
+		"scoring": 4,
+		"comentario": "Esta muy bien"
+	}
+]
+Response: 304 130.409 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:37:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.204 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 23:37:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzYzlmMWNjZDNhZDk2OTdjMTU2NiIsImlhdCI6MTcxOTc4MzQ2NCwiZXhwIjoxNzE5ODY5ODY0fQ.D3eCXNNnXzsdpi8Xu2f6Gcqw0xkwzriW5dyH_gPpxig"
+}
+Response: 200 90.067 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 72.319 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 72.219 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 62.879 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 70.258 ms 
+
+Request: GET /api/admin/user/6681b0a25ef17c9ff660d5f4 at Sun Jun 30 2024 23:37:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 58.006 ms 
+
+Request: GET /api/admin/user/6681b0a25ef17c9ff660d5f4 at Sun Jun 30 2024 23:37:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 65.817 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 60.634 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 67.286 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 62.203 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 63.926 ms 
+
+Request: GET /api/admin/comercios/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 23:37:49 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819d425ef17c9ff660d0d9",
+	"nombre": "Restaurante El Sabor de Madrid",
+	"CIF": "CIFMAD123",
+	"direccion": "Calle Gran Vía, 45",
+	"email": "elsabordemadrid@example.com",
+	"telefono": "912345678",
+	"paginaID": "66819dab5ef17c9ff660d0f3",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"createdAt": "2024-06-30T18:00:34.074Z",
+	"updatedAt": "2024-06-30T18:02:19.228Z"
+}
+Response: 304 57.924 ms 
+
+Request: GET /api/admin/comercios/66819d425ef17c9ff660d0d9 at Sun Jun 30 2024 23:37:49 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819d425ef17c9ff660d0d9",
+	"nombre": "Restaurante El Sabor de Madrid",
+	"CIF": "CIFMAD123",
+	"direccion": "Calle Gran Vía, 45",
+	"email": "elsabordemadrid@example.com",
+	"telefono": "912345678",
+	"paginaID": "66819dab5ef17c9ff660d0f3",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"createdAt": "2024-06-30T18:00:34.074Z",
+	"updatedAt": "2024-06-30T18:02:19.228Z"
+}
+Response: 304 58.346 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 57.637 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 60.008 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 54.280 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:50 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 64.356 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 68.943 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 69.701 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:37:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 57.644 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:37:53 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 68.120 ms 
+
+Request: GET /api/admin/comercios/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 23:37:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819e0d5ef17c9ff660d123",
+	"nombre": "Discoteca Eclipse",
+	"CIF": "CIFMAD125",
+	"direccion": "Calle de las Huertas, 14",
+	"email": "eclipse@example.com",
+	"telefono": "913456789",
+	"paginaID": "66819f8d5ef17c9ff660d1bc",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTBkNWVmMTdjOWZmNjYwZDEyMyIsImlhdCI6MTcxOTc3MDYzN30.a8xxR1vvR0JLkBXpEn37FkutckOid4x7Ksd1DkSxn_8",
+	"createdAt": "2024-06-30T18:03:57.172Z",
+	"updatedAt": "2024-06-30T18:10:21.769Z"
+}
+Response: 200 55.954 ms 
+
+Request: GET /api/admin/comercios/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 23:37:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819e0d5ef17c9ff660d123",
+	"nombre": "Discoteca Eclipse",
+	"CIF": "CIFMAD125",
+	"direccion": "Calle de las Huertas, 14",
+	"email": "eclipse@example.com",
+	"telefono": "913456789",
+	"paginaID": "66819f8d5ef17c9ff660d1bc",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTBkNWVmMTdjOWZmNjYwZDEyMyIsImlhdCI6MTcxOTc3MDYzN30.a8xxR1vvR0JLkBXpEn37FkutckOid4x7Ksd1DkSxn_8",
+	"createdAt": "2024-06-30T18:03:57.172Z",
+	"updatedAt": "2024-06-30T18:10:21.769Z"
+}
+Response: 304 55.103 ms 
+
+Request: PUT /api/admin/comercios/66819e0d5ef17c9ff660d123 at Sun Jun 30 2024 23:38:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"_id": "66819e0d5ef17c9ff660d123",
+	"nombre": "Discoteca Eclipse",
+	"CIF": "CIFMAD125",
+	"direccion": "Calle de las Huertas, 14.",
+	"email": "eclipse@example.com",
+	"telefono": "913456789",
+	"paginaID": "66819f8d5ef17c9ff660d1bc",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTBkNWVmMTdjOWZmNjYwZDEyMyIsImlhdCI6MTcxOTc3MDYzN30.a8xxR1vvR0JLkBXpEn37FkutckOid4x7Ksd1DkSxn_8",
+	"createdAt": "2024-06-30T18:03:57.172Z",
+	"updatedAt": "2024-06-30T18:10:21.769Z"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "66819e0d5ef17c9ff660d123",
+		"nombre": "Discoteca Eclipse",
+		"CIF": "CIFMAD125",
+		"direccion": "Calle de las Huertas, 14.",
+		"email": "eclipse@example.com",
+		"telefono": "913456789",
+		"paginaID": "66819f8d5ef17c9ff660d1bc",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZTBkNWVmMTdjOWZmNjYwZDEyMyIsImlhdCI6MTcxOTc3MDYzN30.a8xxR1vvR0JLkBXpEn37FkutckOid4x7Ksd1DkSxn_8",
+		"createdAt": "2024-06-30T18:03:57.172Z",
+		"updatedAt": "2024-06-30T21:38:01.430Z"
+	}
+}
+Response: 200 80.301 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:38:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 200 74.390 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:38:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 79.404 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:38:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z
+...
+Response: 304 70.771 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:38:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 70.612 ms 
+
+Request: GET /api/admin/comercios/66819def5ef17c9ff660d115 at Sun Jun 30 2024 23:38:09 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819def5ef17c9ff660d115",
+	"nombre": "Comercio La Central",
+	"CIF": "CIFMAD124",
+	"direccion": "Calle Fuencarral, 78",
+	"email": "lacentral@example.com",
+	"telefono": "911234567",
+	"paginaID": "66819f215ef17c9ff660d19f",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+	"createdAt": "2024-06-30T18:03:27.386Z",
+	"updatedAt": "2024-06-30T18:08:33.482Z"
+}
+Response: 200 56.741 ms 
+
+Request: GET /api/admin/comercios/66819def5ef17c9ff660d115 at Sun Jun 30 2024 23:38:09 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66819def5ef17c9ff660d115",
+	"nombre": "Comercio La Central",
+	"CIF": "CIFMAD124",
+	"direccion": "Calle Fuencarral, 78",
+	"email": "lacentral@example.com",
+	"telefono": "911234567",
+	"paginaID": "66819f215ef17c9ff660d19f",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+	"createdAt": "2024-06-30T18:03:27.386Z",
+	"updatedAt": "2024-06-30T18:08:33.482Z"
+}
+Response: 304 55.578 ms 
+
+Request: PUT /api/admin/comercios/66819def5ef17c9ff660d115 at Sun Jun 30 2024 23:38:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"_id": "66819def5ef17c9ff660d115",
+	"nombre": "Comercio La Central.",
+	"CIF": "CIFMAD124",
+	"direccion": "Calle Fuencarral, 78",
+	"email": "lacentral@example.com",
+	"telefono": "911234567",
+	"paginaID": "66819f215ef17c9ff660d19f",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+	"createdAt": "2024-06-30T18:03:27.386Z",
+	"updatedAt": "2024-06-30T18:08:33.482Z"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central.",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386Z",
+		"updatedAt": "2024-06-30T21:38:13.330Z"
+	}
+}
+Response: 200 61.315 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:38:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 62.126 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:38:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central.",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386
+...
+Response: 200 63.090 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 23:38:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T19:23:14.214Z"
+	},
+	{
+		"_id": "6681b1255ef17c9ff660d601",
+		"nombre": "María García",
+		"email": "mariagarcia@example.com",
+		"password": "$2a$10$zdpl12QVS2VovC070tRSiu.9Jo2sFNM00NypzPKaHydGE73f6UR5O",
+		"edad": 28,
+		"ciudad": "Barcelona",
+		"intereses": [
+			"Comercio",
+			"Gimnasio"
+		],
+		"ofertas": false,
+		"createdAt": "2024-06-30T19:25:25.693Z",
+		"updatedAt": "2024-06-30T19:25:25.693Z"
+	},
+	{
+		"_id": "6681b1505ef17c9ff660d604",
+		"nombre": "Javier Martínez",
+		"email": "javiermartinez@example.com",
+		"password": "$2a$10$S9zYbA4Bqbh2zuC3V.jLTeqPcfRffoNOScYQhcARv0C1xyi.CC.F2",
+		"edad": 22,
+		"ciudad": "
+...
+Response: 304 61.911 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 23:38:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	},
+	{
+		"_id": "66819def5ef17c9ff660d115",
+		"nombre": "Comercio La Central.",
+		"CIF": "CIFMAD124",
+		"direccion": "Calle Fuencarral, 78",
+		"email": "lacentral@example.com",
+		"telefono": "911234567",
+		"paginaID": "66819f215ef17c9ff660d19f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZGVmNWVmMTdjOWZmNjYwZDExNSIsImlhdCI6MTcxOTc3MDYwN30.78KGQoBEPZg3Qi6Q0y2p9PvHv7H6YYoaIaYfrzRgNTA",
+		"createdAt": "2024-06-30T18:03:27.386
+...
+Response: 304 59.807 ms 
+
+Request: POST /api/comercios/login at Sun Jun 30 2024 23:38:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"email": "elsabordemadrid@example.com",
+	"cif": "CIFMAD123"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"comercio": {
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	}
+}
+Response: 200 31.573 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 23:38:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "Restaurante El Sabor de Madrid",
+	"email": "elsabordemadrid@example.com",
+	"CIF": "CIFMAD123",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid.",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:18:25.009Z"
+	}
+}
+Response: 200 86.404 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 23:38:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "Restaurante El Sabor de Madrid",
+	"email": "elsabordemadrid@example.com",
+	"CIF": "CIFMAD123",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid.",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña.",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:18:25.009Z"
+	}
+}
+Response: 304 99.955 ms 
+
+Request: PUT /api/comercios/contenido at Sun Jun 30 2024 23:38:55 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "El Sabor de Madrid.",
+	"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña..."
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid.",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña...",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:38:55.720Z"
+	}
+}
+Response: 200 93.492 ms 
+
+Request: GET /api/comercios/contenido/intereses at Sun Jun 30 2024 23:38:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"emails": []
+}
+Response: 304 111.850 ms 
+
+Request: GET /api/comercios/contenido/intereses at Sun Jun 30 2024 23:39:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"emails": []
+}
+Response: 304 141.582 ms 
+
+Request: GET /api/comercios/contenido/intereses at Sun Jun 30 2024 23:39:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"emails": []
+}
+Response: 304 129.877 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 23:39:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "carlosperez@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "carlosperez@example.com",
+			"msg": "El nombre de usuario debe tener entre 2 y 20 caracteres.",
+			"path": "username",
+			"location": "body"
+		}
+	]
+}
+Response: 403 0.698 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 23:39:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "carlosperez@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+{
+	"errors": [
+		{
+			"type": "field",
+			"value": "carlosperez@example.com",
+			"msg": "El nombre de usuario debe tener entre 2 y 20 caracteres.",
+			"path": "username",
+			"location": "body"
+		}
+	]
+}
+Response: 403 0.473 ms 
+
+Request: POST /api/user/login at Sun Jun 30 2024 23:39:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"email": "carlosperez@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODFiMGEyNWVmMTdjOWZmNjYwZDVmNCIsImlhdCI6MTcxOTc4MzU5OSwiZXhwIjoxNzE5ODY5OTk5fQ.XI-egPocNkVHljBo2Xak17Nn6fXql6kPLo8zORD2Z8U"
+}
+Response: 200 90.723 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 23:40:00 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid.",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña...",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T21:38:55.720Z"
+		},
+		"deleted": false,
+	
+...
+Response: 200 67.584 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:40:00 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 200 63.190 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 23:40:00 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": {
+			"_id": "66819dab5ef17c9ff660d0f3",
+			"ciudad": "Madrid",
+			"actividad": "Restaurante",
+			"titulo": "El Sabor de Madrid.",
+			"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña...",
+			"text": [
+				"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+				"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+				"Visítanos y disfruta de un ambiente acogedor y familiar."
+			],
+			"fotos": [
+				"uploads/entrada_restaurante.jpg",
+				"uploads/plato_típico.jpg"
+			],
+			"scoring": 5,
+			"numScoring": 1,
+			"reviews": [
+				"6681bfa35ef17c9ff660d941"
+			],
+			"createdAt": "2024-06-30T18:02:19.185Z",
+			"updatedAt": "2024-06-30T21:38:55.720Z"
+		},
+		"deleted": false,
+	
+...
+Response: 304 68.287 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:40:00 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 70.458 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:40:03 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 60.519 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:40:03 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T19:23:14.214Z"
+}
+Response: 304 60.664 ms 
+
+Request: PUT /api/user/update at Sun Jun 30 2024 23:40:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "Usuario actualizado con éxito",
+	"contenido": {
+		"_id": "6681b0a25ef17c9ff660d5f4",
+		"nombre": "Carlos Pérez",
+		"email": "carlosperez@example.com",
+		"password": "$2a$10$D25oKxI7QKuhZyW35gVb0.YNSsUPcIH2MBVctFnjjMD2n9R/4zqS.",
+		"edad": 35,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cine",
+			"Ocio Nocturno"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T19:23:14.214Z",
+		"updatedAt": "2024-06-30T21:40:13.607Z"
+	}
+}
+Response: 200 103.582 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 23:40:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "6681b0a25ef17c9ff660d5f4",
+	"nombre": "Carlos Pérez",
+	"email": "carlosperez@example.com",
+	"edad": 35,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cine",
+		"Ocio Nocturno"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T19:23:14.214Z",
+	"updatedAt": "2024-06-30T21:40:13.607Z"
+}
+Response: 200 64.705 ms 
+
+Request: POST /api/comercios/login at Sun Jun 30 2024 23:40:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"email": "elsabordemadrid@example.com",
+	"cif": "CIFMAD123"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+	"comercio": {
+		"_id": "66819d425ef17c9ff660d0d9",
+		"nombre": "Restaurante El Sabor de Madrid",
+		"CIF": "CIFMAD123",
+		"direccion": "Calle Gran Vía, 45",
+		"email": "elsabordemadrid@example.com",
+		"telefono": "912345678",
+		"paginaID": "66819dab5ef17c9ff660d0f3",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5ZDQyNWVmMTdjOWZmNjYwZDBkOSIsImlhdCI6MTcxOTc3MDQzNH0.Uifav3UlPFudnPtB0lX9HDGyuXFksFxZKw6z9fS0ugs",
+		"createdAt": "2024-06-30T18:00:34.074Z",
+		"updatedAt": "2024-06-30T18:02:19.228Z"
+	}
+}
+Response: 200 32.797 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 23:40:32 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "Restaurante El Sabor de Madrid",
+	"email": "elsabordemadrid@example.com",
+	"CIF": "CIFMAD123",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid.",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña...",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:38:55.720Z"
+	}
+}
+Response: 200 100.400 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 23:40:32 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "Restaurante El Sabor de Madrid",
+	"email": "elsabordemadrid@example.com",
+	"CIF": "CIFMAD123",
+	"contenido": {
+		"_id": "66819dab5ef17c9ff660d0f3",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "El Sabor de Madrid.",
+		"resumen": "Disfruta de los mejores platos tradicionales de la cocina madrileña...",
+		"text": [
+			"Bienvenidos a El Sabor de Madrid, donde ofrecemos una experiencia gastronómica única.",
+			"Nuestros platos están preparados con ingredientes frescos y de alta calidad.",
+			"Visítanos y disfruta de un ambiente acogedor y familiar."
+		],
+		"fotos": [
+			"uploads/entrada_restaurante.jpg",
+			"uploads/plato_típico.jpg"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6681bfa35ef17c9ff660d941"
+		],
+		"createdAt": "2024-06-30T18:02:19.185Z",
+		"updatedAt": "2024-06-30T21:38:55.720Z"
+	}
+}
+Response: 304 98.438 ms 
+
+Request: GET /api/comercios/contenido/intereses at Sun Jun 30 2024 23:40:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"emails": [
+		"carlosperez@example.com"
+	]
+}
+Response: 200 110.118 ms 
