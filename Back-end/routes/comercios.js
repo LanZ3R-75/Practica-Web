@@ -64,7 +64,7 @@ const upload = multer({
  * @swagger
  * /api/comercios/login:
  *   post:
- *     summary: Loguea un comercio
+ *     summary: Login de un comercio
  *     tags: [Comercios]
  *     requestBody:
  *       required: true
@@ -75,16 +75,63 @@ const upload = multer({
  *             properties:
  *               email:
  *                 type: string
- *                 example: comercio@xyz.com
+ *                 example: mercadona@mercadona.com
  *               cif:
  *                 type: string
  *                 example: CIF333333
  *     responses:
  *       200:
- *         description: Comercio logueado con éxito
+ *         description: Comercio autenticado con éxito
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 token:
+ *                   type: string
+ *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE
+ *                 comercio:
+ *                   type: object
+ *                   properties:
+ *                     _id:
+ *                       type: string
+ *                       example: 667b9de96929557b09ecb4b4
+ *                     nombre:
+ *                       type: string
+ *                       example: mercadona
+ *                     CIF:
+ *                       type: string
+ *                       example: CIF333333
+ *                     direccion:
+ *                       type: string
+ *                       example: Calle Falsa 123
+ *                     email:
+ *                       type: string
+ *                       example: mercadona@mercadona.com
+ *                     telefono:
+ *                       type: string
+ *                       example: 699898943
+ *                     paginaID:
+ *                       type: string
+ *                       example: 667cc4f64a3f97545c29b841
+ *                     deleted:
+ *                       type: boolean
+ *                       example: false
+ *                     tokenJWT:
+ *                       type: string
+ *                       example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE
+ *                     createdAt:
+ *                       type: string
+ *                       example: 2024-06-26T04:49:45.430Z
+ *                     updatedAt:
+ *                       type: string
+ *                       example: 2024-06-27T01:48:38.356Z
+ *       404:
+ *         description: Comercio no encontrado
  *       400:
- *         description: Credenciales no válidas
+ *         description: Credenciales incorrectas
  */
+
 
 router.post('/login',validatorLoginComercio, loginComercio)
 
@@ -94,11 +141,13 @@ router.post('/login',validatorLoginComercio, loginComercio)
  * @swagger
  * /api/comercios/info:
  *   get:
- *     summary: Obtiene el contenido asociado al comercio
+ *     summary: Obtener la información del comercio autenticado
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
- *         description: Contenido del comercio obtenido con éxito
+ *         description: Información del comercio obtenida con éxito
  *         content:
  *           application/json:
  *             schema:
@@ -124,47 +173,46 @@ router.post('/login',validatorLoginComercio, loginComercio)
  *                       example: Madrid
  *                     actividad:
  *                       type: string
- *                       example: Comercio
+ *                       example: Restaurante
  *                     titulo:
  *                       type: string
- *                       example: Tu mercado de confianza
+ *                       example: Tu mercado Dia a dia
  *                     resumen:
  *                       type: string
- *                       example: Vendemos todas tus necesidades del dia a dia
+ *                       example: Vendemos mucha porqueria
  *                     text:
  *                       type: array
  *                       items:
  *                         type: string
- *                       example: [ "tomates-1.40", "pepinillos-2.50", "pollo-2x1" ]
+ *                       example: [sss, aaaa, aaaaa, aaaaa, aaaaaaa]
  *                     fotos:
  *                       type: array
  *                       items:
  *                         type: string
- *                       example: [ "uploads\\1719718764324-mercadona.jpg" ]
+ *                       example: [uploads\\1719718764324-shishaBar.jpg]
  *                     scoring:
- *                       type: integer
+ *                       type: number
  *                       example: 4
  *                     numScoring:
- *                       type: integer
- *                       example: 2
+ *                       type: number
+ *                       example: 1
  *                     reviews:
  *                       type: array
  *                       items:
  *                         type: string
- *                       example: [ "6680c3dffd1c5efd1502a427", "6680cd0ed8318cc9aee2dcf6" ]
+ *                       example: [6680c3dffd1c5efd1502a427]
  *                     createdAt:
  *                       type: string
- *                       format: date-time
  *                       example: 2024-06-27T01:48:38.322Z
  *                     updatedAt:
  *                       type: string
- *                       format: date-time
- *                       example: 2024-06-30T03:39:24.397Z
- *       401:
- *         description: No autorizado
+ *                       example: 2024-06-30T16:28:47.135Z
  *       404:
  *         description: Comercio no encontrado
+ *       401:
+ *         description: No autorizado
  */
+
 
 router.get('/info',auth, auth.isComercio, getComercioyContenido);
 
@@ -174,7 +222,7 @@ router.get('/info',auth, auth.isComercio, getComercioyContenido);
  * @swagger
  * /api/comercios:
  *   post:
- *     summary: Crea una nueva página de contenido
+ *     summary: Crear una nueva página de contenido para un comercio
  *     tags: [Comercios]
  *     security:
  *       - bearerAuth: []
@@ -201,19 +249,74 @@ router.get('/info',auth, auth.isComercio, getComercioyContenido);
  *                 type: array
  *                 items:
  *                   type: string
- *                 example: [ "Bienvenidos a nuestro restaurante.", "Ofrecemos una gran variedad de platos." ]
+ *                 example: [Bienvenidos a nuestro restaurante., Ofrecemos una gran variedad de platos.]
  *               fotos:
  *                 type: array
  *                 items:
  *                   type: string
+ *                 example: []
  *     responses:
- *       201:
- *         description: Página de contenido creada con éxito
- *       401:
- *         description: No autorizado
+ *       200:
+ *         description: Contenido nuevo creado con éxito
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Contenido nuevo creado con éxito
+ *                 contenido:
+ *                   type: object
+ *                   properties:
+ *                     ciudad:
+ *                       type: string
+ *                       example: Madrid
+ *                     actividad:
+ *                       type: string
+ *                       example: Restaurante
+ *                     titulo:
+ *                       type: string
+ *                       example: Restaurante TOP
+ *                     resumen:
+ *                       type: string
+ *                       example: El mejor restaurante de la ciudad.
+ *                     text:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: [Bienvenidos a nuestro restaurante., Ofrecemos una gran variedad de platos.]
+ *                     fotos:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: []
+ *                     scoring:
+ *                       type: number
+ *                       example: 0
+ *                     numScoring:
+ *                       type: number
+ *                       example: 0
+ *                     reviews:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: []
+ *                     _id:
+ *                       type: string
+ *                       example: 6681894e9f676e1532b3cfdb
+ *                     createdAt:
+ *                       type: string
+ *                       example: 2024-06-30T16:35:26.089Z
+ *                     updatedAt:
+ *                       type: string
+ *                       example: 2024-06-30T16:35:26.089Z
  *       400:
- *         description: Error en la solicitud
+ *         description: Contenido ya existe para este comercio
+ *       404:
+ *         description: Comercio no encontrado
  */
+
 
 router.post("/", auth, auth.isComercio, validatorCreateContenido, createContenido); 
 
@@ -241,16 +344,25 @@ router.delete("/", auth, auth.isComercio, deleteComercio);
  * @swagger
  * /api/comercios/contenido:
  *   delete:
- *     summary: Borra un contenido
+ *     summary: Borrar el contenido de un comercio
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
- *         description: Contenido borrado con éxito
- *       401:
- *         description: No autorizado
+ *         description: Contenido eliminado con éxito
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Contenido eliminado con exito
  *       404:
- *         description: Contenido no encontrado
+ *         description: Comercio no encontrado o el comercio no tiene un contenido asociado
  */
+
 
 router.delete("/contenido", auth, auth.isComercio, deleteContenido); 
 
@@ -260,8 +372,10 @@ router.delete("/contenido", auth, auth.isComercio, deleteContenido);
  * @swagger
  * /api/comercios/contenido:
  *   put:
- *     summary: Actualiza un contenido
+ *     summary: Actualizar el contenido de un comercio
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -269,20 +383,87 @@ router.delete("/contenido", auth, auth.isComercio, deleteContenido);
  *           schema:
  *             type: object
  *             properties:
- *               title:
+ *               ciudad:
  *                 type: string
- *                 example: Nuevo título del contenido
- *               description:
+ *                 example: Granada
+ *               actividad:
  *                 type: string
- *                 example: Nueva descripción del contenido
+ *                 example: Heladería
+ *               titulo:
+ *                 type: string
+ *                 example: Helados Frescos
+ *               resumen:
+ *                 type: string
+ *                 example: Los mejores helados artesanales.
+ *               text:
+ *                 type: array
+ *                 items:
+ *                   type: string
+ *                 example: ["Helados de todos los sabores.", "Ingredientes naturales y frescos."]
+ *               fotos:
+ *                 type: array
+ *                 items:
+ *                   type: string
+ *                 example: ["foto1_comercio6.jpg"]
  *     responses:
  *       200:
- *         description: Contenido actualizado con éxito
- *       401:
- *         description: No autorizado
+ *         description: Página web actualizada con éxito
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Página web actualizada con éxito
+ *                 contenido:
+ *                   type: object
+ *                   properties:
+ *                     _id:
+ *                       type: string
+ *                       example: 668189c9ed8dc8aa28220701
+ *                     ciudad:
+ *                       type: string
+ *                       example: Granada
+ *                     actividad:
+ *                       type: string
+ *                       example: Heladería
+ *                     titulo:
+ *                       type: string
+ *                       example: Helados Frescos
+ *                     resumen:
+ *                       type: string
+ *                       example: Los mejores helados artesanales.
+ *                     text:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: ["Helados de todos los sabores.", "Ingredientes naturales y frescos."]
+ *                     fotos:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: ["foto1_comercio6.jpg"]
+ *                     scoring:
+ *                       type: number
+ *                       example: 0
+ *                     numScoring:
+ *                       type: number
+ *                       example: 0
+ *                     reviews:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                     createdAt:
+ *                       type: string
+ *                       example: 2024-06-30T16:37:29.721Z
+ *                     updatedAt:
+ *                       type: string
+ *                       example: 2024-06-30T16:37:51.011Z
  *       404:
- *         description: Contenido no encontrado
+ *         description: Comercio no encontrado
  */
+
 
 router.put("/contenido", auth, auth.isComercio, validatorUpdateContenido, updateContenido) 
 
@@ -292,8 +473,10 @@ router.put("/contenido", auth, auth.isComercio, validatorUpdateContenido, update
  * @swagger
  * /api/comercios/contenido/texts:
  *   post:
- *     summary: Sube un nuevo texto
+ *     summary: Publicar un nuevo texto en el contenido del comercio
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -303,13 +486,27 @@ router.put("/contenido", auth, auth.isComercio, validatorUpdateContenido, update
  *             properties:
  *               text:
  *                 type: string
- *                 example: Este es un nuevo texto
+ *                 example: Este texto es increiblemente increible
  *     responses:
  *       200:
- *         description: Texto subido con éxito
- *       401:
- *         description: No autorizado
+ *         description: Texto añadido correctamente
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Texto añadido correctamente
+ *                 texto:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                   example: ["Helados de todos los sabores.", "Ingredientes naturales y frescos.", "Este texto es increiblemente increible"]
+ *       404:
+ *         description: Comercio no encontrado
  */
+
 
 router.post("/contenido/texts", auth.isComercio, validatorUploadText, uploadText); 
 
@@ -319,23 +516,38 @@ router.post("/contenido/texts", auth.isComercio, validatorUploadText, uploadText
  * @swagger
  * /api/comercios/contenido/texts/{textIndex}:
  *   delete:
- *     summary: Elimina un texto
+ *     summary: Borrar un texto del contenido del comercio
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: textIndex
- *         required: true
  *         schema:
  *           type: integer
- *           example: 0
+ *         required: true
+ *         description: Índice del texto a borrar
+ *         example: 0
  *     responses:
  *       200:
- *         description: Texto eliminado con éxito
- *       401:
- *         description: No autorizado
+ *         description: Texto eliminado correctamente
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Texto eliminado correctamente
+ *                 texto:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                   example: ["Ingredientes naturales y frescos.", "Este texto es increiblemente increible"]
  *       404:
- *         description: Texto no encontrado
+ *         description: Comercio no encontrado
  */
+
 
 router.delete("/contenido/texts/:textIndex", auth.isComercio, validatorDeleteText, deleteText); 
 
@@ -345,8 +557,10 @@ router.delete("/contenido/texts/:textIndex", auth.isComercio, validatorDeleteTex
  * @swagger
  * /api/comercios/contenido/fotos:
  *   post:
- *     summary: Sube una nueva foto
+ *     summary: Subir una foto al contenido del comercio
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -357,11 +571,28 @@ router.delete("/contenido/texts/:textIndex", auth.isComercio, validatorDeleteTex
  *               photo:
  *                 type: string
  *                 format: binary
+ *             required:
+ *               - photo
  *     responses:
  *       200:
- *         description: Foto subida con éxito
- *       401:
- *         description: No autorizado
+ *         description: Foto añadida correctamente
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Foto añadida correctamente
+ *                 fotos:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                   example: ["foto1_comercio6.jpg", "uploads\\1719765701266-shishaBar.jpg"]
+ *       400:
+ *         description: No se ha subido ninguna foto
+ *       404:
+ *         description: Comercio no encontrado
  */
 
 router.post("/contenido/fotos", auth.isComercio, upload.single('photo'), validatorUploadFoto, uploadFoto);
@@ -372,22 +603,35 @@ router.post("/contenido/fotos", auth.isComercio, upload.single('photo'), validat
  * @swagger
  * /api/comercios/contenido/fotos/{fotoIndex}:
  *   delete:
- *     summary: Elimina una foto
+ *     summary: Eliminar una foto del contenido del comercio
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: fotoIndex
- *         required: true
  *         schema:
  *           type: integer
- *           example: 0
+ *         required: true
+ *         description: Índice de la foto a eliminar
  *     responses:
  *       200:
- *         description: Foto eliminada con éxito
- *       401:
- *         description: No autorizado
+ *         description: Foto eliminada correctamente
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Foto eliminada correctamente
+ *                 fotos:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                   example: ["uploads\\1719765701266-shishaBar.jpg", "uploads\\1719765716836-shishaBar.jpg"]
  *       404:
- *         description: Foto no encontrada
+ *         description: Comercio o foto no encontrados
  */
 
 router.delete("/contenido/fotos/:fotoIndex", auth.isComercio, validatorDeleteFoto, deleteFoto); 
@@ -398,13 +642,25 @@ router.delete("/contenido/fotos/:fotoIndex", auth.isComercio, validatorDeleteFot
  * @swagger
  * /api/comercios/contenido/intereses:
  *   get:
- *     summary: Consulta los intereses de los usuarios
+ *     summary: Mostrar correos electrónicos de usuarios de la misma ciudad y con el mismo interés
  *     tags: [Comercios]
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
- *         description: Intereses consultados con éxito
- *       401:
- *         description: No autorizado
+ *         description: Correos electrónicos obtenidos correctamente
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 emails:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                   example: ["usuario1@example.com", "usuario2@example.com"]
+ *       404:
+ *         description: Comercio no encontrado
  */
 
 router.get('/contenido/intereses', auth.isComercio, consultarIntereses);

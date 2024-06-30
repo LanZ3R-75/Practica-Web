@@ -1,5 +1,6 @@
 ##Variables 
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE
+
 ### Login de Comercio
 POST http://localhost:3000/api/comercios/login
 Content-Type: application/json
@@ -65,7 +66,7 @@ Authorization: Bearer {{token}}
 DELETE http://localhost:3000/api/comercios/contenido/texts/0
 Authorization: Bearer {{token}}
 
-### Subir una foto ---->FALTA
+### Subir una foto 
 POST http://localhost:3000/api/comercios/contenido/fotos HTTP/1.1
 Content-Type: multipart/form-data; boundary=boundary
 Authorization: Bearer {{token}}
@@ -77,7 +78,7 @@ Content-Type: image/jpg
 < ./shishaBar.jpg
 --boundary--
 
-###Borrar foto ---->FALTA
+###Borrar foto 
 DELETE http://localhost:3000/api/comercios/contenido/fotos/0
 Authorization: Bearer {{token}}
 

@@ -86507,3 +86507,5223 @@ Response Body:
 	"updatedAt": "2024-06-30T10:51:07.009Z"
 }
 Response: 304 60.882 ms 
+
+Request: POST /api/admin/register at Sun Jun 30 2024 13:07:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"mesage": "Administrador registrado con exito"
+}
+Response: 201 138.574 ms 
+
+Request: POST /api/admin/register at Sun Jun 30 2024 13:08:15 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"mesage": "Administrador registrado con exito"
+}
+Response: 201 122.253 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 13:09:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.016 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 13:09:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.876 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 13:09:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.806 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 13:09:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.044 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 13:09:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.590 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 13:09:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.358 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 13:11:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzYzlmMWNjZDNhZDk2OTdjMTU2NiIsImlhdCI6MTcxOTc0NTg4MiwiZXhwIjoxNzE5ODMyMjgyfQ.yuWK99kFLlmZg9mZGSsnEmHpLbaQmqvS4vWfgX1dgkg"
+}
+Response: 200 130.786 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 13:12:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.388 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 13:12:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.094 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 13:12:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.963 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 13:12:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.821 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 13:12:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.667 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 13:12:26 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.342 ms 
+
+Request: POST /api/admin/comercios at Sun Jun 30 2024 13:13:23 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AD",
+	"direccion": "Calle P",
+	"email": "pruebaadminD@example.com",
+	"telefono": "667788776"
+}
+Response Body:
+{
+	"message": "Comercio ya existe"
+}
+Response: 400 79.806 ms 
+
+Request: DELETE /api/admin/comercios/6680e00cec2855d97355379a at Sun Jun 30 2024 13:13:50 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado correctamente"
+}
+Response: 200 212.947 ms 
+
+Request: POST /api/admin/comercios at Sun Jun 30 2024 13:14:12 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AD",
+	"direccion": "Calle P",
+	"email": "pruebaadminD@example.com",
+	"telefono": "667788776"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AD",
+		"direccion": "Calle P",
+		"email": "pruebaadminD@example.com",
+		"telefono": "667788776",
+		"paginaID": "66813e0442450cbfd1a43f55",
+		"_id": "66813e0442450cbfd1a43f57",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzZTA0NDI0NTBjYmZkMWE0M2Y1NyIsImlhdCI6MTcxOTc0NjA1Mn0.cLptkKzmm-z5knnvC20wFkaelZe9MalHwO8krXiZy6A",
+		"createdAt": "2024-06-30T11:14:12.777Z",
+		"updatedAt": "2024-06-30T11:14:12.777Z"
+	}
+}
+Response: 201 161.156 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 13:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.980 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 13:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.155 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 13:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.469 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 13:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.364 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 13:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.492 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 13:15:18 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.385 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 13:15:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.765 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 13:15:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.446 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 13:15:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.665 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 13:15:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.430 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 13:15:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.609 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 13:15:46 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.356 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 17:53:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 200 81.012 ms 
+
+Request: PUT /api/admin/comercios/66813e0442450cbfd1a43f57 at Sun Jun 30 2024 17:54:31 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "66813e0442450cbfd1a43f57",
+		"nombre": "Super Comercio 1111111111",
+		"CIF": "CIF0007AD",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadminD@example.com",
+		"telefono": "667788776",
+		"paginaID": "66813e0442450cbfd1a43f55",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzZTA0NDI0NTBjYmZkMWE0M2Y1NyIsImlhdCI6MTcxOTc0NjA1Mn0.cLptkKzmm-z5knnvC20wFkaelZe9MalHwO8krXiZy6A",
+		"createdAt": "2024-06-30T11:14:12.777Z",
+		"updatedAt": "2024-06-30T15:54:31.219Z"
+	}
+}
+Response: 200 86.488 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 17:56:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.779 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 17:56:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.328 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 17:56:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.721 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 17:56:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.657 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 17:56:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.278 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 17:56:28 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.520 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 17:56:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.049 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 17:56:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.164 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 17:56:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.676 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 17:56:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 1.008 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 17:56:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.937 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 17:56:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.368 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 17:58:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 200 85.041 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 17:59:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.824 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 17:59:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.739 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 17:59:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.749 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 17:59:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.507 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 17:59:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.535 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 17:59:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.396 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:00:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.965 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:00:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.488 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:00:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.412 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:00:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.697 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:00:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.535 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:00:38 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.327 ms 
+
+Request: GET /api/admin/comercios/6666e82d3a61f396bd4a1994 at Sun Jun 30 2024 18:01:19 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "No se ha encontrado el comercio"
+}
+Response: 404 263.887 ms 
+
+Request: GET /api/admin/comercios/66813e0442450cbfd1a43f57 at Sun Jun 30 2024 18:01:27 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "66813e0442450cbfd1a43f57",
+	"nombre": "Super Comercio 1111111111",
+	"CIF": "CIF0007AD",
+	"direccion": "Calle Verdadera 456",
+	"email": "pruebaadminD@example.com",
+	"telefono": "667788776",
+	"paginaID": "66813e0442450cbfd1a43f55",
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzZTA0NDI0NTBjYmZkMWE0M2Y1NyIsImlhdCI6MTcxOTc0NjA1Mn0.cLptkKzmm-z5knnvC20wFkaelZe9MalHwO8krXiZy6A",
+	"createdAt": "2024-06-30T11:14:12.777Z",
+	"updatedAt": "2024-06-30T15:54:31.219Z"
+}
+Response: 200 56.950 ms 
+
+Request: DELETE /api/admin/comercios/66813e0442450cbfd1a43f57 at Sun Jun 30 2024 18:03:30 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado correctamente"
+}
+Response: 200 210.323 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:04:30 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.026 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:04:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.242 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:04:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.918 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:04:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.659 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:04:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.865 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:04:31 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.288 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:05:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-29T10:57:41.224Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+
+...
+Response: 200 74.110 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:06:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.893 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:06:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.925 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:06:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.167 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:06:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.878 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:06:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.577 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:06:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.305 ms 
+
+Request: GET /api/admin/user/6666eb5c3c108bd9108f92ed at Sun Jun 30 2024 18:06:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Usuario no encontrado"
+}
+Response: 404 97.513 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:06:59 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-29T10:57:41.224Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+
+...
+Response: 200 73.328 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:07:07 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-29T10:57:41.224Z"
+}
+Response: 200 85.091 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.860 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.187 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.644 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.204 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.866 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:08:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.362 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:08:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.787 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:08:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.793 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:08:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.061 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:08:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.934 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:08:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 1.052 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:08:33 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.388 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:08:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.793 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:08:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.393 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:08:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.881 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:08:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.492 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:08:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.549 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:08:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.288 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:09:54 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-29T10:57:41.224Z"
+}
+Response: 200 88.364 ms 
+
+Request: POST /api/admin/register at Sun Jun 30 2024 18:11:45 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"message": "Adminstrador ya existente"
+}
+Response: 400 34.653 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 18:11:48 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzYzlmMWNjZDNhZDk2OTdjMTU2NiIsImlhdCI6MTcxOTc2MzkwOCwiZXhwIjoxNzE5ODUwMzA4fQ.mgsMtKLaOtyJc5H5pIFY-rGKa4PJxdMzeOrl2XfH9Dw"
+}
+Response: 200 98.346 ms 
+
+Request: POST /api/admin/login at Sun Jun 30 2024 18:15:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"username": "admin1",
+	"password": "admin1"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODEzYzlmMWNjZDNhZDk2OTdjMTU2NiIsImlhdCI6MTcxOTc2NDEwNiwiZXhwIjoxNzE5ODUwNTA2fQ.x-mP9iP-GJV1-n1bU_VGLZaisyb23KX7uFXJYR9CVr0"
+}
+Response: 200 111.132 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:15:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-29T10:57:41.224Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+
+...
+Response: 200 78.264 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 18:15:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 200 76.686 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:15:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-29T10:57:41.224Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+
+...
+Response: 304 63.891 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 18:15:07 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 304 75.240 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:15:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-29T10:57:41.224Z"
+}
+Response: 200 59.958 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:15:10 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-29T10:57:41.224Z"
+}
+Response: 304 55.184 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:15:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": "22",
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-29T10:57:41.224Z"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:15:14.809Z"
+	}
+}
+Response: 200 74.737 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:15:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:15:14.809Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+
+...
+Response: 200 62.888 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 18:15:14 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 304 73.872 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:15:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "daniel12345@example.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:15:14.809Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+
+...
+Response: 304 69.403 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 18:15:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 304 83.356 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-30T16:15:14.809Z"
+}
+Response: 200 64.134 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:15:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-30T16:15:14.809Z"
+}
+Response: 304 62.642 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 18:15:51 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 200 87.820 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 18:15:51 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.666666666666667,
+			"numScoring": 3,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T03:13:17.854Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff",
+				"6680cd4dd8318cc9aee2dd82"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.
+...
+Response: 304 69.236 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:17:44 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "daniel12345@example.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-30T16:15:14.809Z"
+}
+Response: 200 71.835 ms 
+
+Request: PUT /api/admin/comercios/66813e0442450cbfd1a43f57 at Sun Jun 30 2024 18:18:44 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio no encontrado"
+}
+Response: 404 76.797 ms 
+
+Request: POST /api/admin/comercios at Sun Jun 30 2024 18:18:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Comercio Prueba Admin",
+	"CIF": "CIF0007AD",
+	"direccion": "Calle P",
+	"email": "pruebaadminD@example.com",
+	"telefono": "667788776"
+}
+Response Body:
+{
+	"message": "Comercio registrado con éxito",
+	"comercio": {
+		"nombre": "Comercio Prueba Admin",
+		"CIF": "CIF0007AD",
+		"direccion": "Calle P",
+		"email": "pruebaadminD@example.com",
+		"telefono": "667788776",
+		"paginaID": "6681856aca09f504f906fc3f",
+		"_id": "6681856aca09f504f906fc41",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE4NTZhY2EwOWY1MDRmOTA2ZmM0MSIsImlhdCI6MTcxOTc2NDMzMH0.ojUhDC_ukHyyITQvSDA8VmvC4PpHeUEPE8ULstlMrmA",
+		"createdAt": "2024-06-30T16:18:50.995Z",
+		"updatedAt": "2024-06-30T16:18:50.995Z"
+	}
+}
+Response: 201 139.942 ms 
+
+Request: PUT /api/admin/comercios/6681856aca09f504f906fc41 at Sun Jun 30 2024 18:19:07 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "Super Comercio 1111111111",
+	"direccion": "Calle Verdadera 456"
+}
+Response Body:
+{
+	"message": "Comercio actualizado",
+	"comercio": {
+		"_id": "6681856aca09f504f906fc41",
+		"nombre": "Super Comercio 1111111111",
+		"CIF": "CIF0007AD",
+		"direccion": "Calle Verdadera 456",
+		"email": "pruebaadminD@example.com",
+		"telefono": "667788776",
+		"paginaID": "6681856aca09f504f906fc3f",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE4NTZhY2EwOWY1MDRmOTA2ZmM0MSIsImlhdCI6MTcxOTc2NDMzMH0.ojUhDC_ukHyyITQvSDA8VmvC4PpHeUEPE8ULstlMrmA",
+		"createdAt": "2024-06-30T16:18:50.995Z",
+		"updatedAt": "2024-06-30T16:19:07.584Z"
+	}
+}
+Response: 200 64.779 ms 
+
+Request: DELETE /api/admin/comercios/6681856aca09f504f906fc41 at Sun Jun 30 2024 18:19:14 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio y contenido eliminado correctamente"
+}
+Response: 200 213.883 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:20:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"ciudad": "Madrid"
+}
+Response Body:
+{
+	"message": "Cannot read properties of undefined (reading 'id')"
+}
+Response: 500 0.915 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:22:33 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid"
+}
+Response Body:
+{
+	"message": "Cannot read properties of undefined (reading 'id')"
+}
+Response: 500 0.565 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:22:47 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid"
+}
+Response Body:
+{
+	"message": "Cannot read properties of undefined (reading 'id')"
+}
+Response: 500 0.252 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:23:20 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"ciudad": "Madrid"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "nuevoNombre",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:23:19.988Z"
+	}
+}
+Response: 200 127.090 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:23:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-30T16:23:19.988Z"
+}
+Response: 200 64.739 ms 
+
+Request: GET /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:23:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "nuevoNombre",
+	"email": "nuevoEmail@gmail.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-30T16:23:19.988Z"
+}
+Response: 304 90.397 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:24:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"_id": "665fbef2560e494814e15cf8",
+	"nombre": "Daniel",
+	"email": "nuevoEmail@gmail.com",
+	"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+	"edad": 21,
+	"ciudad": "Madrid",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-05T01:27:14.856Z",
+	"updatedAt": "2024-06-30T16:23:19.988Z"
+}
+Response Body:
+{
+	"message": "Usuario actualizado correctamente",
+	"user": {
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:24:06.415Z"
+	}
+}
+Response: 200 73.899 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:24:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:24:06.415Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+			
+...
+Response: 200 65.219 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 18:24:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 304 69.864 ms 
+
+Request: GET /api/admin/users at Sun Jun 30 2024 18:24:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "nuevoEmail@gmail.com",
+		"password": "$2a$10$P/a.CZVuGjBhleHz1D9eoeuXZnUwrpkL0TCubzosbSCZ5phhb.23i",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:24:06.415Z"
+	},
+	{
+		"_id": "667656ffd4b6ce17310ef231",
+		"nombre": "Pepe",
+		"email": "pepe@example.com",
+		"password": "$2a$10$w52VcV3TR4Dc63gSIVLnKej3lJu1OyIKofuhaQtlxoFCBxGcNqpFW",
+		"edad": 26,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-22T04:45:51.164Z",
+		"updatedAt": "2024-06-22T04:45:51.164Z"
+	},
+	{
+		"_id": "667a2f98381a2c9c46b2d76d",
+		"nombre": "paco",
+		"email": "paco@paco.com",
+		"password": "$2a$10$IWVX0zmebWZhaa4GrVJMa.HL9WxnU3V7GoABe6IKjsWm0Mf/m5bcq",
+		"edad": 18,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería",
+			
+...
+Response: 304 65.423 ms 
+
+Request: GET /api/admin/comercios at Sun Jun 30 2024 18:24:06 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": "66604205b9bc68d084386be7",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586Z"
+	},
+	{
+		"_id": "666042b8b9bc68d084386bef",
+		"nombre": "Fnac",
+		"CIF": "CIF006660",
+		"direccion": "Calle 6",
+		"email": "comercio6@example.com",
+		"telefono": "667788991",
+		"paginaID": "666042b8b9bc68d084386bed",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MmI4YjliYzY4ZDA4NDM4NmJlZiIsImlhdCI6MTcxNzU4NDU2OH0.8OvHJzAYGIzscMYGgB4_m5O0hb2KxBB32TnF6eFusjk",
+		"createdAt": "2024-06-05T10:49:28.864Z",
+		"updatedAt": "2024-06-27T02:52:51.728Z"
+	},
+	{
+		"_
+...
+Response: 304 75.457 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8/password at Sun Jun 30 2024 18:26:14 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"newPassword": "P@ssw0rd"
+}
+Response Body:
+{
+	"message": "Cotraseña actualizada con exito"
+}
+Response: 200 197.348 ms 
+
+Request: GET /api/admin/user/6666eb5c3c108bd9108f92ed/email at Sun Jun 30 2024 18:27:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 404 3.877 ms 
+
+Request: PUT /api/admin/user/665fbef2560e494814e15cf8/email at Sun Jun 30 2024 18:27:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"newEmail": "nueviiiiiiiiiiiisimoEmail@gmail.com"
+}
+Response Body:
+{
+	"message": "Correo electrónico actualizado correctamente",
+	"user": {
+		"_id": "665fbef2560e494814e15cf8",
+		"nombre": "Daniel",
+		"email": "nueviiiiiiiiiiiisimoEmail@gmail.com",
+		"password": "$2a$10$hSJXN8U8sCtNr7YcvOFHieBP4YedS6PRwQuSu76AkSxibCJcMBnhC",
+		"edad": 21,
+		"ciudad": "Madrid",
+		"intereses": [
+			"Restaurante",
+			"Cafetería"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-05T01:27:14.856Z",
+		"updatedAt": "2024-06-30T16:27:34.467Z"
+	}
+}
+Response: 200 396.134 ms 
+
+Request: DELETE /api/admin/user/665fbef2560e494814e15cf8 at Sun Jun 30 2024 18:28:47 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Cuenta de usuario y reseñas asociadas eliminadas con éxito"
+}
+Response: 200 516.702 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:29:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.819 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:29:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.569 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:29:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.091 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:29:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 1.058 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:29:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.666 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:29:17 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.371 ms 
+
+Request: POST /api/comercios/login at Sun Jun 30 2024 18:30:15 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "mercadona@mercadona.com",
+	"cif": "CIF333333"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE",
+	"comercio": {
+		"_id": "667b9de96929557b09ecb4b4",
+		"nombre": "mercadona",
+		"CIF": "CIF333333",
+		"direccion": "Calle Falsa 123",
+		"email": "mercadona@mercadona.com",
+		"telefono": "699898943",
+		"paginaID": "667cc4f64a3f97545c29b841",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE",
+		"createdAt": "2024-06-26T04:49:45.430Z",
+		"updatedAt": "2024-06-27T01:48:38.356Z"
+	}
+}
+Response: 200 48.713 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:32:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.279 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:32:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.357 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:32:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.710 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:32:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.411 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:32:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 1.342 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:32:13 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.354 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:32:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 0.744 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:32:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.342 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:32:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.768 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:32:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 304 0.771 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:32:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.097 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:32:15 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.315 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 18:32:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"nombre": "mercadona",
+	"email": "mercadona@mercadona.com",
+	"CIF": "CIF333333",
+	"contenido": {
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T16:28:47.135Z"
+	}
+}
+Response: 200 119.206 ms 
+
+Request: POST /api/comercios at Sun Jun 30 2024 18:33:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido ya existe para este comercio"
+}
+Response: 400 78.979 ms 
+
+Request: POST /api/comercios/login at Sun Jun 30 2024 18:34:58 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Request Body:
+{
+	"email": "mercadona@mercadona.com",
+	"cif": "CIF333333"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE",
+	"comercio": {
+		"_id": "667b9de96929557b09ecb4b4",
+		"nombre": "mercadona",
+		"CIF": "CIF333333",
+		"direccion": "Calle Falsa 123",
+		"email": "mercadona@mercadona.com",
+		"telefono": "699898943",
+		"paginaID": "667cc4f64a3f97545c29b841",
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE",
+		"createdAt": "2024-06-26T04:49:45.430Z",
+		"updatedAt": "2024-06-27T01:48:38.356Z"
+	}
+}
+Response: 200 31.005 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 18:34:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "mercadona",
+	"email": "mercadona@mercadona.com",
+	"CIF": "CIF333333",
+	"contenido": {
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T16:28:47.135Z"
+	}
+}
+Response: 200 115.861 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 18:34:59 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "mercadona",
+	"email": "mercadona@mercadona.com",
+	"CIF": "CIF333333",
+	"contenido": {
+		"_id": "667cc4f64a3f97545c29b841",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "Vendemos mucha porqueria",
+		"text": [
+			"sss",
+			"aaaa",
+			"aaaaa",
+			"aaaaa",
+			"aaaaaaa"
+		],
+		"fotos": [
+			"uploads\\1719718764324-shishaBar.jpg"
+		],
+		"scoring": 4,
+		"numScoring": 1,
+		"reviews": [
+			"6680c3dffd1c5efd1502a427"
+		],
+		"createdAt": "2024-06-27T01:48:38.322Z",
+		"updatedAt": "2024-06-30T16:28:47.135Z"
+	}
+}
+Response: 304 86.171 ms 
+
+Request: DELETE /api/comercios/contenido at Sun Jun 30 2024 18:35:02 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 210.198 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 18:35:03 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "mercadona",
+	"email": "mercadona@mercadona.com",
+	"CIF": "CIF333333",
+	"contenido": null
+}
+Response: 200 63.691 ms 
+
+Request: POST /api/comercios at Sun Jun 30 2024 18:35:26 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "6681894e9f676e1532b3cfdb",
+		"createdAt": "2024-06-30T16:35:26.089Z",
+		"updatedAt": "2024-06-30T16:35:26.089Z"
+	}
+}
+Response: 200 129.423 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 18:35:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "mercadona",
+	"email": "mercadona@mercadona.com",
+	"CIF": "CIF333333",
+	"contenido": {
+		"_id": "6681894e9f676e1532b3cfdb",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-30T16:35:26.089Z",
+		"updatedAt": "2024-06-30T16:35:26.089Z"
+	}
+}
+Response: 200 81.714 ms 
+
+Request: GET /api/comercios/info at Sun Jun 30 2024 18:35:35 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"nombre": "mercadona",
+	"email": "mercadona@mercadona.com",
+	"CIF": "CIF333333",
+	"contenido": {
+		"_id": "6681894e9f676e1532b3cfdb",
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-30T16:35:26.089Z",
+		"updatedAt": "2024-06-30T16:35:26.089Z"
+	}
+}
+Response: 304 82.156 ms 
+
+Request: DELETE /api/comercios/contenido at Sun Jun 30 2024 18:37:01 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Contenido eliminado con exito"
+}
+Response: 200 171.992 ms 
+
+Request: POST /api/comercios at Sun Jun 30 2024 18:37:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Madrid",
+	"actividad": "Restaurante",
+	"titulo": "Restaurante TOP",
+	"resumen": "El mejor restaurante de la ciudad.",
+	"text": [
+		"Bienvenidos a nuestro restaurante.",
+		"Ofrecemos una gran variedad de platos."
+	],
+	"fotos": []
+}
+Response Body:
+{
+	"message": "Contenido nuevo creado con éxito",
+	"contenido": {
+		"ciudad": "Madrid",
+		"actividad": "Restaurante",
+		"titulo": "Restaurante TOP",
+		"resumen": "El mejor restaurante de la ciudad.",
+		"text": [
+			"Bienvenidos a nuestro restaurante.",
+			"Ofrecemos una gran variedad de platos."
+		],
+		"fotos": [],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"_id": "668189c9ed8dc8aa28220701",
+		"createdAt": "2024-06-30T16:37:29.721Z",
+		"updatedAt": "2024-06-30T16:37:29.721Z"
+	}
+}
+Response: 200 157.791 ms 
+
+Request: PUT /api/comercios/contenido at Sun Jun 30 2024 18:37:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Granada",
+	"actividad": "Heladería",
+	"titulo": "Helados Frescos",
+	"resumen": "Los mejores helados artesanales.",
+	"text": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos."
+	],
+	"fotos": [
+		"foto1_comercio6.jpg"
+	]
+}
+Response Body:
+{
+	"message": "Página web actualizada con éxito",
+	"contenido": {
+		"_id": "668189c9ed8dc8aa28220701",
+		"ciudad": "Granada",
+		"actividad": "Heladería",
+		"titulo": "Helados Frescos",
+		"resumen": "Los mejores helados artesanales.",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-30T16:37:29.721Z",
+		"updatedAt": "2024-06-30T16:37:51.011Z"
+	}
+}
+Response: 200 102.470 ms 
+
+Request: POST /api/comercios/contenido/texts at Sun Jun 30 2024 18:39:01 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"text": "Este texto es increiblemente increible"
+}
+Response Body:
+{
+	"message": "Texto añadido correctamente",
+	"texto": [
+		"Helados de todos los sabores.",
+		"Ingredientes naturales y frescos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 135.626 ms 
+
+Request: DELETE /api/comercios/contenido/texts/0 at Sun Jun 30 2024 18:40:40 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Texto eliminado correctamente",
+	"texto": [
+		"Ingredientes naturales y frescos.",
+		"Este texto es increiblemente increible"
+	]
+}
+Response: 200 162.269 ms 
+
+Request: POST /api/comercios/contenido/fotos at Sun Jun 30 2024 18:41:41 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Foto añadida correctamente",
+	"fotos": [
+		"foto1_comercio6.jpg",
+		"uploads\\1719765701266-shishaBar.jpg"
+	]
+}
+Response: 200 153.336 ms 
+
+Request: POST /api/comercios/contenido/fotos at Sun Jun 30 2024 18:41:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Foto añadida correctamente",
+	"fotos": [
+		"foto1_comercio6.jpg",
+		"uploads\\1719765701266-shishaBar.jpg",
+		"uploads\\1719765716836-shishaBar.jpg"
+	]
+}
+Response: 200 137.122 ms 
+
+Request: DELETE /api/comercios/contenido/fotos/0 at Sun Jun 30 2024 18:42:54 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "El servidor se fue de madre..."
+}
+Response: 500 370.402 ms 
+
+Request: DELETE /api/comercios/contenido/fotos/0 at Sun Jun 30 2024 18:45:09 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Foto eliminada correctamente",
+	"fotos": [
+		"uploads\\1719765701266-shishaBar.jpg",
+		"uploads\\1719765716836-shishaBar.jpg"
+	]
+}
+Response: 200 161.416 ms 
+
+Request: GET /api/comercios/contenido/intereses at Sun Jun 30 2024 18:46:21 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"emails": []
+}
+Response: 200 135.989 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:47:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.634 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:47:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.340 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:47:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.874 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:47:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.803 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:47:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.502 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:47:01 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.470 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 18:48:28 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 200 87.957 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:49:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 2.878 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:49:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.056 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:49:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.692 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:49:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.872 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:49:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.595 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:49:56 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.363 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad?ciudad=Madrid&ordenar=desc at Sun Jun 30 2024 18:50:50 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6680c492fd1c5efd1502a455"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T16:28:47.199Z"
+	}
+]
+Response: 200 51.462 ms 
+
+Request: GET /api/user/comercios/contenido/actividad?actividad=Cafeter%C3%ADa&ordenar=desc at Sun Jun 30 2024 18:51:52 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "No se ha encontrado ningun contenido para la actividad"
+}
+Response: 404 36.487 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 18:52:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 200 112.387 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 18:52:12 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 89.932 ms 
+
+Request: GET /api/user/comercios/contenido/actividad?actividad=Bar&ordenar=desc at Sun Jun 30 2024 18:52:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666042b8b9bc68d084386bed",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:49:28.820Z",
+		"updatedAt": "2024-06-30T16:28:47.065Z",
+		"actividad": "Bar",
+		"ciudad": "Granada",
+		"resumen": "Los mejores helados artesanales.",
+		"titulo": "Helados Frescos"
+	}
+]
+Response: 200 31.639 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad/actividad?ciudad=Granada&actividad=Bar&ordenar=desc at Sun Jun 30 2024 18:54:14 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666042b8b9bc68d084386bed",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:49:28.820Z",
+		"updatedAt": "2024-06-30T16:28:47.065Z",
+		"actividad": "Bar",
+		"ciudad": "Granada",
+		"resumen": "Los mejores helados artesanales.",
+		"titulo": "Helados Frescos"
+	}
+]
+Response: 200 40.556 ms 
+
+Request: GET /api/user/comercios/contenido/666041f9b9bc68d084386be3 at Sun Jun 30 2024 18:55:34 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "No se ha encontrado ningun contenido para el ID introducido"
+}
+Response: 404 47.446 ms 
+
+Request: GET /api/user/comercios/contenido/ciudad/actividad?ciudad=Granada&actividad=Bar&ordenar=desc at Sun Jun 30 2024 18:55:41 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "666042b8b9bc68d084386bed",
+		"text": [
+			"Helados de todos los sabores.",
+			"Ingredientes naturales y frescos."
+		],
+		"fotos": [
+			"foto1_comercio6.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-05T10:49:28.820Z",
+		"updatedAt": "2024-06-30T16:28:47.065Z",
+		"actividad": "Bar",
+		"ciudad": "Granada",
+		"resumen": "Los mejores helados artesanales.",
+		"titulo": "Helados Frescos"
+	}
+]
+Response: 200 34.884 ms 
+
+Request: GET /api/user/comercios/contenido/666042b8b9bc68d084386bed at Sun Jun 30 2024 18:55:49 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "No se ha encontrado ningun contenido para el ID introducido"
+}
+Response: 404 30.357 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 18:56:00 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 200 87.317 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 18:56:09 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 2,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T16:28:47.272Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02:22:22.586Z"
+}
+Response: 200 280.699 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 18:58:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.197 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 18:58:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.765 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 18:58:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.718 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 18:58:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.788 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 18:58:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.138 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 18:58:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.492 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/666041f9b9bc68d084386be3 at Sun Jun 30 2024 18:59:32 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Comercio no encontrado"
+}
+Response: 404 35.444 ms 
+
+Request: GET /api/user/comercios/contenido/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 18:59:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667fec45fd1c5efd1502a23b",
+	"nombre": "llaollao",
+	"CIF": "CIF777777",
+	"direccion": "Calle Falsa 123",
+	"email": "llaollao@llaollao.com",
+	"telefono": "638201634",
+	"paginaID": {
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6680c492fd1c5efd1502a455"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T16:28:47.199Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ZlYzQ1ZmQxYzVlZmQxNTAyYTIzYiIsImlhdCI6MTcxOTY1OTU4OX0.j6YyIZNCjc77o1DChKXyYgQjhVM5EH4kOsT8_1oZOaE",
+	"createdAt": "2024-06-29T11:13:09.677Z",
+	"updatedAt": "2024-06-29T11:14:01.997Z"
+}
+Response: 200 67.896 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 18:59:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "helados muy ricos"
+	}
+]
+Response: 200 114.810 ms 
+
+Request: GET /api/user/comercios/contenido/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 18:59:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667fec45fd1c5efd1502a23b",
+	"nombre": "llaollao",
+	"CIF": "CIF777777",
+	"direccion": "Calle Falsa 123",
+	"email": "llaollao@llaollao.com",
+	"telefono": "638201634",
+	"paginaID": {
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6680c492fd1c5efd1502a455"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T16:28:47.199Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ZlYzQ1ZmQxYzVlZmQxNTAyYTIzYiIsImlhdCI6MTcxOTY1OTU4OX0.j6YyIZNCjc77o1DChKXyYgQjhVM5EH4kOsT8_1oZOaE",
+	"createdAt": "2024-06-29T11:13:09.677Z",
+	"updatedAt": "2024-06-29T11:14:01.997Z"
+}
+Response: 304 50.880 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 18:59:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.939 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 18:59:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "helados muy ricos"
+	}
+]
+Response: 304 104.791 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 18:59:45 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.599 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 18:59:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 68.138 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 18:59:47 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 68.476 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 18:59:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 2,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T16:28:47.272Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02:22:22.586Z"
+}
+Response: 200 52.963 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 18:59:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	}
+]
+Response: 200 106.304 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 18:59:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.236 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 18:59:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 2,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T16:28:47.272Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02:22:22.586Z"
+}
+Response: 304 56.586 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 18:59:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	}
+]
+Response: 304 108.090 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 18:59:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.252 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 18:59:55 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 200 82.149 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 19:00:08 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	}
+]
+Response: 200 114.497 ms 
+
+Request: POST /api/user/register at Sun Jun 30 2024 19:01:09 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "user",
+	"password": "passwordSegura",
+	"email": "user@example.com",
+	"edad": "18",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"nombre": "user",
+	"email": "user@example.com",
+	"password": "$2a$10$Bk34oXbAXw64mSwuNk1HYOi9U.lCzlm9cbDNhvx.DazvQAyuBRsMG",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"_id": "66818f557e4ec78117f039ec",
+	"createdAt": "2024-06-30T17:01:09.238Z",
+	"updatedAt": "2024-06-30T17:01:09.238Z"
+}
+Response: 200 397.375 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 19:02:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.337 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 19:02:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.941 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 19:02:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.994 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 19:02:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 3.945 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 19:02:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 1.000 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 19:02:27 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.359 ms 
+
+Request: POST /api/user/login at Sun Jun 30 2024 19:03:22 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "user@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE4ZjU1N2U0ZWM3ODExN2YwMzllYyIsImlhdCI6MTcxOTc2NzAwMiwiZXhwIjoxNzE5ODUzNDAyfQ.NyVu7iRTezdF-4uLY0hcg-vbareo1fLNTDdERQoOV0U"
+}
+Response: 200 113.416 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:04:26 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"_id": "66818f557e4ec78117f039ec",
+	"nombre": "user",
+	"email": "user@example.com",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"createdAt": "2024-06-30T17:01:09.238Z",
+	"updatedAt": "2024-06-30T17:01:09.238Z"
+}
+Response: 200 69.327 ms 
+
+Request: PUT /api/user/update at Sun Jun 30 2024 19:05:39 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"ciudad": "Bilbao",
+	"intereses": [
+		"Museo",
+		"Restaurante"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"message": "Usuario actualizado con éxito",
+	"contenido": {
+		"_id": "66818f557e4ec78117f039ec",
+		"nombre": "user",
+		"email": "user@example.com",
+		"password": "$2a$10$Bk34oXbAXw64mSwuNk1HYOi9U.lCzlm9cbDNhvx.DazvQAyuBRsMG",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"Restaurante"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T17:01:09.238Z",
+		"updatedAt": "2024-06-30T17:05:39.733Z"
+	}
+}
+Response: 200 122.785 ms 
+
+Request: PUT /api/user/email at Sun Jun 30 2024 19:06:35 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "megaprueba@example.com"
+}
+Response Body:
+{
+	"message": "Correo electrónico actualizado con éxito",
+	"user": {
+		"_id": "66818f557e4ec78117f039ec",
+		"nombre": "user",
+		"email": "megaprueba@example.com",
+		"password": "$2a$10$Bk34oXbAXw64mSwuNk1HYOi9U.lCzlm9cbDNhvx.DazvQAyuBRsMG",
+		"edad": 18,
+		"ciudad": "Bilbao",
+		"intereses": [
+			"Museo",
+			"Restaurante"
+		],
+		"ofertas": true,
+		"createdAt": "2024-06-30T17:01:09.238Z",
+		"updatedAt": "2024-06-30T17:06:35.634Z"
+	}
+}
+Response: 200 142.490 ms 
+
+Request: PUT /api/user/password at Sun Jun 30 2024 19:07:56 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"oldPassword": "passwordSegura",
+	"newPassword": "nuevaPasswordSegura"
+}
+Response Body:
+{
+	"message": "Contraseña actualizado con éxito"
+}
+Response: 200 254.544 ms 
+
+Request: DELETE /api/user/baja at Sun Jun 30 2024 19:08:51 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Cuenta de usuario y reseñas asociadas eliminadas con éxito"
+}
+Response: 200 192.480 ms 
+
+Request: POST /api/user/register at Sun Jun 30 2024 19:09:40 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"nombre": "user",
+	"password": "passwordSegura",
+	"email": "user@example.com",
+	"edad": "18",
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true
+}
+Response Body:
+{
+	"nombre": "user",
+	"email": "user@example.com",
+	"password": "$2a$10$YowHog4/WxDE5G7CEgpM/u2.c9m4C7G4Hzyh7wWGrDTnHSY/om/5a",
+	"edad": 18,
+	"ciudad": "Barcelona",
+	"intereses": [
+		"Restaurante",
+		"Cafetería"
+	],
+	"ofertas": true,
+	"_id": "668191547f3ee170b2834f4d",
+	"createdAt": "2024-06-30T17:09:40.870Z",
+	"updatedAt": "2024-06-30T17:09:40.870Z"
+}
+Response: 200 196.797 ms 
+
+Request: POST /api/user/login at Sun Jun 30 2024 19:09:43 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"email": "user@example.com",
+	"password": "passwordSegura"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5MTU0N2YzZWUxNzBiMjgzNGY0ZCIsImlhdCI6MTcxOTc2NzM4MywiZXhwIjoxNzE5ODUzNzgzfQ.tABHweF1ebMl9TRCwO6oqAD668-cE5fYC2jDuphK7ZY"
+}
+Response: 200 102.091 ms 
+
+Request: POST /api/user/6666ee72e2cff37338880429/review at Sun Jun 30 2024 19:09:58 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Churros Churros churros !!!!!",
+	"puntuacion": 4
+}
+Response Body:
+{
+	"message": "Reseña publicada correctamente",
+	"review": {
+		"usuarioID": "668191547f3ee170b2834f4d",
+		"contenidoID": "6666ee72e2cff37338880429",
+		"comentario": "Churros Churros churros !!!!!",
+		"puntuacion": 4,
+		"_id": "668191667f3ee170b2834f53",
+		"createdAt": "2024-06-30T17:09:58.894Z",
+		"updatedAt": "2024-06-30T17:09:58.894Z"
+	}
+}
+Response: 201 187.242 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 19:10:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 200 102.836 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 19:10:34 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 69.106 ms 
+
+Request: GET /api/user/comercios/contenido/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 19:10:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667fec45fd1c5efd1502a23b",
+	"nombre": "llaollao",
+	"CIF": "CIF777777",
+	"direccion": "Calle Falsa 123",
+	"email": "llaollao@llaollao.com",
+	"telefono": "638201634",
+	"paginaID": {
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6680c492fd1c5efd1502a455"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T16:28:47.199Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ZlYzQ1ZmQxYzVlZmQxNTAyYTIzYiIsImlhdCI6MTcxOTY1OTU4OX0.j6YyIZNCjc77o1DChKXyYgQjhVM5EH4kOsT8_1oZOaE",
+	"createdAt": "2024-06-29T11:13:09.677Z",
+	"updatedAt": "2024-06-29T11:14:01.997Z"
+}
+Response: 304 66.920 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 19:10:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "helados muy ricos"
+	}
+]
+Response: 304 106.268 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:10:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.389 ms 
+
+Request: GET /api/user/comercios/contenido/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 19:10:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667fec45fd1c5efd1502a23b",
+	"nombre": "llaollao",
+	"CIF": "CIF777777",
+	"direccion": "Calle Falsa 123",
+	"email": "llaollao@llaollao.com",
+	"telefono": "638201634",
+	"paginaID": {
+		"_id": "667fec79fd1c5efd1502a25c",
+		"ciudad": "Madrid",
+		"actividad": "Vender cosas",
+		"titulo": "Tu mercado Dia a dia",
+		"resumen": "aaaaaa",
+		"text": [
+			"aaaaaaa",
+			"aaaaaaaa"
+		],
+		"fotos": [
+			"aaa",
+			"a"
+		],
+		"scoring": 5,
+		"numScoring": 1,
+		"reviews": [
+			"6680c492fd1c5efd1502a455"
+		],
+		"createdAt": "2024-06-29T11:14:01.964Z",
+		"updatedAt": "2024-06-30T16:28:47.199Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ZlYzQ1ZmQxYzVlZmQxNTAyYTIzYiIsImlhdCI6MTcxOTY1OTU4OX0.j6YyIZNCjc77o1DChKXyYgQjhVM5EH4kOsT8_1oZOaE",
+	"createdAt": "2024-06-29T11:13:09.677Z",
+	"updatedAt": "2024-06-29T11:14:01.997Z"
+}
+Response: 304 65.029 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667fec45fd1c5efd1502a23b at Sun Jun 30 2024 19:10:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "helados muy ricos"
+	}
+]
+Response: 304 99.871 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:10:37 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.238 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 19:10:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 58.014 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 19:10:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 55.531 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 19:10:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 2,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T16:28:47.272Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02:22:22.586Z"
+}
+Response: 304 50.841 ms 
+
+Request: GET /api/user/comercios/contenido/66604205b9bc68d084386be9 at Sun Jun 30 2024 19:10:39 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "66604205b9bc68d084386be9",
+	"nombre": "Teteria ben baker",
+	"CIF": "CIF5005AR",
+	"direccion": "Calle 5",
+	"email": "comercio666@example.com",
+	"telefono": "645324515",
+	"paginaID": {
+		"_id": "66604205b9bc68d084386be7",
+		"text": [
+			"Equipos de última generación.",
+			"Clases dirigidas y entrenadores personales."
+		],
+		"fotos": [
+			"foto1_comercio5.jpg"
+		],
+		"scoring": 4.5,
+		"numScoring": 2,
+		"createdAt": "2024-06-05T10:46:29.031Z",
+		"updatedAt": "2024-06-30T16:28:47.272Z",
+		"actividad": "Gimnasio",
+		"ciudad": "Bilbao",
+		"resumen": "Tu gimnasio en Bilbao.",
+		"titulo": "Fitness Center",
+		"reviews": [
+			"6680c55efd1c5efd1502a485",
+			"6680c947d8318cc9aee2dbff"
+		]
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+	"createdAt": "2024-06-05T10:46:29.067Z",
+	"updatedAt": "2024-06-25T02:22:22.586Z"
+}
+Response: 304 51.354 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 19:10:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	}
+]
+Response: 304 133.094 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:10:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.299 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/66604205b9bc68d084386be9 at Sun Jun 30 2024 19:10:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"userName": "Pepe",
+		"scoring": 5,
+		"comentario": "Buenas shishas a buen precio"
+	},
+	{
+		"userName": "patricia",
+		"scoring": 3,
+		"comentario": "Ta bien"
+	}
+]
+Response: 304 132.433 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:10:40 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.199 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 19:10:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 91.020 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=asc at Sun Jun 30 2024 19:10:42 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 304 96.120 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667b9de96929557b09ecb4b4 at Sun Jun 30 2024 19:10:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 200 53.860 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:10:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.199 ms 
+
+Request: GET /api/user/comercios/contenido/667b9de96929557b09ecb4b4 at Sun Jun 30 2024 19:10:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667b9de96929557b09ecb4b4",
+	"nombre": "mercadona",
+	"CIF": "CIF333333",
+	"direccion": "Calle Falsa 123",
+	"email": "mercadona@mercadona.com",
+	"telefono": "699898943",
+	"paginaID": {
+		"_id": "668189c9ed8dc8aa28220701",
+		"ciudad": "Granada",
+		"actividad": "Heladería",
+		"titulo": "Helados Frescos",
+		"resumen": "Los mejores helados artesanales.",
+		"text": [
+			"Ingredientes naturales y frescos.",
+			"Este texto es increiblemente increible"
+		],
+		"fotos": [
+			"uploads\\1719765701266-shishaBar.jpg",
+			"uploads\\1719765716836-shishaBar.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-30T16:37:29.721Z",
+		"updatedAt": "2024-06-30T16:45:09.773Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE",
+	"createdAt": "2024-06-26T04:49:45.430Z",
+	"updatedAt": "2024-06-30T16:37:29.761Z"
+}
+Response: 200 64.476 ms 
+
+Request: GET /api/user/comercios/contenido/reviews/667b9de96929557b09ecb4b4 at Sun Jun 30 2024 19:10:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 55.270 ms 
+
+Request: GET /api/user/perfil at Sun Jun 30 2024 19:10:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"message": "El token no es válido"
+}
+Response: 401 0.223 ms 
+
+Request: GET /api/user/comercios/contenido/667b9de96929557b09ecb4b4 at Sun Jun 30 2024 19:10:48 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+{
+	"_id": "667b9de96929557b09ecb4b4",
+	"nombre": "mercadona",
+	"CIF": "CIF333333",
+	"direccion": "Calle Falsa 123",
+	"email": "mercadona@mercadona.com",
+	"telefono": "699898943",
+	"paginaID": {
+		"_id": "668189c9ed8dc8aa28220701",
+		"ciudad": "Granada",
+		"actividad": "Heladería",
+		"titulo": "Helados Frescos",
+		"resumen": "Los mejores helados artesanales.",
+		"text": [
+			"Ingredientes naturales y frescos.",
+			"Este texto es increiblemente increible"
+		],
+		"fotos": [
+			"uploads\\1719765701266-shishaBar.jpg",
+			"uploads\\1719765716836-shishaBar.jpg"
+		],
+		"scoring": 0,
+		"numScoring": 0,
+		"reviews": [],
+		"createdAt": "2024-06-30T16:37:29.721Z",
+		"updatedAt": "2024-06-30T16:45:09.773Z"
+	},
+	"deleted": false,
+	"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2I5ZGU5NjkyOTU1N2IwOWVjYjRiNCIsImlhdCI6MTcxOTM3NzM4NX0.3XxnDYNP3BxtJCb-muPDIWPeJDWWVfUwjDUlFb1ZvnE",
+	"createdAt": "2024-06-26T04:49:45.430Z",
+	"updatedAt": "2024-06-30T16:37:29.761Z"
+}
+Response: 304 64.866 ms 
+
+Request: GET /api/user/reviews at Sun Jun 30 2024 19:11:38 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "668191667f3ee170b2834f53",
+		"usuarioID": "668191547f3ee170b2834f4d",
+		"contenidoID": "6666ee72e2cff37338880429",
+		"comentario": "Churros Churros churros !!!!!",
+		"puntuacion": 4,
+		"createdAt": "2024-06-30T17:09:58.894Z",
+		"updatedAt": "2024-06-30T17:09:58.894Z"
+	}
+]
+Response: 200 112.005 ms 
+
+Request: GET /api-docs/ at Sun Jun 30 2024 19:12:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol viewBox="0 0 20 20" id="unlocked">
+      <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199
+Response: 304 3.222 ms 
+
+Request: GET /api-docs/swagger-ui.css at Sun Jun 30 2024 19:12:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.442 ms 
+
+Request: GET /api-docs/swagger-ui-bundle.js at Sun Jun 30 2024 19:12:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 2.826 ms 
+
+Request: GET /api-docs/swagger-ui-standalone-preset.js at Sun Jun 30 2024 19:12:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.659 ms 
+
+Request: GET /api-docs/swagger-ui-init.js at Sun Jun 30 2024 19:12:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response Body:
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Comercios || Shogyo",
+      "version": "1.0.0",
+      "description": "Esta API gestiona las rutas y operaciones relacionadas con los comercios en la plataforma Shogyo."
+    },
+    "paths": {
+      "/api/admin/register": {
+        "post": {
+          "summary": "Registra un nuevo administrador",
+          "tags": [
+            "Administradores"
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string",
+                      "example": "ad
+Response: 200 0.752 ms 
+
+Request: GET /api-docs/favicon-32x32.png at Sun Jun 30 2024 19:12:44 GMT+0200, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0
+Response: 304 0.496 ms 
+
+Request: GET /api/user/comercios/contenido?ordenar=desc at Sun Jun 30 2024 19:13:15 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+[
+	{
+		"_id": "66604205b9bc68d084386be9",
+		"nombre": "Teteria ben baker",
+		"CIF": "CIF5005AR",
+		"direccion": "Calle 5",
+		"email": "comercio666@example.com",
+		"telefono": "645324515",
+		"paginaID": {
+			"_id": "66604205b9bc68d084386be7",
+			"text": [
+				"Equipos de última generación.",
+				"Clases dirigidas y entrenadores personales."
+			],
+			"fotos": [
+				"foto1_comercio5.jpg"
+			],
+			"scoring": 4.5,
+			"numScoring": 2,
+			"createdAt": "2024-06-05T10:46:29.031Z",
+			"updatedAt": "2024-06-30T16:28:47.272Z",
+			"actividad": "Gimnasio",
+			"ciudad": "Bilbao",
+			"resumen": "Tu gimnasio en Bilbao.",
+			"titulo": "Fitness Center",
+			"reviews": [
+				"6680c55efd1c5efd1502a485",
+				"6680c947d8318cc9aee2dbff"
+			]
+		},
+		"deleted": false,
+		"tokenJWT": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA0MjA1YjliYzY4ZDA4NDM4NmJlOSIsImlhdCI6MTcxNzU4NDM4OX0.ap1x81XAMvLws6b5Z4zU_W6e3SFwE1zMoD597th5nes",
+		"createdAt": "2024-06-05T10:46:29.067Z",
+		"updatedAt": "2024-06-25T02:22:22.586
+...
+Response: 200 103.526 ms 
+
+Request: POST /api/user/6666ee72e2cff37338880429/review at Sun Jun 30 2024 19:13:45 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Request Body:
+{
+	"comentario": "Churros Churros churros !!!!!",
+	"puntuacion": 4
+}
+Response Body:
+{
+	"message": "Ya has escrito una reseña para este contenido"
+}
+Response: 400 113.424 ms 
+
+Request: GET /api/user/comercios/contenido/6666ee72e2cff37338880429 at Sun Jun 30 2024 19:14:04 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "No se ha encontrado ningun contenido para el ID introducido"
+}
+Response: 404 31.791 ms 
+
+Request: DELETE /api/user/baja at Sun Jun 30 2024 19:15:29 GMT+0200, IP: ::ffff:127.0.0.1, User Agent: vscode-restclient
+Response Body:
+{
+	"message": "Cuenta de usuario y reseñas asociadas eliminadas con éxito"
+}
+Response: 200 275.206 ms 

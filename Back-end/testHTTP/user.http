@@ -2,7 +2,7 @@
 ###                             VARIABLES
 ###----------------------------------------------------------------------------
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWZiZWYyNTYwZTQ5NDgxNGUxNWNmOCIsImlhdCI6MTcxOTcxNjUxMCwiZXhwIjoxNzE5ODAyOTEwfQ.04QlXW3IIfqOY83JBpgef2zatV0HxgpUMpsmf3Y_700
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODE5MTU0N2YzZWUxNzBiMjgzNGY0ZCIsImlhdCI6MTcxOTc2NzM4MywiZXhwIjoxNzE5ODUzNzgzfQ.tABHweF1ebMl9TRCwO6oqAD668-cE5fYC2jDuphK7ZY
 
 ###----------------------------------------------------------------------------
 ###                    Pruebas para usuarios publicos
@@ -17,19 +17,19 @@ GET http://localhost:3000/api/user/comercios/contenido/ciudad?ciudad=Madrid&orde
 Content-Type: application/json
 
 ###Consultar los contenidos por actividad
-GET http://localhost:3000/api/user/comercios/contenido/actividad?actividad=Cafetería&ordenar=desc
+GET http://localhost:3000/api/user/comercios/contenido/actividad?actividad=Bar&ordenar=desc
 Content-Type: application/json
 
 ###Consultar los contenidos por ciudad y actividad
-GET http://localhost:3000/api/user/comercios/contenido/ciudad/actividad?ciudad=Madrid&actividad=Restaurante&ordenar=desc
+GET http://localhost:3000/api/user/comercios/contenido/ciudad/actividad?ciudad=Granada&actividad=Bar&ordenar=desc
 Content-Type: application/json
 
 ###Consultar un comercio y su contenido por id
-GET http://localhost:3000/api/user/comercios/contenido/666041f9b9bc68d084386be3
+GET http://localhost:3000/api/user/comercios/contenido/6666ee72e2cff37338880429
 Content-Type: application/json
 
 ### Obtener todas las reviews de un contenido
-GET http://localhost:3000/api/user/comercios/contenido/reviews/666041f9b9bc68d084386be3
+GET http://localhost:3000/api/user/comercios/contenido/reviews/66604205b9bc68d084386be9
 Content-Type: application/json
 
 ###Registrar Usuario
@@ -55,7 +55,7 @@ POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-  "email": "daniel12345@example.com",
+  "email": "user@example.com",
   "password": "passwordSegura"
 }
 

@@ -268,12 +268,10 @@ const uploadFoto = async (req, res, next) => {
 //Borrar imagenes
 
 const deleteFoto = async (req, res, next) => {
-
-    const {fotoIndex} = req.params;
-    const {id} = req.user;
+    const { fotoIndex } = req.params;
+    const { id } = req.user;
 
     try {
-
         const comercio = await comerciosModel.findById(id);
         if (!comercio) return res.status(404).send({ message: 'Comercio no encontrado' });
 
@@ -281,24 +279,26 @@ const deleteFoto = async (req, res, next) => {
         const fotoPath = contenido.fotos[fotoIndex];
 
         if (!fotoPath) {
-            return res.status(404).send({ message: 'Foto no encontrado' });
+            return res.status(404).send({ message: 'Foto no encontrada' });
         }
 
-        //Eliminar la foto del sistema de archivos
-        fs.unlinkSync(path.resolve(fotoPath))
+        // Comprobar si el archivo existe antes de eliminarlo
+        const fullPath = path.resolve(fotoPath);
+        if (fs.existsSync(fullPath)) {
+            fs.unlinkSync(fullPath);
+        } else {
+            console.warn(`File not found: ${fullPath}`);
+        }
 
-        //Eliminar la foto de la base de datos
-        contenido.fotos.splice(fotoIndex, 1)
-        await contenido.save()
+        // Eliminar la foto de la base de datos
+        contenido.fotos.splice(fotoIndex, 1);
+        await contenido.save();
 
-        res.status(200).send({message: 'Foto eliminada correctamente', fotos: contenido.fotos})
-
-        
+        res.status(200).send({ message: 'Foto eliminada correctamente', fotos: contenido.fotos });
     } catch (error) {
-        
-        next(error)
+        next(error);
     }
-}
+};
 
 //Optener el correo segun la ciudad y los intereses
 
